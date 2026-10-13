@@ -60,14 +60,5 @@
   },
   "engines": {
     "node": ">=20.19.0"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "@tailwindcss/oxide",
-      "@swc/core",
-      "unrs-resolver",
-      "sharp"
-    ]
   }
 }
