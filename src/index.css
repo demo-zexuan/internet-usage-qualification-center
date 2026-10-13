@@ -1,0 +1,353 @@
+/**
+ * IUQA 全局样式与设计令牌
+ *
+ * I. 设计定位
+ *
+ * 1. 正式政务门户 + 标准化考试系统 + 行政证件的混合视觉
+ * 2. 主色为深海军蓝 #17365D，强调色为行政红 #B4232D
+ * 3. 禁止大面积渐变、荧光色、夸张玻璃拟态与过度动画
+ *
+ * II. 令牌分层
+ *
+ * 1. 原始色阶（navy / seal / ink / level-*）：固定不变，供徽章与图表使用
+ * 2. 语义令牌（surface / line / ink / brand / accent）：随明暗主题切换
+ *
+ * III. 主题机制
+ *
+ * 1. `:root` 定义浅色主题值，`.dark` 覆盖为深色主题值
+ * 2. `@theme inline` 将语义令牌注册为 Tailwind 工具类（bg-surface / text-ink 等）
+ *
+ * @author zexuan.peng
+ * @created 2026-10-14
+ */
+
+@import 'tailwindcss';
+
+/* 明暗主题以 .dark 类切换（由 index.html 中的预置脚本提前应用，避免闪烁） */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ============================================================
+   I. 语义令牌：浅色主题
+   ============================================================ */
+:root {
+  color-scheme: light;
+
+  --iuqa-surface: #ffffff;
+  --iuqa-surface-muted: #f4f6f9;
+  --iuqa-surface-sunken: #e9edf2;
+  --iuqa-surface-raised: #ffffff;
+
+  --iuqa-line: #d2d9e2;
+  --iuqa-line-strong: #b3bec9;
+
+  --iuqa-ink: #10161d;
+  --iuqa-ink-soft: #47525f;
+  --iuqa-ink-faint: #6d7885;
+
+  --iuqa-brand: #17365d;
+  --iuqa-brand-strong: #102845;
+  --iuqa-brand-soft: #e3eaf4;
+  --iuqa-on-brand: #ffffff;
+
+  --iuqa-accent: #b4232d;
+  --iuqa-accent-soft: #f8e5e6;
+
+  --iuqa-pass: #1f6b45;
+  --iuqa-pass-soft: #e2f0e8;
+  --iuqa-fail: #b4232d;
+  --iuqa-fail-soft: #f8e5e6;
+  --iuqa-warn: #8a5a12;
+  --iuqa-warn-soft: #f8eeda;
+  --iuqa-info: #1f4f7a;
+  --iuqa-info-soft: #e3edf6;
+}
+
+/* ============================================================
+   II. 语义令牌：深色主题
+   ============================================================ */
+.dark {
+  color-scheme: dark;
+
+  --iuqa-surface: #10161d;
+  --iuqa-surface-muted: #161e27;
+  --iuqa-surface-sunken: #0b1016;
+  --iuqa-surface-raised: #1a232e;
+
+  --iuqa-line: #2c3743;
+  --iuqa-line-strong: #3d4a58;
+
+  --iuqa-ink: #eef2f6;
+  --iuqa-ink-soft: #b9c3ce;
+  --iuqa-ink-faint: #8d99a6;
+
+  --iuqa-brand: #4b7fbd;
+  --iuqa-brand-strong: #6c9bd2;
+  --iuqa-brand-soft: #1b2a3d;
+  --iuqa-on-brand: #0b1016;
+
+  --iuqa-accent: #e06a72;
+  --iuqa-accent-soft: #3a1d20;
+
+  --iuqa-pass: #62b98b;
+  --iuqa-pass-soft: #16291f;
+  --iuqa-fail: #e06a72;
+  --iuqa-fail-soft: #3a1d20;
+  --iuqa-warn: #d9a94f;
+  --iuqa-warn-soft: #33270f;
+  --iuqa-info: #7fb0d9;
+  --iuqa-info-soft: #17293a;
+}
+
+/* ============================================================
+   III. Tailwind 主题注册
+   ============================================================ */
+@theme inline {
+  /* 1. 字体：中文优先使用系统无衬线字体 */
+  --font-sans:
+    'PingFang SC', 'HarmonyOS Sans SC', 'Source Han Sans SC', 'Noto Sans SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Heiti SC', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono:
+    ui-monospace, 'SFMono-Regular', 'JetBrains Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+
+  /* 2. 语义颜色 → 工具类（bg-surface / border-line / text-ink 等） */
+  --color-surface: var(--iuqa-surface);
+  --color-surface-muted: var(--iuqa-surface-muted);
+  --color-surface-sunken: var(--iuqa-surface-sunken);
+  --color-surface-raised: var(--iuqa-surface-raised);
+  --color-line: var(--iuqa-line);
+  --color-line-strong: var(--iuqa-line-strong);
+  --color-ink: var(--iuqa-ink);
+  --color-ink-soft: var(--iuqa-ink-soft);
+  --color-ink-faint: var(--iuqa-ink-faint);
+  --color-brand: var(--iuqa-brand);
+  --color-brand-strong: var(--iuqa-brand-strong);
+  --color-brand-soft: var(--iuqa-brand-soft);
+  --color-on-brand: var(--iuqa-on-brand);
+  --color-accent: var(--iuqa-accent);
+  --color-accent-soft: var(--iuqa-accent-soft);
+  --color-pass: var(--iuqa-pass);
+  --color-pass-soft: var(--iuqa-pass-soft);
+  --color-fail: var(--iuqa-fail);
+  --color-fail-soft: var(--iuqa-fail-soft);
+  --color-warn: var(--iuqa-warn);
+  --color-warn-soft: var(--iuqa-warn-soft);
+  --color-info: var(--iuqa-info);
+  --color-info-soft: var(--iuqa-info-soft);
+}
+
+@theme {
+  /* 4. 原始色阶：海军蓝（主色） */
+  --color-navy-50: #f2f6fa;
+  --color-navy-100: #e1eaf4;
+  --color-navy-200: #c0d3e8;
+  --color-navy-300: #8fb3d6;
+  --color-navy-400: #5d8ec0;
+  --color-navy-500: #3a6fa8;
+  --color-navy-600: #27578c;
+  --color-navy-700: #1e4674;
+  --color-navy-800: #17365d;
+  --color-navy-900: #102845;
+  --color-navy-950: #0b1b2e;
+
+  /* 5. 原始色阶：行政红（强调色） */
+  --color-seal-50: #fcf1f2;
+  --color-seal-100: #f8e3e5;
+  --color-seal-200: #f0c4c8;
+  --color-seal-300: #e29aa0;
+  --color-seal-400: #d16a73;
+  --color-seal-500: #c93a44;
+  --color-seal-600: #b4232d;
+  --color-seal-700: #8e1b23;
+  --color-seal-800: #6b141a;
+
+  /* 6. 原始色阶：灰蓝中性色 */
+  --color-slate-blue-50: #f5f7f9;
+  --color-slate-blue-100: #e8ecf1;
+  --color-slate-blue-200: #d3dae3;
+  --color-slate-blue-300: #a9b4c2;
+  --color-slate-blue-400: #7a8798;
+  --color-slate-blue-500: #5a6675;
+  --color-slate-blue-600: #45505d;
+  --color-slate-blue-700: #2f3944;
+  --color-slate-blue-800: #1c242e;
+  --color-slate-blue-900: #10161d;
+
+  /* 7. 等级徽章色：全站统一，克制低饱和 */
+  --color-level-1: #3f6b52;
+  --color-level-2: #2f6296;
+  --color-level-3: #5b4a8f;
+  --color-level-4: #9a6a1c;
+  --color-level-5: #146b6b;
+  --color-level-6: #8e1b23;
+
+  /* 8. 版式节奏 */
+  --radius-card: 0.5rem;
+  --shadow-card: 0 1px 2px 0 rgb(16 22 29 / 0.06), 0 1px 3px 0 rgb(16 22 29 / 0.04);
+  --shadow-raised: 0 4px 12px -2px rgb(16 22 29 / 0.1), 0 2px 4px -2px rgb(16 22 29 / 0.06);
+}
+
+/* ============================================================
+   IV. 基础层
+   ============================================================ */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-color: var(--iuqa-line);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--iuqa-surface-muted);
+    color: var(--iuqa-ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* 移动端禁止横向溢出：长英文串与编号需要可断行 */
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+  }
+
+  /* 键盘焦点必须清晰可见（无障碍要求） */
+  :focus-visible {
+    outline: 2px solid var(--iuqa-brand);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: var(--iuqa-brand-soft);
+    color: var(--iuqa-ink);
+  }
+
+  /* 数字型数据使用等宽字体，便于比对分数与编号 */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum';
+  }
+}
+
+/* ============================================================
+   V. 组件层：官方文书与证件专用样式
+   ============================================================ */
+@layer components {
+  /* 1. 官方文书纸张：证件与成绩单的基底 */
+  .doc-paper {
+    background-color: var(--iuqa-surface);
+    border: 1px solid var(--iuqa-line);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+  }
+
+  /* 2. 证件底纹：细密防伪纹理（低透明度网格 + 同心弧线），不使用大面积渐变 */
+  .doc-guilloche {
+    background-image:
+      repeating-linear-gradient(
+        45deg,
+        color-mix(in srgb, var(--iuqa-brand) 7%, transparent) 0 1px,
+        transparent 1px 7px
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        color-mix(in srgb, var(--iuqa-brand) 5%, transparent) 0 1px,
+        transparent 1px 9px
+      );
+  }
+
+  /* 3. 印章样式：行政红色双环印章（纯装饰，非真实机关印章） */
+  .doc-seal {
+    border: 2px solid var(--iuqa-accent);
+    color: var(--iuqa-accent);
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: rotate(-8deg);
+    letter-spacing: 0.18em;
+    opacity: 0.88;
+  }
+
+  /* 4. 编号等宽展示：证件编号、考生编号 */
+  .doc-code {
+    font-family: var(--font-mono);
+    letter-spacing: 0.08em;
+  }
+
+  /* 5. 表头行政样式 */
+  .table-official thead th {
+    background-color: var(--iuqa-surface-muted);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+}
+
+/* ============================================================
+   VI. 打印样式：证件与成绩单打印 / 另存为 PDF
+   ============================================================ */
+@media print {
+  /* 1. 打印时隐藏一切交互与导航元素 */
+  .no-print,
+  [data-print='hide'] {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+  }
+
+  /* 2. 打印区域占满纸张，去除屏幕阴影 */
+  .print-area {
+    box-shadow: none !important;
+    border: 1px solid #999999 !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* 3. 打印时保留防伪纹理（浏览器默认不打印背景色，需要用户勾选“背景图形”） */
+  .doc-guilloche {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  @page {
+    size: A4 landscape;
+    margin: 12mm;
+  }
+}
+
+/* ============================================================
+   VII. 动效克制：尊重系统「减少动态效果」设置
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

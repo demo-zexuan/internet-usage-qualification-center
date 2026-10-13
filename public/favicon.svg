@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="IUQA">
+  <rect width="64" height="64" rx="10" fill="#17365D" />
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#C0D3E8" stroke-width="1.5" opacity="0.65" />
+  <circle cx="32" cy="32" r="15" fill="none" stroke="#C0D3E8" stroke-width="1" opacity="0.45" />
+  <path d="M32 14 L46 20 V33 C46 41.5 39.8 47.6 32 50 C24.2 47.6 18 41.5 18 33 V20 Z"
+        fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linejoin="round" />
+  <path d="M25.5 32.5 L30 37 L39 27.5" fill="none" stroke="#B4232D" stroke-width="3"
+        stroke-linecap="round" stroke-linejoin="round" />
+</svg>

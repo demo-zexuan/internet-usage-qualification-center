@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#17365D" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>互联网使用资格考试中心 · IUQA</title>
+    <meta
+      name="description"
+      content="IUQA 互联网使用资格考试中心：一套虚构的互联网使用资格认证与在线考试系统。所有等级、证件与网络权限均为应用内模拟，不具有现实法律效力。"
+    />
+    <script>
+      // 主题预置：在首屏渲染前应用本地主题，避免浅色/深色闪烁。
+      // localStorage 仅承载此类非关键 UI 偏好，业务数据一律存放于 IndexedDB。
+      (function () {
+        try {
+          var stored = window.localStorage.getItem('iuqa.ui.theme');
+          var prefersDark =
+            window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = stored === 'dark' || stored === 'light' ? stored : prefersDark ? 'dark' : 'light';
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+          document.documentElement.dataset.theme = theme;
+        } catch (error) {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="font-family: sans-serif; padding: 24px">
+        本考试系统需要启用 JavaScript 才能运行。请在浏览器设置中启用 JavaScript 后重新加载页面。
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

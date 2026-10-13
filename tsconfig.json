@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    /* I. 语言与模块目标 */
+    "target": "ES2022",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "useDefineForClassFields": true,
+
+    /* II. 严格类型检查（项目要求：启用严格模式） */
+    "strict": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "forceConsistentCasingInFileNames": true,
+
+    /* III. 模块解析与互操作 */
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+
+    /* IV. 路径别名 */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    /* V. 全局类型 */
+    "types": ["node", "vite/client", "vitest/globals", "@testing-library/jest-dom"]
+  },
+  "include": ["src", "tests", "vite.config.ts", "playwright.config.ts"],
+  "exclude": ["node_modules", "dist", "coverage", "test-results", "playwright-report"]
+}
