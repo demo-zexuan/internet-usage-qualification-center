@@ -1,0 +1,425 @@
+[
+  {
+    "id": "ADV-020",
+    "type": "multiple_choice",
+    "category": "information_literacy",
+    "difficulty": 4,
+    "tags": ["synthetic-media", "verification"],
+    "stem": "面对一段来源不明、声称记录某次会议现场的合成视频，下列哪些核验线索较为可靠？",
+    "options": [
+      { "id": "A", "text": "检查视频中人物口型与音频是否同步，以及牙齿、手指等细节的连续性" },
+      { "id": "B", "text": "查找是否存在同一事件的多个独立拍摄角度" },
+      { "id": "C", "text": "观察视频画面的清晰度是否达到高清标准" },
+      { "id": "D", "text": "核查画面中的光影方向、阴影与场景光源是否一致" },
+      { "id": "E", "text": "因为视频看起来自然流畅，即可认为未经合成处理" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "D"] },
+    "selection": "multiple",
+    "explanation": "合成内容的核验依赖可交叉检验的物理与来源线索：细节连续性、光影一致性属于物理线索，多角度素材属于来源线索。清晰度与真实与否没有必然关系，低清素材同样可能为真；以「看起来自然」作为判据，则把主观观感当成了验证手段。",
+    "score": 5,
+    "knowledgePoints": ["合成媒体", "多角度素材", "光影一致性"]
+  },
+  {
+    "id": "ADV-021",
+    "type": "reading_comprehension",
+    "category": "information_literacy",
+    "difficulty": 4,
+    "tags": ["log-scale", "chart-literacy"],
+    "materialTitle": "材料：一张被广泛转发的趋势图",
+    "material": "一份被广泛转发的图表显示，某指标在近两年内「增长超过十倍」。图表的纵轴采用对数刻度，起点为 0.5，终点为 5000；横轴只标注了两个端点年份，中间没有刻度。图表说明中写道：「数据来源于公开统计，具体口径见原表。」原表本身未被附上，也未提供下载地址。转发者补充说明：「曲线在后半段明显变陡，说明情况正在迅速恶化。」有读者据此认为该指标已经失控；也有读者指出，若把纵轴改为线性刻度，曲线的形状会完全不同。图表作者未回应这两种解读。",
+    "stem": "根据材料，下列哪一项判断最为准确？",
+    "options": [
+      { "id": "A", "text": "在对数刻度下，曲线变陡并不直接对应增长加速，且缺少中间刻度与原始口径使结论无法被核验" },
+      { "id": "B", "text": "曲线变陡说明增长速度确实在加快，转发者的说明成立" },
+      { "id": "C", "text": "只要纵轴起点不为零，该图表就一定属于伪造" },
+      { "id": "D", "text": "由于图表未附原表，可以断定其所引用的数据不存在" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "对数刻度压缩了较大数值区间的视觉差距，曲线在同一斜率下对应的绝对增量随数值增大而增大，因此「变陡」不能直接读作「加速」。同时，横轴缺少中间刻度、原始口径未附，使读者无法复原数据，结论自然无法核验。起点非零与伪造之间没有必然联系；未附原表只能说明核验条件不足，不能推出数据不存在。",
+    "score": 5,
+    "knowledgePoints": ["对数刻度", "可视化陷阱", "原始口径"]
+  },
+  {
+    "id": "ADV-022",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 4,
+    "tags": ["chart-truncation", "visual-encoding"],
+    "stem": "一张柱状图的纵轴从 90 开始而不是从 0 开始，两根柱子分别高 95 与 98。下列哪一项评价最为准确？",
+    "options": [
+      { "id": "A", "text": "截断纵轴会放大两组数值的视觉差距，读者容易高估其实际差异" },
+      { "id": "B", "text": "截断纵轴不影响读者对差异的判断" },
+      { "id": "C", "text": "只要在图上标注了数值，截断纵轴就不构成任何误导" },
+      { "id": "D", "text": "柱状图必须使用对数刻度才准确" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "柱状图以长度编码数值，纵轴不从零开始时，长度比例与数值比例不再一致，视觉差距会被显著放大。标注数值可以减轻但无法消除这一效果，因为多数读者首先获得的是整体印象；对数刻度适用于跨越多个数量级的数据，并不是柱状图的普遍要求。",
+    "score": 5,
+    "knowledgePoints": ["坐标轴截断", "视觉编码", "图表误导"]
+  },
+  {
+    "id": "ADV-023",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 3,
+    "tags": ["citation", "secondary-source"],
+    "stem": "某作者在文章中引用了「甲研究指出，某现象的发生率为 37%」，但该引用实际来自另一篇文章对该研究的转述，且转述中并未给出页码。从信息溯源的角度看，下列哪一项判断最合理？",
+    "options": [
+      { "id": "A", "text": "该引用属于二次引用，数值可能在转述中被改写或脱离原始条件，应回溯原文核对" },
+      { "id": "B", "text": "只要转述文章本身可信，二次引用与一次引用等价" },
+      { "id": "C", "text": "转述中未给出页码，说明原始研究并不存在" },
+      { "id": "D", "text": "数值型结论在层层转述中不会发生变化" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "二次引用的风险在于每一次转述都可能丢失限定条件、改变数值或省略适用范围，因此引用者需要回溯原始文献核对。转述文章可信并不消除转述环节的损耗；缺少页码只说明引用不规范；数值型结论恰恰是最容易在层层转述中被简化的内容。",
+    "score": 5,
+    "knowledgePoints": ["二次引用", "引用损耗", "溯源"]
+  },
+  {
+    "id": "ADV-024",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 3,
+    "tags": ["preprint", "peer-review"],
+    "stem": "关于预印本与经过同行评审的论文，下列哪一项表述最为准确？",
+    "options": [
+      { "id": "A", "text": "预印本未经同行评审，可以作为线索使用，但引用时应说明其评审状态" },
+      { "id": "B", "text": "预印本与正式发表论文的可靠性完全相同" },
+      { "id": "C", "text": "预印本一旦上传即视为已被学术界接受" },
+      { "id": "D", "text": "预印本因未经评审，不应被任何人阅读" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "预印本是公开于评审之前的稿件，其价值在于及时提供线索，其局限在于尚未经过独立评审，因此引用时说明评审状态是必要的。B 与 C 都把预印本等同于已通过评审的成果；D 则把「未评审」夸大为「不可阅读」，忽略了它在信息传播中的实际作用。",
+    "score": 5,
+    "knowledgePoints": ["预印本", "同行评审", "引用规范"]
+  },
+  {
+    "id": "ADV-025",
+    "type": "multiple_choice",
+    "category": "information_literacy",
+    "difficulty": 4,
+    "tags": ["metadata", "timestamp"],
+    "stem": "在核验一张声称拍摄于某日某地的现场照片时，下列哪些线索值得检查？",
+    "options": [
+      { "id": "A", "text": "文件内记录的拍摄时间及其时区信息" },
+      { "id": "B", "text": "照片中可见的日照角度、天气与当时当地的气象记录是否吻合" },
+      { "id": "C", "text": "图片的转发次数与点赞数量" },
+      { "id": "D", "text": "是否存在更早发布的相同或近似画面" },
+      { "id": "E", "text": "元数据缺失即可直接断定照片为伪造" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "D"] },
+    "selection": "multiple",
+    "explanation": "时间戳提供第一层线索，但需要结合时区以及是否被重写来判断；日照与天气可以与当时当地的环境记录交叉检验；查找更早出现的相同画面是发现旧图新用的有效方法。转发与点赞反映的是传播规模，与内容是否为真没有因果关系；元数据缺失也可能来自平台压缩或隐私清理，只能说明核验条件不足，不能直接推出伪造。",
+    "score": 5,
+    "knowledgePoints": ["元数据核验", "时间戳", "旧图新用"]
+  },
+  {
+    "id": "ADV-026",
+    "type": "multiple_choice",
+    "category": "information_literacy",
+    "difficulty": 5,
+    "tags": ["inauthentic-behavior", "coordination"],
+    "stem": "在识别协同性不真实行为时，下列哪些特征组合起来具有较高的指示性？",
+    "options": [
+      { "id": "A", "text": "大量账号在相近的时间窗口内发布高度同质的表述" },
+      { "id": "B", "text": "账号注册时间集中、历史内容稀少，却在同一议题上同时活跃" },
+      { "id": "C", "text": "单个账号长期发布与其兴趣领域一致的内容，观点随时间有所变化" },
+      { "id": "D", "text": "多个账号使用相同或高度相似的措辞模板，并互相引用形成闭环" },
+      { "id": "E", "text": "账号偶尔转发主流媒体的公开报道" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "D"] },
+    "selection": "multiple",
+    "explanation": "协同性不真实行为的判据是「协调」而不是「观点」：时间窗口集中、账号历史薄弱、措辞模板化与互动闭环共同指向组织化操作。单个账号长期稳定地表达某一领域的观点、且观点随时间变化，属于正常使用特征；偶尔转发主流内容也不构成异常。",
+    "score": 5,
+    "knowledgePoints": ["协同性不真实行为", "行为特征", "账号历史"]
+  },
+  {
+    "id": "ADV-027",
+    "type": "scenario_analysis",
+    "category": "information_literacy",
+    "difficulty": 4,
+    "tags": ["source-conflict", "uncertainty"],
+    "materialTitle": "情景：两份来源在关键事实上冲突",
+    "material": "甲、乙两份来源对同一起事件给出了互相矛盾的关键事实：甲称事件发生于上午，乙称发生于下午；甲给出的现场人数为约二百人，乙为约两千人。两份来源都未提供原始影像，都声称「据现场人士」。此外，甲来源的发布时间早于乙来源约三小时。",
+    "stem": "面对这一情况，下列处理方式中哪一项最为恰当？",
+    "options": [
+      {
+        "id": "A",
+        "text": "记录两份来源的差异与发布时间，寻找可独立核验的第三方材料（如现场影像、参与者的同期记录），并在结论中同时标注分歧",
+        "points": 5,
+        "rationale": "保留分歧并寻找独立证据，使结论与证据强度相匹配，也为后续修正留出空间。"
+      },
+      {
+        "id": "B",
+        "text": "采用发布时间较早的甲来源，因为它更接近事件发生时刻",
+        "points": 1,
+        "rationale": "发布时间早只说明它更接近事件，不说明其信息更准确，早期信息往往最为混乱。"
+      },
+      {
+        "id": "C",
+        "text": "采用数值较大的乙来源，因为数据更醒目",
+        "points": 0,
+        "rationale": "数值大小与准确性无关，以醒目程度作为取舍标准属于以传播效果替代证据。"
+      },
+      {
+        "id": "D",
+        "text": "取两份来源的平均值，作为对事件规模的估计",
+        "points": -1,
+        "rationale": "对互斥的估计取平均既没有统计依据，也会生成一个两份来源都不支持的结论。"
+      }
+    ],
+    "answer": {
+      "mode": "points",
+      "bestOptionIds": ["A"],
+      "optionPoints": { "A": 5, "B": 1, "C": 0, "D": -1 }
+    },
+    "selection": "single",
+    "explanation": "来源冲突时，处理目标不是尽快得出一个数字，而是判断哪些部分可以被独立证据支持。保留分歧、补充独立材料并标注不确定性，是使结论与证据相称的做法；以发布时间、数值大小或平均值作为取舍标准，都没有增加任何新的证据。",
+    "score": 5,
+    "knowledgePoints": ["来源冲突", "独立证据", "不确定性标注"]
+  },
+  {
+    "id": "ADV-028",
+    "type": "reading_comprehension",
+    "category": "information_literacy",
+    "difficulty": 5,
+    "tags": ["source-comparison", "process-stages"],
+    "materialTitle": "材料：两份来源对同一公告的摘录",
+    "material": "甲来源称：「该平台在本季度删除了约 1.2 万条违规内容，其中九成由自动化系统识别。」乙来源称：「该平台本季度删除的违规内容中，人工复核的比例约为三成。」两份来源都引用同一份季度公告，但甲来源只摘录了公告中「自动化识别」一段，乙来源只摘录了「人工复核」一段。公告原文另有一段说明：自动化系统识别的内容需经人工复核后方可处置，未通过复核的内容会被恢复。两家来源在转述时都未附上公告的完整链接，读者只能看到各自摘录的段落。",
+    "stem": "根据材料，下列哪一项判断最为准确？",
+    "options": [
+      { "id": "A", "text": "两份来源分别摘录了同一公告的不同环节，把它们并置后与原文流程并不矛盾" },
+      { "id": "B", "text": "两份来源的数据互相矛盾，其中至少一份必然是伪造的" },
+      { "id": "C", "text": "甲来源的数据可信，因为自动化比例更高，更符合效率原则" },
+      { "id": "D", "text": "乙来源的数据可信，因为人工复核比自动化更可靠" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "材料的关键信息是公告原文说明了「识别」与「处置」是两个环节：自动化负责识别，人工负责复核后处置。甲来源讲的是识别环节，乙来源讲的是复核环节，二者描述的对象不同，并置后与原文流程一致。B 把环节差异误读为数据冲突；C 与 D 都以个人偏好替代了对材料环节的辨认。",
+    "score": 5,
+    "knowledgePoints": ["来源对照", "环节区分", "误读冲突"]
+  },
+  {
+    "id": "ADV-029",
+    "type": "opinion_analysis",
+    "category": "information_literacy",
+    "difficulty": 5,
+    "tags": ["attribution", "argument-structure"],
+    "multipleValidViewpoints": true,
+    "stem": "一段讨论这样论证：「这条内容我只是转发，没有添加任何评论，所以我对它的准确性不承担任何说明义务，也不需要标注它来自哪里。」下列哪一项对该论证的评价最为准确？",
+    "options": [
+      { "id": "A", "text": "论证把「未添加评论」等同于「未作出任何传递行为」，忽略了转发本身已经构成对内容的传播，因而未回应标注来源的问题" },
+      { "id": "B", "text": "论证成立，因为转发者没有创作内容，因而不产生任何责任" },
+      { "id": "C", "text": "论证不成立，因为转发行为在任何情况下都应被禁止" },
+      { "id": "D", "text": "论证成立，因为来源标注只是形式要求，与内容准确性无关" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "本题不评判立场，只评判论证方式。该论证的前提是「未添加评论」，结论是「不承担说明义务」，两者之间缺少必要的推论环节：转发使内容触达新的读者，这一行为本身即构成传播，因此「是否添加评论」不能直接推出「是否需要标注来源」。B 与 D 只是重复了论证的结论而未补充理由；C 提出了一个论证中并未出现且明显过强的规范主张。",
+    "score": 5,
+    "knowledgePoints": ["论证结构", "转发责任", "来源标注"]
+  },
+  {
+    "id": "ADV-030",
+    "type": "scenario_analysis",
+    "category": "information_literacy",
+    "difficulty": 5,
+    "tags": ["image-verification", "earliest-copy"],
+    "materialTitle": "情景：一张高传播图片的核验流程",
+    "material": "一张声称记录某次突发事件现场的图片在短时间内被大量转发。图片没有原始链接，只有多个二次上传的副本；其中一张副本的角落留有另一平台的界面元素。已有账号声称该图片「来自现场目击者」，但未提供任何可追溯的联系方式。编辑部需要在一小时内决定是否在稿件中使用该图片。",
+    "stem": "下列处理方式中哪一项最为恰当？",
+    "options": [
+      {
+        "id": "A",
+        "text": "先定位最早出现的副本并记录其上传时间，检查界面元素与画面细节是否与声称的现场一致，同时寻找同一事件的其他独立素材；在核验完成前不以「现场图片」的名义使用",
+        "points": 5,
+        "rationale": "通过定位最早副本、检查画面线索与寻找独立素材，把「尚未核验」这一状态显式保留到结论之前，是时间受限条件下最稳妥的处理。"
+      },
+      {
+        "id": "B",
+        "text": "因为已有账号声称来自目击者，可直接标注「据目击者」后使用",
+        "points": 0,
+        "rationale": "「据目击者」依赖一个无法追溯的声称，等于用来源标注的形式掩盖来源缺失。"
+      },
+      {
+        "id": "C",
+        "text": "因为时间紧迫，先把图片裁剪掉界面元素后使用",
+        "points": -1,
+        "rationale": "裁剪界面元素会主动移除可用于判断来源的线索，使后续核验更加困难，也容易被理解为有意隐瞒。"
+      },
+      {
+        "id": "D",
+        "text": "因为无法核验，永久禁止在该议题下使用任何图片",
+        "points": 1,
+        "rationale": "因个别素材无法核验而拒绝全部素材，超出了当前证据所能支持的范围，属于过度反应。"
+      }
+    ],
+    "answer": {
+      "mode": "points",
+      "bestOptionIds": ["A"],
+      "optionPoints": { "A": 5, "B": 0, "C": -1, "D": 1 }
+    },
+    "selection": "single",
+    "explanation": "图像核验的基本顺序是定位最早副本、比对画面与环境线索、寻找独立素材。在时间受限时，正确的做法是降低结论强度而不是降低核验标准：可以说明「该图片尚在核验」，但不应以确定性表述使用它。",
+    "score": 5,
+    "knowledgePoints": ["图像溯源", "最早副本", "结论强度"]
+  },
+  {
+    "id": "ADV-031",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 3,
+    "tags": ["screenshot", "evidence"],
+    "stem": "在证据评估中，截图作为证据的主要局限是什么？",
+    "options": [
+      { "id": "A", "text": "截图可以被裁剪、拼接或修改，且通常不包含可独立验证的来源信息" },
+      { "id": "B", "text": "截图的分辨率通常低于原始页面" },
+      { "id": "C", "text": "截图无法用文字描述，因此不便于检索" },
+      { "id": "D", "text": "截图只能由发布者本人保存" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "截图的根本局限在于它脱离了原始页面：既无法自证未被编辑，也通常不携带可追溯的地址与时间信息。分辨率、可检索性与保存主体都不是其核心问题，原始页面同样可以被引用与描述。",
+    "score": 5,
+    "knowledgePoints": ["截图证据", "可验证性", "来源信息"]
+  },
+  {
+    "id": "ADV-032",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 4,
+    "tags": ["availability-bias", "search-ranking"],
+    "stem": "一名研究者仅使用某搜索引擎首页的前十条结果来评估某议题的公众关注程度。下列哪一项批评最为切中要害？",
+    "options": [
+      { "id": "A", "text": "搜索结果的排序由个性化与商业因素共同决定，首页结果不能代表议题的真实关注分布" },
+      { "id": "B", "text": "十条结果的样本量过小，只要增加到二十条即可代表整体" },
+      { "id": "C", "text": "搜索引擎返回的结果一定是伪造的" },
+      { "id": "D", "text": "公众关注程度本身无法被任何方式研究" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "首页结果的排序受个性化推荐、商业投放与算法权重影响，其构成与议题的真实分布之间没有对应关系，因此用它评估关注程度存在系统性偏差。B 只是扩大了同一个有偏样本；C 把排序问题夸大为伪造；D 否定了所有可能的研究方法，超出了证据所能支持的范围。",
+    "score": 5,
+    "knowledgePoints": ["可得性偏差", "搜索排序", "样本代表性"]
+  },
+  {
+    "id": "ADV-033",
+    "type": "opinion_analysis",
+    "category": "information_literacy",
+    "difficulty": 4,
+    "tags": ["data-literacy", "argument-structure"],
+    "multipleValidViewpoints": true,
+    "stem": "一段讨论这样论证：「这份报表的数据是由系统自动生成的，所以它的结论一定客观可靠，不需要再检查统计口径。」下列哪一项对该论证的评价最为准确？",
+    "options": [
+      { "id": "A", "text": "论证把「生成过程自动化」当作「结论无需检查」的理由，但口径选择与字段定义仍由人工设定，因此该推论不成立" },
+      { "id": "B", "text": "论证成立，因为自动生成排除了人为干预的可能" },
+      { "id": "C", "text": "论证不成立，因为系统生成的数据在任何情况下都不可信" },
+      { "id": "D", "text": "论证成立，因为统计口径与结论的正确性无关" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "本题不评判立场，只评判论证方式。该论证的核心跳跃在于把「生成环节自动化」等同于「判断环节无人工介入」。统计口径、字段定义与纳入范围通常由人在系统之外设定，自动化只是执行这些设定，因此不能推出「无需检查」。B 与 D 只是重复了论证的结论；C 走向另一个极端，同样缺乏理由。",
+    "score": 5,
+    "knowledgePoints": ["论证结构", "统计口径", "自动化偏见"]
+  },
+  {
+    "id": "ADV-034",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 4,
+    "tags": ["formal-fallacy", "affirming-consequent"],
+    "stem": "「如果系统遭受暴力破解，登录日志中会出现大量失败记录。现在日志中确实出现了大量失败记录，因此系统一定遭受了暴力破解。」这一推理属于下列哪一种？",
+    "options": [
+      { "id": "A", "text": "肯定后件" },
+      { "id": "B", "text": "否定前件" },
+      { "id": "C", "text": "循环论证" },
+      { "id": "D", "text": "滑坡论证" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "该推理的形式是「若 P 则 Q；Q 成立；故 P 成立」，即把充分条件当作必要条件使用，属于肯定后件。大量失败记录还可能来自配置错误、客户端重试或口令过期，因此结论不能被推出。否定前件的形式是「若 P 则 Q；非 P；故非 Q」，与本题不同；循环论证与滑坡论证均未在题干中出现。",
+    "score": 5,
+    "knowledgePoints": ["形式谬误", "肯定后件", "充分条件"]
+  },
+  {
+    "id": "ADV-035",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 4,
+    "tags": ["base-rate", "conditional-probability"],
+    "stem": "某检测工具对某类异常的识别准确率为 99%，该异常在全体样本中的发生率为千分之一。若某样本被判定为异常，下列哪一项判断最合理？",
+    "options": [
+      { "id": "A", "text": "由于基础比率极低，该判定为误报的可能性仍然相当大，需要结合其他证据" },
+      { "id": "B", "text": "该判定正确的概率为 99%" },
+      { "id": "C", "text": "该判定正确的概率一定低于 1%" },
+      { "id": "D", "text": "基础比率与判定结果的可靠性无关" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "在极低的基础比率下，即使检测的敏感度与特异度都很高，阳性结果中仍会包含大量误报：当异常发生率为千分之一时，正常样本的绝对数量远大于异常样本，少量假阳性即可超过真阳性。B 混淆了「工具的准确率」与「给定阳性时真正异常的概率」；C 给出了一个未经计算的确定上界；D 忽略了先验概率对后验判断的影响。",
+    "score": 5,
+    "knowledgePoints": ["基础比率", "条件概率", "假阳性"]
+  },
+  {
+    "id": "ADV-036",
+    "type": "multiple_choice",
+    "category": "logical_reasoning",
+    "difficulty": 5,
+    "tags": ["bayesian-update", "evidence"],
+    "stem": "在一次贝叶斯更新中，下列哪些因素是必须纳入的？",
+    "options": [
+      { "id": "A", "text": "在获得新证据之前对假设的初始信念" },
+      { "id": "B", "text": "该证据在假设成立时出现的可能性" },
+      { "id": "C", "text": "该证据在假设不成立时出现的可能性" },
+      { "id": "D", "text": "提出该假设的人的身份与职务" },
+      { "id": "E", "text": "该假设在社交平台上的讨论热度" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "C"] },
+    "selection": "multiple",
+    "explanation": "贝叶斯更新由三部分构成：先验信念、假设成立时证据出现的似然、假设不成立时证据出现的似然；缺少第三项就无法判断证据的区分能力。提出者的身份与讨论热度可能影响我们如何寻找证据，但它们本身不是更新过程的输入项，直接计入会引入与证据强度无关的因素。",
+    "score": 5,
+    "knowledgePoints": ["贝叶斯更新", "先验", "似然"]
+  },
+  {
+    "id": "ADV-037",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 5,
+    "tags": ["counterfactual", "causal-inference"],
+    "stem": "在评估「若当时采取了另一项措施，结果是否会不同」这类反事实问题时，下列哪一项做法最为严谨？",
+    "options": [
+      { "id": "A", "text": "明确说明所设定的替代情形，并检验结论对该设定的敏感性" },
+      { "id": "B", "text": "直接假定替代措施必然有效，从而推出结果会不同" },
+      { "id": "C", "text": "因为反事实无法被直接观察，所以任何相关讨论都没有意义" },
+      { "id": "D", "text": "只采用支持自己结论的那一种替代情形" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "反事实推理的困难在于替代情形无法被观测，因此结论高度依赖所设定的条件。严谨的做法是把设定写清楚，并检验结论在不同设定下是否稳定。B 把待证结论放进了前提；C 因无法直接观察而否定全部讨论，忽略了在设定明确时反事实推理仍有分析价值；D 属于选择性使用情形。",
+    "score": 5,
+    "knowledgePoints": ["反事实推理", "敏感性分析", "因果推断"]
+  },
+  {
+    "id": "ADV-038",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 4,
+    "tags": ["occam-razor", "model-selection"],
+    "stem": "关于「奥卡姆剃刀」在解释选择中的适用边界，下列哪一项表述最为准确？",
+    "options": [
+      { "id": "A", "text": "它主张在解释力相当时优先选择假设更少的解释，但不适用于解释力明显不同的情形" },
+      { "id": "B", "text": "它主张最简单的解释一定为真" },
+      { "id": "C", "text": "它主张假设越多的解释越接近事实" },
+      { "id": "D", "text": "它可以用来替代证据收集" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "奥卡姆剃刀是一条比较规则：当多个解释对现有证据的覆盖能力相当时，优先采用假设更少的那个。它并不保证简单解释为真，也不主张假设越多越好，更不能取代证据收集——若某个解释能够覆盖更多证据，简洁本身不足以让它胜出。",
+    "score": 5,
+    "knowledgePoints": ["奥卡姆剃刀", "解释力", "假设数量"]
+  }
+]

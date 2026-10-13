@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0.0",
+  "bankId": "demo-basic",
+  "title": "互联网使用基础资格题库",
+  "description": "面向 L1 互联网浏览资格、L2 互动交流资格与 L3 内容发布资格的基础题库，覆盖平台规则、信息辨别、网络礼仪与公共讨论。",
+  "language": "zh-CN",
+  "version": "1.0.0",
+  "author": "IUQA 题库管理处",
+  "updatedAt": "2026-10-14"
+}

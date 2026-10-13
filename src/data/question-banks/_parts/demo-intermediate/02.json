@@ -1,0 +1,336 @@
+[
+  {
+    "id": "INT-017",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 3,
+    "tags": ["burden-of-proof"],
+    "stem": "甲提出「某平台将在下周调整会员价格」，乙要求甲提供依据。甲回答：「你无法证明它不会调整。」从论证规范看，甲的回答存在的问题是？",
+    "options": [
+      { "id": "A", "text": "甲的表述过于简短" },
+      { "id": "B", "text": "甲把举证责任转移给了质疑者，提出主张的一方应先给出依据" },
+      { "id": "C", "text": "乙不应要求甲提供依据" },
+      { "id": "D", "text": "价格调整在逻辑上无法被证明" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "提出肯定性主张的一方承担初步举证责任。质疑者指出证据缺失，并不因此接手证明相反命题的义务；「你无法证伪」不能替代主张方给出依据。这与表述长度无关，也不是乙的要求不当，更不意味着该命题不可讨论。",
+    "score": 5,
+    "knowledgePoints": ["举证责任", "主张与证据", "谁主张谁举证"]
+  },
+  {
+    "id": "INT-018",
+    "type": "multiple_choice",
+    "category": "logical_reasoning",
+    "difficulty": 4,
+    "tags": ["slippery-slope", "fallacy"],
+    "stem": "下列哪些论证具有滑坡谬误的特征？（多选）",
+    "options": [
+      { "id": "A", "text": "如果允许学生上课使用电子设备，学生就会逐渐不听讲，最终全部辍学" },
+      { "id": "B", "text": "如果本次不处罚该行为，今后所有用户都会效仿，平台秩序将彻底崩溃" },
+      { "id": "C", "text": "该方案在三个试点城市的效果均未达到预期，因此不宜立即全面推行" },
+      { "id": "D", "text": "一旦允许延期一次，以后所有人都会无限延期" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "D"] },
+    "selection": "multiple",
+    "explanation": "滑坡谬误的特征是由第一步直接跳到极端后果，却不给出中间环节的必然性证据。A、B、D 都省略了从起点到灾难性终点的因果链条。C 基于试点结果提出审慎建议，属于有依据的推断，不构成滑坡。",
+    "score": 5,
+    "knowledgePoints": ["滑坡论证", "因果链条", "中间环节"]
+  },
+  {
+    "id": "INT-019",
+    "type": "reading_comprehension",
+    "category": "logical_reasoning",
+    "difficulty": 4,
+    "tags": ["debate", "topic-drift"],
+    "materialTitle": "材料：一段群聊记录",
+    "material": "甲：这份统计报告显示，该措施实施后投诉量下降了 15%，可以作为效果参考。乙：报告的作者去年在一次会议上说过支持该措施的话，他的数据不可信。甲：我说的是报告的统计方法，你可以指出方法上的问题。乙：你先解释清楚他为什么支持，再来谈方法。丙：投诉量下降也可能是因为受理渠道变了，建议核对受理口径，因为受理渠道的变化会直接改变投诉量的统计分母。",
+    "stem": "根据材料，乙的回应在论证上最主要的问题是？",
+    "options": [
+      { "id": "A", "text": "乙没有提供任何数据" },
+      { "id": "B", "text": "乙以作者动机替代了对统计方法的检验，并把话题从方法转向动机" },
+      { "id": "C", "text": "乙的说法与甲完全相同" },
+      { "id": "D", "text": "丙的介入使讨论无法继续" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "甲的论证焦点是统计方法，乙没有指出方法层面的问题，而是以作者过往表态推断数据不可信，属于以动机否定论据，同时把话题从「方法是否可靠」转向「作者为何支持」。A 未触及核心缺陷；C 与材料相反；D 中丙提出的恰恰是方法层面的补充意见。",
+    "score": 5,
+    "knowledgePoints": ["话题转移", "诉诸动机", "论证焦点"]
+  },
+  {
+    "id": "INT-020",
+    "type": "scenario_analysis",
+    "category": "logical_reasoning",
+    "difficulty": 4,
+    "tags": ["argumentation", "disagreement"],
+    "materialTitle": "情景：会议中的分歧处理",
+    "material": "在一次工作会议上，同事提交了一份基于问卷的结论，认为某功能「用户满意度很高」。你认为问卷只覆盖了主动填写反馈的用户，结论可能被高估。会议剩余时间有限，需要在当天形成下一步安排。",
+    "stem": "此时最合适的做法是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "直接指出结论错误，要求撤回",
+        "rationale": "未指明具体缺陷就否定结论，会把讨论引向立场对抗，也无助于当天形成可执行的安排。"
+      },
+      {
+        "id": "B",
+        "text": "指出样本来自主动反馈者这一具体限制，建议在结论中标注适用范围，并约定补充抽样后再复核",
+        "rationale": "把分歧定位到具体环节，既保留了结论中成立的部分，又给出了可执行的下一步，符合先定位缺陷、再约定验证的处理顺序。"
+      },
+      {
+        "id": "C",
+        "text": "保持沉默，避免影响同事关系",
+        "rationale": "沉默会让已知存在偏差的结论直接进入决策，属于放弃专业判断；讨论规范并不要求回避分歧。"
+      },
+      {
+        "id": "D",
+        "text": "转而在会上讨论问卷的排版与措辞问题",
+        "rationale": "把话题引向与结论可靠性无关的细节属于话题转移，会消耗会议时间却不解决抽样偏差。"
+      }
+    ],
+    "answer": {
+      "mode": "points",
+      "bestOptionIds": ["B"],
+      "optionPoints": { "A": 0, "B": 5, "C": 0, "D": 1 }
+    },
+    "selection": "single",
+    "explanation": "有效的分歧处理包含两步：把问题定位到可检验的具体环节，并给出下一步动作。B 同时完成了这两步；A 只有否定没有依据；C 放弃判断；D 则把讨论引向无关细节。",
+    "score": 5,
+    "knowledgePoints": ["有效反驳", "论证焦点", "分歧定位"]
+  },
+  {
+    "id": "INT-021",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 3,
+    "tags": ["counterexample", "falsification"],
+    "stem": "有人主张「所有使用短视频应用的人注意力都会下降」。要有效反驳这一主张，最直接的方式是？",
+    "options": [
+      { "id": "A", "text": "说明短视频应用目前非常流行" },
+      { "id": "B", "text": "举出一位长期使用该应用但注意力测评成绩稳定的人" },
+      { "id": "C", "text": "指出注意力难以被准确测量" },
+      { "id": "D", "text": "引用另一位专家的相反观点" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "该主张是全称命题，只需一个真实反例即可使其不成立，因此 B 是最直接的证伪方式。A 与命题真假无关；C 只是质疑测量方式，未直接反驳命题本身；D 属于诉诸权威，两位专家意见相左并不能判定命题真假。",
+    "score": 5,
+    "knowledgePoints": ["反例构造", "全称命题", "证伪"]
+  },
+  {
+    "id": "INT-022",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 5,
+    "tags": ["conditional-probability", "base-rate"],
+    "stem": "某违规内容识别系统对违规内容的召回率为 99%，对正常内容的误报率为 1%。在某时段的内容中，违规内容占比为 0.1%。若系统判定某条内容为违规，该内容实际违规的概率最接近？",
+    "options": [
+      { "id": "A", "text": "约 99%" },
+      { "id": "B", "text": "约 50%" },
+      { "id": "C", "text": "约 9%" },
+      { "id": "D", "text": "约 1%" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["C"] },
+    "selection": "single",
+    "explanation": "判定为违规的内容中，多数来自基数庞大的正常内容所产生的误报。按基础比率计算：违规内容被正确标记的概率为 0.1%×99%≈0.099%，正常内容被误标的概率为 99.9%×1%≈0.999%，两者之和约为 1.098%，其中真正违规的占比约为 0.099%÷1.098%≈9%。这说明在基础比率极低时，即使检测准确率很高，阳性结果的实际可信度也可能远低于直觉。",
+    "score": 5,
+    "knowledgePoints": ["条件概率", "基础比率", "检测准确性"]
+  },
+  {
+    "id": "INT-023",
+    "type": "opinion_analysis",
+    "category": "logical_reasoning",
+    "difficulty": 4,
+    "tags": ["rebuttal", "argument-analysis"],
+    "materialTitle": "材料：围绕一项管理措施的四种回应",
+    "material": "某单位提出：自下月起，所有对外发布的数据表格须经第二人复核后发布。理由是该单位近半年出现三次数据差错，复核可以在发布前拦截其中大部分差错。四位同事分别给出回应。甲：这个措施没必要，因为我一向很仔细，从没出过错。乙：近半年的三次差错都发生在月末集中发布时段，如果复核只针对该时段，可能以更低成本达到同样效果。丙：复核会增加工作量，所以措施不可能有效。丁：别的单位也有类似措施，所以这个措施一定有效。",
+    "stem": "关于上述四种回应，下列评价最准确的是？",
+    "options": [
+      { "id": "A", "text": "甲的回应有效，因为个人经验可以直接否定整体统计" },
+      { "id": "B", "text": "乙的回应有效，因为它接受了目标并提出了成本更低的替代方案" },
+      { "id": "C", "text": "丙的回应有效，因为它指出了工作量问题" },
+      { "id": "D", "text": "丁的回应有效，因为它引用了其他单位的做法" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "multipleValidViewpoints": true,
+    "explanation": "本题不评判立场，只评判论证方式。乙承认复核的目标，并基于差错的时间分布提出成本更低的替代方案，属于针对论证本身的有效回应。甲以个人经验否定统计事实；丙由「增加工作量」推出「不可能有效」，成本高与效果差之间没有必然联系；丁以其他单位的做法直接推出必然有效，属于诉诸先例。",
+    "score": 5,
+    "knowledgePoints": ["反驳有效性", "论证结构", "证据相关性"]
+  },
+  {
+    "id": "INT-024",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 2,
+    "tags": ["hasty-generalization"],
+    "stem": "「我认识的三个做设计的朋友都用这款软件，所以设计行业普遍使用这款软件。」该推论的主要问题是？",
+    "options": [
+      { "id": "A", "text": "朋友可能说了假话" },
+      { "id": "B", "text": "以极小的、非随机抽取的样本推断整体分布" },
+      { "id": "C", "text": "软件的功能描述不准确" },
+      { "id": "D", "text": "设计行业的从业人数难以统计" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "三个来自同一社交圈的人既非随机抽样，数量也极小，无法支持「普遍使用」这类整体性结论，属于以偏概全。A 引入了材料中没有依据的猜测；C、D 与推论的逻辑结构无关。",
+    "score": 5,
+    "knowledgePoints": ["以偏概全", "样本量", "样本代表性"]
+  },
+  {
+    "id": "INT-025",
+    "type": "multiple_choice",
+    "category": "logical_reasoning",
+    "difficulty": 3,
+    "tags": ["argument-structure", "premise"],
+    "stem": "某论证称：「该平台本季度的新注册用户数比上季度增加了 30%，说明平台的用户规模在扩大。」要使该论证成立，需要补充或核实哪些内容？（多选）",
+    "options": [
+      { "id": "A", "text": "上季度的注册用户中，本季度是否有大量用户注销" },
+      { "id": "B", "text": "新注册用户数是否包含被系统判定为异常而批量清除的账号" },
+      { "id": "C", "text": "该平台的界面配色是否在本季度发生变化" },
+      { "id": "D", "text": "「用户规模」是按注册总量还是按活跃用户数衡量" },
+      { "id": "E", "text": "该平台的品牌口号是否在本季度更新" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "D"] },
+    "selection": "multiple",
+    "explanation": "论证由「新注册量上升」推出「用户规模扩大」，隐含了三项前提：存量未大幅流失、注册口径未被异常账号污染、且「规模」以注册总量衡量。A、B、D 分别检验这三项前提。C 与 E 属于与结论之间没有推理关系的旁支信息。",
+    "score": 5,
+    "knowledgePoints": ["论证结构", "隐含前提", "结论识别"]
+  },
+  {
+    "id": "INT-026",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 2,
+    "tags": ["causal-reversal"],
+    "stem": "某调查发现，使用某学习工具的学生平均成绩高于不使用的学生，因此该工具能提高成绩。若实际情况是成绩较好、学习主动性更强的学生更倾向于主动寻找并使用这类工具，则该调查的问题属于？",
+    "options": [
+      { "id": "A", "text": "样本量过小" },
+      { "id": "B", "text": "因果关系方向可能被颠倒，存在自我选择" },
+      { "id": "C", "text": "成绩数据不可靠" },
+      { "id": "D", "text": "工具的使用时间过短" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "若学习主动性既影响是否使用工具，又影响成绩，则「使用」与「成绩」之间的关联可能由自我选择造成，因果方向与结论相反。这类问题无法靠扩大样本量解决，必须通过随机分组或控制混杂变量来识别。",
+    "score": 5,
+    "knowledgePoints": ["因果倒置", "相关与因果", "自我选择偏差"]
+  },
+  {
+    "id": "INT-027",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 3,
+    "tags": ["timeline", "verification"],
+    "stem": "一条消息称「某机构已于上月发布新规」，但该机构官网公告列表中，相关内容的最早发布时间显示为本周。在核实该消息时，最应优先确认的是？",
+    "options": [
+      { "id": "A", "text": "消息发布者的粉丝数量" },
+      { "id": "B", "text": "公告的实际首次发布时间，以及消息所称「上月」是否有其他可对应的原始文件" },
+      { "id": "C", "text": "该消息的点赞与转发比例" },
+      { "id": "D", "text": "该机构是否还设有其他社交平台账号" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "时间线矛盾是判断信息可靠性的高价值线索。当消息给出的时间与可查证的原始发布时间不一致时，应回到原始文件确认首次发布时间，或确认是否存在被误记的其他文件。粉丝数、互动比例与是否存在其他账号都不能解释这一矛盾。",
+    "score": 5,
+    "knowledgePoints": ["时间线核验", "信息溯源", "时间戳"]
+  },
+  {
+    "id": "INT-028",
+    "type": "reading_comprehension",
+    "category": "information_literacy",
+    "difficulty": 4,
+    "tags": ["announcement", "cross-check"],
+    "materialTitle": "材料：一份活动公告与一份统计说明",
+    "material": "某平台发布活动公告：本次活动共发放优惠券 12 万张，覆盖用户 8 万人。随后发布的统计说明写道：活动期间共有 6 万名用户使用了优惠券，使用率为 75%。有读者据此认为两组数据完全吻合：6÷8＝75%，说明统计口径一致、可以互相验证。但两份文件的编制说明显示：公告中的「12 万张」包含向同一用户重复发放的部分，「覆盖用户 8 万人」指领取过至少一张券的用户；而统计说明中的使用率分母为活动页面的访问用户数，同样为 8 万人。",
+    "stem": "根据材料，下列说法与材料一致的是？",
+    "options": [
+      { "id": "A", "text": "两份文件的数据完全吻合，可以互相验证" },
+      { "id": "B", "text": "两个 8 万指向不同的用户群体，数值上的巧合不能证明口径一致" },
+      { "id": "C", "text": "使用率 75% 的计算过程有误" },
+      { "id": "D", "text": "优惠券张数与用户规模之间没有任何编制上的联系" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "材料显示，公告中的 8 万是「领取过券的用户」，统计说明的分母是「访问活动页面的用户」，两者是不同群体；6÷8 与 75% 的数值一致只是巧合，不能作为口径一致的证据。材料未指出任何计算错误，也说明了券的张数包含对同一用户的重复发放，因此 D 与材料不符。",
+    "score": 5,
+    "knowledgePoints": ["公告解读", "口径核对", "数据一致性"]
+  },
+  {
+    "id": "INT-029",
+    "type": "multiple_choice",
+    "category": "information_literacy",
+    "difficulty": 3,
+    "tags": ["sampling", "representativeness"],
+    "stem": "某平台通过站内弹窗问卷收集用户对改版方案的意见，回收 5 万份。在解读结果时，需要注意哪些问题？（多选）",
+    "options": [
+      { "id": "A", "text": "愿意填写弹窗问卷的用户可能对改版更为关注，存在自我选择偏差" },
+      { "id": "B", "text": "未登录用户与已经离开平台的用户不在抽样范围内" },
+      { "id": "C", "text": "5 万份样本量较大，因此结论可以代表全部用户" },
+      { "id": "D", "text": "问卷的选项设置与提问顺序可能影响回答分布" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "D"] },
+    "selection": "multiple",
+    "explanation": "样本量只影响随机误差，不能消除系统性偏差。弹窗问卷的应答者更可能是关注改版的活跃用户，未登录与已流失用户被排除在抽样框之外，选项与题序也会引导回答分布，因此 A、B、D 都是解读时必须说明的限制。C 的推断不成立。",
+    "score": 5,
+    "knowledgePoints": ["样本代表性", "抽样偏差", "覆盖偏差"]
+  },
+  {
+    "id": "INT-030",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 2,
+    "tags": ["citation", "source"],
+    "stem": "在整理一份公开资料时，下列哪种来源标注方式最便于他人核验？",
+    "options": [
+      { "id": "A", "text": "「据权威机构统计」" },
+      { "id": "B", "text": "「据某研究报告，2026 年 3 月发布，第 12 页，表 3」" },
+      { "id": "C", "text": "「据业内人士透露」" },
+      { "id": "D", "text": "「据网络公开信息」" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "可核验的引用需要能定位到具体文件与位置：机构名称、发布时间、页码或图表编号。A、C、D 都无法让读者回到原始材料，属于不可核验的标注方式，即使内容真实也无法被他人确认。",
+    "score": 5,
+    "knowledgePoints": ["来源标注", "可核验性", "引用规范"]
+  },
+  {
+    "id": "INT-031",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 3,
+    "tags": ["chart-misleading", "dual-axis"],
+    "stem": "一张图表用左轴表示「投诉量」、右轴表示「满意度」，两条曲线的走势高度贴合，图注称「投诉量与满意度同步变化」。对该图最准确的评价是？",
+    "options": [
+      { "id": "A", "text": "该图证明两者之间存在因果关系" },
+      { "id": "B", "text": "双轴图中两条曲线的贴合程度受各自轴范围设置影响，不能直接作为同步变化的证据" },
+      { "id": "C", "text": "只要数据真实，双轴图就不会造成误导" },
+      { "id": "D", "text": "满意度不应被绘制成曲线" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "双轴图的两条曲线各自使用独立刻度，缩放范围由制图者选定，因此视觉上的贴合可以被调整出来，不能作为变量间关系的证据。数据真实并不排除呈现方式造成的误导；D 则把问题归结为图形类型，而非刻度设置。",
+    "score": 5,
+    "knowledgePoints": ["双轴图", "视觉暗示", "图表解读"]
+  },
+  {
+    "id": "INT-032",
+    "type": "multiple_choice",
+    "category": "cyber_security",
+    "difficulty": 3,
+    "tags": ["least-privilege", "permission"],
+    "stem": "某小组需要协作整理一份包含联系方式的数据表。下列哪些做法符合权限最小化原则？（多选）",
+    "options": [
+      { "id": "A", "text": "仅向实际需要处理数据的成员开放编辑权限，其余成员只读" },
+      { "id": "B", "text": "为每位成员单独分配权限，不使用共享账号" },
+      { "id": "C", "text": "为方便随时协作，把编辑权限开放给全部同事并长期保留" },
+      { "id": "D", "text": "协作结束后及时回收临时开放的权限" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "D"] },
+    "selection": "multiple",
+    "explanation": "权限最小化要求权限范围与期限都收敛到完成当前任务所必需的程度。按需开放、一人一号、到期回收都符合该原则。C 把权限范围与期限同时放大，一旦账号被冒用或成员转岗，数据暴露面会持续存在。",
+    "score": 5,
+    "knowledgePoints": ["权限最小化", "授权范围", "按需授权"]
+  }
+]

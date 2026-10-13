@@ -1,0 +1,334 @@
+[
+  {
+    "id": "INT-001",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 2,
+    "tags": ["source-evaluation", "primary-source"],
+    "stem": "某自媒体账号发布文章称「据研究显示，某类应用的日均使用时长上升了 18%」，文末标注来源为「某研究机构报告」，但未给出报告名称、发布时间与样本范围。若要核实该数据，最恰当的第一步是？",
+    "options": [
+      { "id": "A", "text": "检索该研究机构的原始报告，确认数据、样本范围与发布时间" },
+      { "id": "B", "text": "直接采信，因为文章已经标注了研究机构" },
+      { "id": "C", "text": "在评论区询问其他读者的看法" },
+      { "id": "D", "text": "查找另一篇引用同一数据的自媒体文章，两篇互相印证" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "标注机构名称并不等于来源可核验。核实数据的第一步是回到一手材料，确认统计口径、样本范围与发布时间。D 看似稳妥，但两篇自媒体文章若都转引自同一份无法查证的报告，则共享同一个错误源头，不构成独立印证；读者评论更不构成证据。",
+    "score": 5,
+    "knowledgePoints": ["一手来源", "二手来源", "信息溯源"]
+  },
+  {
+    "id": "INT-002",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 3,
+    "tags": ["statistics", "denominator"],
+    "stem": "某平台公告称「本季度违规内容处置量环比增长 200%，治理成效显著」。已知上季度处置量为 500 条，本季度为 1500 条。对该表述最准确的评价是？",
+    "options": [
+      { "id": "A", "text": "增长 200% 的计算有误，应为 100%" },
+      { "id": "B", "text": "增长率计算正确，但由处置量推出「治理成效显著」缺少必要证据" },
+      { "id": "C", "text": "处置量增长说明平台内的违规内容变多了" },
+      { "id": "D", "text": "环比数据不能用于评价治理成效" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "（1500−500）÷500＝200%，计算无误，因此 A 不成立。但处置量上升既可能来自违规增多，也可能来自审核覆盖提升或判定标准收紧，单凭该数字无法区分，故 C 是未经排除的推断。环比数据本身是可用的指标，问题在于推论而非指标类型，D 属于过度否定。",
+    "score": 5,
+    "knowledgePoints": ["统计口径", "分母", "增长率"]
+  },
+  {
+    "id": "INT-003",
+    "type": "multiple_choice",
+    "category": "information_literacy",
+    "difficulty": 3,
+    "tags": ["chart-misleading", "axis"],
+    "stem": "下列哪些做法会使读者对图表中数据的实际差异产生高估？（多选）",
+    "options": [
+      { "id": "A", "text": "纵轴不从 0 开始，而截取在接近数据区间的位置" },
+      { "id": "B", "text": "把两组量纲不同的数据画在同一张图上并使用左右双轴" },
+      { "id": "C", "text": "在折线图中标注完整的数据来源与统计口径" },
+      { "id": "D", "text": "用图形面积表示一维数值的等比增长，如数值翻倍时面积放大四倍" },
+      { "id": "E", "text": "在图表中同时给出绝对值与百分比两种读数" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "D"] },
+    "selection": "multiple",
+    "explanation": "纵轴截断会放大视觉落差；双轴图中两条曲线的相对位置取决于人为设定的轴范围，容易制造出并不存在的同步关系；用面积表示一维数值会造成平方级高估。C 与 E 都是提高可读性与可核验性的规范做法，只会降低误读风险。",
+    "score": 5,
+    "knowledgePoints": ["图表误导", "坐标轴截断", "可视化规范"]
+  },
+  {
+    "id": "INT-004",
+    "type": "reading_comprehension",
+    "category": "information_literacy",
+    "difficulty": 3,
+    "tags": ["cross-verification", "statistics"],
+    "materialTitle": "材料：两份口径不同的统计报告",
+    "material": "甲报告称，某类服务的使用率较去年同期增长 12%；乙报告称，同期该类服务的使用率下降 3%。两份报告均注明数据来自公开问卷。查看方法说明后可知：甲报告的样本为「近三个月内至少使用过一次该服务的用户」，统计对象为「使用频次」；乙报告的样本为「全部登记用户」，统计对象为「月度活跃人数占比」。两份报告的问卷发放时间均为上月。",
+    "stem": "根据材料，两份报告结论相反最可能的原因是？",
+    "options": [
+      { "id": "A", "text": "其中一份报告存在数据造假" },
+      { "id": "B", "text": "两份报告的样本范围与统计对象不同" },
+      { "id": "C", "text": "问卷数据在任何情况下都不可信" },
+      { "id": "D", "text": "使用率无法通过问卷测量" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "材料已经给出关键差异：甲报告的样本限定为已使用者、统计使用频次；乙报告覆盖全部登记用户、统计月度活跃占比。样本范围与统计对象不同，结论方向相反属于可预期的结果。材料未提供任何造假线索，C 与 D 属于超出材料的过度概括。",
+    "score": 5,
+    "knowledgePoints": ["统计口径", "样本范围", "结论冲突排查"]
+  },
+  {
+    "id": "INT-005",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 4,
+    "tags": ["survivorship-bias", "sampling"],
+    "stem": "某团队统计了「坚持使用某学习应用满一年」的用户反馈，其中 87% 认为该应用显著提升了学习效率，据此得出「该应用对多数用户有效」的结论。该推论最主要的问题是？",
+    "options": [
+      { "id": "A", "text": "样本量不足" },
+      { "id": "B", "text": "反馈依赖主观感受，不构成数据" },
+      { "id": "C", "text": "未纳入中途放弃的用户，样本只包含坚持下来的人群" },
+      { "id": "D", "text": "一年的观察时间过短" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["C"] },
+    "selection": "single",
+    "explanation": "统计范围被限定在「坚持满一年」的用户，中途放弃者被系统性排除，而后者恰恰最可能认为应用无效。这是典型的幸存者偏差：结论只能说明坚持者内部的反馈分布，不能外推到全部用户。样本量、主观性、观察时长都不是此处的主要缺陷。",
+    "score": 5,
+    "knowledgePoints": ["幸存者偏差", "样本代表性", "沉默数据"]
+  },
+  {
+    "id": "INT-006",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 2,
+    "tags": ["correlation-causation"],
+    "stem": "数据显示，某城市冰淇淋销量上升的月份，溺水事件数量也上升。据此得出「吃冰淇淋导致溺水」的结论，其错误在于？",
+    "options": [
+      { "id": "A", "text": "统计数据存在测量误差" },
+      { "id": "B", "text": "把相关关系直接当作因果关系，忽略了气温等共同影响因素" },
+      { "id": "C", "text": "溺水事件的数量太少，不足以统计" },
+      { "id": "D", "text": "冰淇淋销量不属于可统计的指标" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "两个变量同向变动只说明相关。气温升高会同时推高冰淇淋销量与游泳人数，从而同时抬高溺水事件数量，属于典型的第三变量。未控制共同影响因素，就不能由相关推出因果；这与测量误差、样本数量或指标可否统计无关。",
+    "score": 5,
+    "knowledgePoints": ["相关性", "因果关系", "第三变量"]
+  },
+  {
+    "id": "INT-007",
+    "type": "opinion_analysis",
+    "category": "information_literacy",
+    "difficulty": 4,
+    "tags": ["argument-analysis", "cherry-picking"],
+    "materialTitle": "材料：一段关于某学习应用效果的论证",
+    "material": "甲：该学习应用值得推广。我访谈了十位长期使用者，其中九位给出了正面评价。乙：你的访谈对象全部来自该应用的官方用户群。甲：正面评价占九成，这个比例本身就说明问题；如果你拿不出反例，就应该接受我的结论。",
+    "stem": "关于甲的论证，下列评价最准确的是？",
+    "options": [
+      { "id": "A", "text": "甲的结论必然错误，因为官方用户群中的评价一定是假的" },
+      { "id": "B", "text": "甲的样本全部来自官方用户群，存在系统性筛选；且「对方拿不出反例」不构成接受结论的理由" },
+      { "id": "C", "text": "甲的论证成立，因为九成是明确的多数" },
+      { "id": "D", "text": "只要把访谈人数扩大到一百人，该论证的缺陷即可消除" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "multipleValidViewpoints": true,
+    "explanation": "本题不评判立场，只评判论证方式。访谈对象全部取自官方用户群，属于来源单一的系统性筛选，比例再高也不能代表整体使用者；同时甲把举证责任转移给对方，属于论证结构上的缺陷。A 以「必然错误」作了另一个方向的跳跃推论；D 只扩大样本量而不改变抽样渠道，偏差依旧存在。",
+    "score": 5,
+    "knowledgePoints": ["论证结构", "选择性举证", "证据充分性"]
+  },
+  {
+    "id": "INT-008",
+    "type": "multiple_choice",
+    "category": "information_literacy",
+    "difficulty": 3,
+    "tags": ["cross-verification", "evidence"],
+    "stem": "要判断一条「某地即将实施新管理办法」的消息是否可信，下列哪些做法有助于形成独立验证？（多选）",
+    "options": [
+      { "id": "A", "text": "核查发布该消息的账号是否为权威渠道，并比对原始发布内容" },
+      { "id": "B", "text": "查找内容一致的独立来源，且该来源不是对同一原始帖的转引" },
+      { "id": "C", "text": "统计该消息在社交平台上的转发量" },
+      { "id": "D", "text": "核对消息中的生效日期与该机构公开的其他文件在时间线上是否自洽" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "D"] },
+    "selection": "multiple",
+    "explanation": "独立验证要求来源之间不共享同一出处：核对原始发布渠道、寻找非转引的第二来源、检查时间线自洽，都属于有效手段。转发量只反映传播规模，不反映真实性——同一条不实信息同样可以被大量转发，因此 C 不构成验证。",
+    "score": 5,
+    "knowledgePoints": ["多源交叉验证", "独立来源", "证据链"]
+  },
+  {
+    "id": "INT-009",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 2,
+    "tags": ["quotation", "context"],
+    "stem": "某文章引用一段访谈称「受访者明确表示该做法不可行」。读者找到访谈原文后发现，受访者的完整表述是「在缺乏配套措施的情况下，该做法不可行」。该文章的问题属于？",
+    "options": [
+      { "id": "A", "text": "数据计算错误" },
+      { "id": "B", "text": "截取片段导致原意被改变" },
+      { "id": "C", "text": "引用格式不规范" },
+      { "id": "D", "text": "受访者前后表述矛盾" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "原文带有「在缺乏配套措施的情况下」这一限定条件，删去限定后，一句有条件的判断被改写为无条件的否定。这属于断章引用：引用的字句本身没有错，但通过删减语境改变了原意。这不是计算错误，也不是格式问题，材料中也没有受访者自相矛盾的证据。",
+    "score": 5,
+    "knowledgePoints": ["断章引用", "上下文", "原始出处"]
+  },
+  {
+    "id": "INT-010",
+    "type": "single_choice",
+    "category": "cyber_security",
+    "difficulty": 2,
+    "tags": ["password", "account-security"],
+    "stem": "下列关于口令管理的做法，最恰当的是？",
+    "options": [
+      { "id": "A", "text": "为便于记忆，在多个网站使用同一个高强度口令" },
+      { "id": "B", "text": "不同账号使用互不相同的口令，并交由口令管理器保存" },
+      { "id": "C", "text": "把口令写在便签上并贴在显示器边缘" },
+      { "id": "D", "text": "使用生日与姓名拼音组合，只要长度足够即可" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "口令复用的风险在于：任一站点泄露后，攻击者可用同一组合尝试其他站点，单站口令再强也无法阻止跨站扩散。因此不同账号使用不同口令、由口令管理器承担记忆负担更为稳妥。便签与可推测的个人信息都会显著降低口令的实际防护效果。",
+    "score": 5,
+    "knowledgePoints": ["口令强度", "口令复用", "撞库"]
+  },
+  {
+    "id": "INT-011",
+    "type": "multiple_choice",
+    "category": "cyber_security",
+    "difficulty": 3,
+    "tags": ["mfa", "authentication"],
+    "stem": "关于多因素认证，下列理解正确的有哪些？（多选）",
+    "options": [
+      { "id": "A", "text": "口令与短信验证码属于不同类型的认证因素" },
+      { "id": "B", "text": "开启多因素认证后，即使口令泄露，攻击者仍可能因缺少第二因素而无法登录" },
+      { "id": "C", "text": "多因素认证可以替代对钓鱼站点的识别，开启后无需再核对网址" },
+      { "id": "D", "text": "认证因素应尽量来自不同类别，如「知道的信息」与「持有的设备」" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "D"] },
+    "selection": "multiple",
+    "explanation": "多因素认证的价值在于要求攻击者同时突破多种类型的凭证，口令与短信验证码分属「知道」与「持有」两类，因此 A、D 正确，B 是其直接效果。但它不能替代对钓鱼站点的识别：若用户在伪造页面主动输入口令与验证码，第二因素会被实时转发，C 不成立。",
+    "score": 5,
+    "knowledgePoints": ["多因素认证", "认证因素", "验证码"]
+  },
+  {
+    "id": "INT-012",
+    "type": "single_choice",
+    "category": "cyber_security",
+    "difficulty": 3,
+    "tags": ["phishing", "email"],
+    "stem": "收到一封邮件，要求「24 小时内点击链接完成账号验证，否则账号将被停用」。发件人显示名与某平台官方名称一致，但回复地址属于另一域名，链接指向的域名与官方域名仅相差一个字符。下列判断最合理的是？",
+    "options": [
+      { "id": "A", "text": "显示名一致即可确认是官方邮件" },
+      { "id": "B", "text": "存在多项钓鱼特征，应通过官方入口自行访问核实，不点击邮件链接" },
+      { "id": "C", "text": "只要不输入口令，点击链接就没有风险" },
+      { "id": "D", "text": "回复地址不同属于正常配置，无需在意" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "制造时间压力、显示名与真实发件域名不一致、链接域名近似仿冒，是钓鱼邮件的典型组合特征。稳妥做法是不经由邮件链接进入，而从官方入口自行访问并核对。仅「不输入口令」并不安全，仿冒页面仍可能借点击投放脚本或诱导下载；D 则忽略了发件域名这一关键证据。",
+    "score": 5,
+    "knowledgePoints": ["钓鱼识别", "发件人伪造", "紧迫话术"]
+  },
+  {
+    "id": "INT-013",
+    "type": "scenario_analysis",
+    "category": "cyber_security",
+    "difficulty": 3,
+    "tags": ["account-security", "incident-response"],
+    "materialTitle": "情景：深夜收到异地登录提醒",
+    "material": "你在凌晨收到一条来自某社交平台的登录提醒，提示有新设备在异地登录。你本人当时并未登录，提醒中的时间与地点也与你近期的活动范围不符。该提醒短信内附带一个「立即处理」的短链接。次日你需要使用该账号处理工作事务。",
+    "stem": "此时最合适的处理方式是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "点击短信中的短链接，按页面提示登录并修改口令",
+        "rationale": "在未核实链接归属前经由短信入口登录，可能把口令直接交给仿冒页面；正确做法是从官方应用或官网入口进入。"
+      },
+      {
+        "id": "B",
+        "text": "从官方应用或官网入口登录，修改口令、检查登录设备与会话并退出陌生会话，必要时联系平台客服",
+        "rationale": "绕开可疑链接、从可信入口处置，同时清除攻击者可能保留的会话，覆盖了止损、排查与加固的完整链条。"
+      },
+      {
+        "id": "C",
+        "text": "忽略提醒，认为只是系统误报",
+        "rationale": "在时间与地点均不符的情况下直接判定为误报，会错过处置窗口，攻击者可能利用已获得的会话继续操作。"
+      },
+      {
+        "id": "D",
+        "text": "立即注销该账号并重新注册",
+        "rationale": "注销虽能终止风险，但会丢失账号内的历史数据与关系链，代价过高；在确认损失范围之前，止损与排查更为合适。"
+      }
+    ],
+    "answer": {
+      "mode": "points",
+      "bestOptionIds": ["B"],
+      "optionPoints": { "A": 0, "B": 5, "C": -1, "D": 2 }
+    },
+    "selection": "single",
+    "explanation": "处置顺序应当是先止损、再夺回控制权、最后加固。B 同时完成了绕开可疑入口、清除陌生会话与加固认证三件事；D 代价过高且会丢失排查所需的记录；C 放弃处置；A 则可能在处置过程中二次泄露口令。",
+    "score": 5,
+    "knowledgePoints": ["登录提醒", "异常处置", "账号安全"]
+  },
+  {
+    "id": "INT-014",
+    "type": "single_choice",
+    "category": "cyber_security",
+    "difficulty": 3,
+    "tags": ["public-wifi", "network"],
+    "stem": "在公共场所连接未加密的开放 Wi-Fi 时，下列认识最准确的是？",
+    "options": [
+      { "id": "A", "text": "只要访问的网站使用 HTTPS，全部风险即被消除" },
+      { "id": "B", "text": "未加密网络中的流量可能被监听或篡改，应避免处理敏感事务，必要时使用可信的加密通道" },
+      { "id": "C", "text": "开放 Wi-Fi 一定由攻击者架设" },
+      { "id": "D", "text": "连接开放 Wi-Fi 后，本机文件会被自动读取" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "开放网络的主要风险是同一网络内的监听与中间人篡改。HTTPS 能保护所访问站点的传输内容，但无法覆盖域名解析被劫持、仿冒热点以及明文协议流量等情形，因此 A 的「全部消除」不成立；C 与 D 则把风险绝对化，或夸大到与事实不符的程度。",
+    "score": 5,
+    "knowledgePoints": ["公共网络风险", "传输加密", "中间人攻击"]
+  },
+  {
+    "id": "INT-015",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 2,
+    "tags": ["necessary-sufficient", "logic"],
+    "stem": "「只有完成实名登记，才能发布内容。」据此可以必然推出的是？",
+    "options": [
+      { "id": "A", "text": "完成实名登记后一定可以发布内容" },
+      { "id": "B", "text": "未完成实名登记则不能发布内容" },
+      { "id": "C", "text": "能发布内容的人一定不需要实名登记" },
+      { "id": "D", "text": "实名登记与发布内容之间没有关系" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["B"] },
+    "selection": "single",
+    "explanation": "「只有 P 才 Q」表示 P 是 Q 的必要条件：Q 成立必然要求 P 成立，因此由非 P 可推出非 Q，即 B。A 把必要条件误当作充分条件；C 与题干给出的条件方向相反；D 直接否认了题干明确陈述的关系。",
+    "score": 5,
+    "knowledgePoints": ["充分条件", "必要条件", "条件关系"]
+  },
+  {
+    "id": "INT-016",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 2,
+    "tags": ["circular-reasoning", "fallacy"],
+    "stem": "「这本书说的都是真的，因为书里明确写着它记载的内容全部属实。」该论证的缺陷是？",
+    "options": [
+      { "id": "A", "text": "论据与结论互相支撑，属于循环论证" },
+      { "id": "B", "text": "论据数量太少" },
+      { "id": "C", "text": "结论表述不够精确" },
+      { "id": "D", "text": "使用了不必要的专业术语" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "论证的前提是「书里写着内容属实」，结论是「书的内容属实」，而前提成立恰恰依赖结论为真，两者互为支撑，构成循环论证。这类缺陷与论据数量、措辞精度或术语使用都无关。",
+    "score": 5,
+    "knowledgePoints": ["循环论证", "论证结构", "前提与结论"]
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0.0",
+  "bankId": "demo-intermediate",
+  "title": "互联网使用进阶资格题库",
+  "description": "面向 L4 高级信息检索资格与信息辨别、网络安全专项能力认证考试的进阶题库，侧重多源交叉验证、证据链构建、隐私保护与论证分析。",
+  "language": "zh-CN",
+  "version": "1.0.0",
+  "author": "IUQA 题库管理处",
+  "updatedAt": "2026-10-14"
+}

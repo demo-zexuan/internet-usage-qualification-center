@@ -1,0 +1,394 @@
+[
+  {
+    "id": "BASIC-021",
+    "type": "single_choice",
+    "category": "platform_rules",
+    "difficulty": 1,
+    "tags": ["account-rules", "verification"],
+    "stem": "某平台在注册环节要求用户提供手机号用于账号验证。关于该环节，下列说法最恰当的是？",
+    "options": [
+      { "id": "A", "text": "验证信息属于平台运营所必需，但平台仍应按照公示的隐私政策处理该信息" },
+      { "id": "B", "text": "平台要求验证即意味着可以随意使用该手机号" },
+      { "id": "C", "text": "只要不使用平台功能，验证信息就不会被保存" },
+      { "id": "D", "text": "用户可以随意填写他人的手机号完成验证" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "账号验证是平台确认账号归属、防止批量注册的常规手段，但收集信息的目的与范围仍受隐私政策约束，平台不得超出公示目的使用。随意填写他人手机号会侵害他人权益，也可能导致账号后续无法找回，因此其余选项均不成立。",
+    "score": 5,
+    "knowledgePoints": ["账号验证", "个人信息处理"]
+  },
+  {
+    "id": "BASIC-022",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 1,
+    "tags": ["image-verification", "source-checking"],
+    "stem": "一张声称拍摄于近期某地的现场图片在社交平台传播。核实该图片最有效的做法是？",
+    "options": [
+      { "id": "A", "text": "使用图片检索查找该图更早的出现记录与原始出处" },
+      { "id": "B", "text": "观察图片的清晰度是否足够高" },
+      { "id": "C", "text": "查看转发该图片的账号有多少粉丝" },
+      { "id": "D", "text": "判断图片内容是否符合自己的预期" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "图片被移花接木的常见形式，是把旧图或他处图片标注为近期本地事件，通过图片检索找到更早的出现记录与原始出处，可以直接检验该图片的时间与地点标注是否成立。清晰度、账号粉丝量和个人预期都不能用于确定图片来源。",
+    "score": 5,
+    "knowledgePoints": ["图片溯源", "旧图新用"]
+  },
+  {
+    "id": "BASIC-023",
+    "type": "multiple_choice",
+    "category": "public_discourse",
+    "difficulty": 3,
+    "tags": ["argumentation", "logical-fallacy"],
+    "stem": "下列论证方式中，哪些属于与议题无关的论证？",
+    "options": [
+      { "id": "A", "text": "以对方曾经改变过观点为由，认为其当前观点不可信" },
+      { "id": "B", "text": "以某项主张的支持者人数众多为由，认为该主张成立" },
+      { "id": "C", "text": "以对方未能提供反例为由，认为对方的质疑不成立" },
+      { "id": "D", "text": "以某项措施在试点地区取得可核查的效果为由，支持该措施推广" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "C"] },
+    "selection": "multiple",
+    "explanation": "前三种论证分别诉诸发言者过去的表现、支持者规模，以及举证责任的错置，都没有回应议题本身的证据与推理，因此与议题无关。第四项以可核查的试点效果作为依据，属于与议题直接相关的论据，不属于无关论证。",
+    "score": 5,
+    "knowledgePoints": ["无关论证", "诉诸人身", "诉诸多数"]
+  },
+  {
+    "id": "BASIC-024",
+    "type": "single_choice",
+    "category": "internet_etiquette",
+    "difficulty": 1,
+    "tags": ["group-chat", "question-asking"],
+    "stem": "在即时通讯群组中向他人提问时，下列做法最恰当的是？",
+    "options": [
+      { "id": "A", "text": "一次性说明背景、已尝试的方法与具体问题，便于对方直接回应" },
+      { "id": "B", "text": "连续发送多条只有「在吗」的消息，等待对方回应后再说明问题" },
+      { "id": "C", "text": "在深夜反复发送提醒，直到对方回复" },
+      { "id": "D", "text": "同时在多个群组重复提问，并要求尽快答复" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "即时通讯是异步沟通，对方未必处于可立即回应的状态。一次性提供背景与具体问题，可以让对方在自己方便的时间给出有效回应；只发「在吗」会拉长沟通轮次，深夜反复提醒与多群重复提问则把提问者的时间压力转移给了他人。",
+    "score": 5,
+    "knowledgePoints": ["异步沟通", "提问方式"]
+  },
+  {
+    "id": "BASIC-025",
+    "type": "multiple_choice",
+    "category": "platform_rules",
+    "difficulty": 2,
+    "tags": ["content-moderation", "prohibited-content"],
+    "stem": "下列哪些内容通常属于平台社区规范明确禁止发布的范围？",
+    "options": [
+      { "id": "A", "text": "未经同意公开他人身份证件照片与联系方式" },
+      { "id": "B", "text": "以虚构身份冒充他人发布求助信息骗取财物" },
+      { "id": "C", "text": "对某项公共设施的使用体验提出负面评价" },
+      { "id": "D", "text": "发布含有恶意链接、诱导他人点击的页面" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "D"] },
+    "selection": "multiple",
+    "explanation": "公开他人证件与联系方式涉及个人信息侵害，冒充他人骗取财物属于欺诈，恶意链接则危害他人的设备与信息安全，三者通常都在社区规范的禁止范围内。对公共设施的使用体验提出负面评价属于正常表达，只要不包含人身攻击与虚假事实，通常不构成违规。",
+    "score": 5,
+    "knowledgePoints": ["禁止内容", "个人信息保护", "恶意链接"]
+  },
+  {
+    "id": "BASIC-026",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 2,
+    "tags": ["video-verification", "independent-sources"],
+    "stem": "一段声称记录某突发事件的短视频画面流畅，但缺少具体时间与地点信息。判断其可信度时，应当优先关注的是？",
+    "options": [
+      { "id": "A", "text": "画面中是否存在可核对的标志性场景，以及是否有其他独立来源记录同一事件" },
+      { "id": "B", "text": "视频的播放量是否已经过万" },
+      { "id": "C", "text": "视频背景音乐是否符合该类事件的常见风格" },
+      { "id": "D", "text": "发布者的头像是否为真人照片" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "突发事件的真实记录通常会留下可核对的地理标志与时间线索，并被多个独立来源同时记录。画面流畅、配乐风格与头像形式都不构成对事件真实性的证明，播放量只说明传播范围，因此判断重点应放在可核对的场景线索与独立来源的相互印证上。",
+    "score": 5,
+    "knowledgePoints": ["视频核验", "独立来源印证"]
+  },
+  {
+    "id": "BASIC-027",
+    "type": "single_choice",
+    "category": "public_discourse",
+    "difficulty": 2,
+    "tags": ["clarification", "discussion"],
+    "stem": "讨论中出现表述含糊的观点时，下列做法最有利于讨论继续推进的是？",
+    "options": [
+      { "id": "A", "text": "先请对方明确关键概念的具体含义，再针对该含义展开讨论" },
+      { "id": "B", "text": "按照自己理解的最极端含义解读对方观点并加以反驳" },
+      { "id": "C", "text": "忽略含糊之处，直接对对方的动机作出判断" },
+      { "id": "D", "text": "要求对方在限定时间内给出完整论证，否则视为放弃观点" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "含糊表述会导致双方针对不同的理解各自论证，讨论因此无法收敛。先请对方明确关键概念，可以把分歧定位到具体含义上；按最极端含义解读属于曲解，判断动机与设定回应时限都没有解决表述本身的歧义。",
+    "score": 5,
+    "knowledgePoints": ["概念澄清", "善意理解原则"]
+  },
+  {
+    "id": "BASIC-028",
+    "type": "multiple_choice",
+    "category": "cyber_security",
+    "difficulty": 3,
+    "tags": ["phishing", "account-security"],
+    "stem": "收到一条声称来自平台客服的消息，要求点击链接填写账号与验证码以「解除账号限制」。下列判断哪些是正确的？",
+    "options": [
+      { "id": "A", "text": "平台客服通常不会通过私信索要登录验证码" },
+      { "id": "B", "text": "应先通过平台官方应用内的客服入口核实该通知是否真实" },
+      { "id": "C", "text": "链接中的域名与官方域名不一致，是明显的风险信号" },
+      { "id": "D", "text": "只要消息中显示了本人的昵称，就可以确认对方是官方客服" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "C"] },
+    "selection": "multiple",
+    "explanation": "验证码是账号控制权的凭证，正规客服不会主动索要；通过官方应用内的入口核实，可以绕开消息中提供的可疑链接；域名不一致是识别仿冒页面的直接线索。昵称属于可被他人获取的公开信息，不能作为身份确认依据。",
+    "score": 5,
+    "knowledgePoints": ["钓鱼识别", "验证码保护", "域名核验"]
+  },
+  {
+    "id": "BASIC-029",
+    "type": "true_false",
+    "category": "platform_rules",
+    "difficulty": 1,
+    "tags": ["copyright", "content-moderation"],
+    "stem": "在平台发布他人创作的完整作品时，通常需要取得权利人许可，或确认该使用方式属于规则允许的范围。",
+    "answer": { "mode": "boolean", "correctBoolean": true },
+    "selection": "single",
+    "explanation": "他人创作的作品受权利保护，完整转载通常涉及复制与传播行为。平台规则一般要求发布者取得许可，或依据规则中允许的使用方式（例如合理引用并注明出处）进行发布，未经许可的完整转载可能被权利人投诉并被平台处置。",
+    "score": 5,
+    "knowledgePoints": ["作品转载", "授权使用"]
+  },
+  {
+    "id": "BASIC-030",
+    "type": "reading_comprehension",
+    "category": "information_literacy",
+    "difficulty": 4,
+    "tags": ["sampling", "reading-evidence"],
+    "materialTitle": "材料：一份社区调查公告",
+    "material": "某社区研究小组发布了一份关于公共阅读空间使用情况的调查公告。公告说明：本次调查通过社区公告栏招募志愿者，共回收有效问卷 480 份，其中 372 份由每周到访阅读空间三次以上的居民填写。公告给出的结论是「本社区约七成七的居民经常使用公共阅读空间」。公告同时注明，问卷发放集中在工作日的白天，且未设置随机抽样环节。研究小组在附录中说明，本次调查的目的是了解常客的使用体验，为空间改造提供参考。",
+    "stem": "根据材料，对该公告结论最准确的评价是？",
+    "options": [
+      { "id": "A", "text": "结论把常客样本中的比例推广为全社区居民的比例，超出了调查设计所能支持的范围" },
+      { "id": "B", "text": "结论成立，因为有效问卷数量达到了 480 份" },
+      { "id": "C", "text": "结论成立，因为研究小组已在附录中说明调查目的" },
+      { "id": "D", "text": "结论不成立，因为问卷调查本身无法用于了解使用体验" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "材料明确说明样本由自愿报名的志愿者构成，发放集中在工作日白天，且未设随机抽样，其中多数填写者本身就是高频使用者。在此设计下得到的比例只能反映常客群体的分布，不能推广为全社区约七成七的居民经常使用。问卷数量与研究目的说明都不能弥补抽样代表性的不足，而问卷调查本身是可以用于了解使用体验的。",
+    "score": 5,
+    "knowledgePoints": ["抽样代表性", "结论适用范围", "自愿样本偏差"]
+  },
+  {
+    "id": "BASIC-031",
+    "type": "true_false",
+    "category": "digital_wellbeing",
+    "difficulty": 1,
+    "tags": ["sleep", "screen-time"],
+    "stem": "在临睡前长时间浏览信息流，通常会影响入睡时间与睡眠质量。",
+    "answer": { "mode": "boolean", "correctBoolean": true },
+    "selection": "single",
+    "explanation": "屏幕内容带来的持续刺激会推迟入睡意愿，信息流中不确定的更新节奏也会延长实际使用时间，两者共同压缩睡眠时长。把睡前时段留给低刺激活动，是数字健康管理中常见的调整方式。",
+    "score": 5,
+    "knowledgePoints": ["睡眠影响", "睡前使用习惯"]
+  },
+  {
+    "id": "BASIC-032",
+    "type": "scenario_analysis",
+    "category": "internet_etiquette",
+    "difficulty": 3,
+    "tags": ["joking-boundary", "bystander", "group-pressure"],
+    "materialTitle": "情景：群组中的持续调侃",
+    "material": "你所在的兴趣群组中，几位成员持续以某位成员的口音与说话方式作为玩笑素材，并为其取了带有调侃意味的称呼。该成员起初以表情回应，近期已明显减少发言。群组管理员未对此作出说明，其他成员认为「只是开玩笑，不必当真」。你与该成员并不熟悉。",
+    "stem": "面对上述情况，下列处理方式中最合适的是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "在群组中明确提出该调侃已使当事人减少发言，建议停止使用该称呼，必要时向管理员反映",
+        "rationale": "直接指出行为与后果的关联并提出可执行的调整建议，既回应了当事人的处境，也为群组建立了明确的边界。"
+      },
+      {
+        "id": "B",
+        "text": "私下告诉当事人「大家没有恶意」，建议其不要介意",
+        "rationale": "以「没有恶意」解释他人行为，实际是把调整成本转移给当事人，并未改变持续调侃的处境。"
+      },
+      {
+        "id": "C",
+        "text": "跟随群组氛围继续使用该称呼，避免自己成为被调侃的对象",
+        "rationale": "继续使用该称呼会强化群体压力，使当事人的处境进一步恶化。"
+      },
+      {
+        "id": "D",
+        "text": "退出群组，不再关注此事",
+        "rationale": "退出群组可以避免自身卷入，但没有改善当事人所处的环境，实际效果有限。"
+      }
+    ],
+    "answer": {
+      "mode": "points",
+      "bestOptionIds": ["A"],
+      "optionPoints": { "A": 5, "B": 1, "C": 0, "D": 2 }
+    },
+    "selection": "single",
+    "explanation": "玩笑是否成立并不取决于发起者的意图，而取决于被指向者的感受与由此产生的行为变化。当事人减少发言已是可观察的后果，因此恰当的处理是明确指出行为与后果的关联并推动群组停止该做法；替他人判断「不必介意」或跟随氛围，都会使压力继续存在。",
+    "score": 5,
+    "knowledgePoints": ["玩笑边界", "旁观者责任", "群体压力"]
+  },
+  {
+    "id": "BASIC-033",
+    "type": "single_choice",
+    "category": "public_discourse",
+    "difficulty": 2,
+    "tags": ["data-citation", "evidence"],
+    "stem": "在公共讨论中引用统计数据时，下列做法最能提升论证可信度的是？",
+    "options": [
+      { "id": "A", "text": "说明数据的来源机构、统计时间与统计口径" },
+      { "id": "B", "text": "只保留与结论一致的部分数据" },
+      { "id": "C", "text": "使用「众所周知」等表述替代来源说明" },
+      { "id": "D", "text": "将不同年份的数据合并为一个数字以简化表达" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "数据的可信度依赖于来源、时间与口径的可核查性，完整说明这三项可以让其他参与者自行验证并判断适用范围。只保留一致的部分数据属于选择性呈现，用「众所周知」替代来源会使论证无法核查，合并不同年份的数据则会掩盖口径差异。",
+    "score": 5,
+    "knowledgePoints": ["数据引用", "来源标注"]
+  },
+  {
+    "id": "BASIC-034",
+    "type": "single_choice",
+    "category": "platform_rules",
+    "difficulty": 1,
+    "tags": ["account-rules", "account-sharing"],
+    "stem": "某平台允许用户将账号借给他人使用。关于该做法，下列判断最恰当的是？",
+    "options": [
+      { "id": "A", "text": "借用他人账号期间的发布行为，通常仍由账号注册者承担相应责任" },
+      { "id": "B", "text": "借用期间的违规行为与账号注册者无关" },
+      { "id": "C", "text": "只要借用人承诺不违规，注册者就不必承担任何风险" },
+      { "id": "D", "text": "账号借用可以免除平台对发布内容的核查" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "平台规则通常以账号为责任主体，账号项下的发布记录、违规记录与信用状态都归属于注册者。借用期间的违规行为会造成注册者的账号受限，借用人的口头承诺不能转移平台层面的责任，也不会影响平台对内容的核查。",
+    "score": 5,
+    "knowledgePoints": ["账号责任", "账号借用风险"]
+  },
+  {
+    "id": "BASIC-035",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 2,
+    "tags": ["expertise", "source-checking"],
+    "stem": "一则健康类信息标注作者为「某机构研究人员」，但未给出机构名称与研究方向。评估该信息时，首先应当确认的是？",
+    "options": [
+      { "id": "A", "text": "作者所属机构与专业领域是否与所述内容相关" },
+      { "id": "B", "text": "作者的表述是否使用了通俗易懂的语言" },
+      { "id": "C", "text": "该信息是否被多个账号转发" },
+      { "id": "D", "text": "该信息是否配有作者照片" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "专业意见的可信度取决于其专业领域与所述内容是否相关，因此需要先确认机构与研究方向，才能判断该意见是否具备相应的专业基础。语言风格、转发情况与照片都属于与专业相关性无关的信息，无法用于评估内容本身。",
+    "score": 5,
+    "knowledgePoints": ["专家资质核验", "相关性判断"]
+  },
+  {
+    "id": "BASIC-036",
+    "type": "multiple_choice",
+    "category": "logical_reasoning",
+    "difficulty": 3,
+    "tags": ["logic", "causal-reasoning"],
+    "stem": "某平台统计发现，使用夜间模式的用户平均每日使用时长高于未使用夜间模式的用户。据此可以合理得出的判断有哪些？",
+    "options": [
+      { "id": "A", "text": "该统计只能说明两者存在相关关系，不能直接说明夜间模式导致使用时长增加" },
+      { "id": "B", "text": "可能存在第三项因素（例如作息习惯）同时影响夜间模式的使用与使用时长" },
+      { "id": "C", "text": "若要判断因果关系，需要控制其他变量或进行对照实验" },
+      { "id": "D", "text": "使用夜间模式必然导致使用时长增加" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "C"] },
+    "selection": "multiple",
+    "explanation": "观察到的统计差异属于相关关系，而相关可能来自反向影响，也可能来自同时影响两者的第三项因素，因此不能直接认定为因果。判断因果需要控制其他变量或设计对照实验。第四项把相关直接当作必然因果，超出了统计结果能够支持的范围。",
+    "score": 5,
+    "knowledgePoints": ["相关与因果", "混杂因素", "对照设计"]
+  },
+  {
+    "id": "BASIC-037",
+    "type": "single_choice",
+    "category": "public_discourse",
+    "difficulty": 3,
+    "tags": ["argumentation", "strongest-counterargument"],
+    "stem": "在讨论一项存在分歧的公共议题时，下列做法最能体现论证的完整性？",
+    "options": [
+      { "id": "A", "text": "在提出自身主张前，先说明对方主张中最有说服力的版本及其依据" },
+      { "id": "B", "text": "只引用支持自身主张的材料，不提及相反证据" },
+      { "id": "C", "text": "把对方主张概括为「缺乏常识」，从而省略具体回应" },
+      { "id": "D", "text": "以讨论时间有限为由，拒绝回应对方提出的反例" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "完整论证需要回应议题中最强的反对意见，先准确复述对方主张的最有说服力版本，可以确保反驳针对的是真实分歧，而不是被削弱的版本。只引用有利材料、以概括性评价替代回应、以时间为由回避反例，都会使论证停留在单方陈述。",
+    "score": 5,
+    "knowledgePoints": ["最强反对意见", "论证完整性"]
+  },
+  {
+    "id": "BASIC-038",
+    "type": "single_choice",
+    "category": "internet_etiquette",
+    "difficulty": 1,
+    "tags": ["correction", "group-chat"],
+    "stem": "发现自己此前在群聊中转发的信息有误时，最恰当的做法是？",
+    "options": [
+      { "id": "A", "text": "在同一群聊中说明此前信息有误，并给出更正后的内容与依据" },
+      { "id": "B", "text": "悄悄删除原消息，不作任何说明" },
+      { "id": "C", "text": "在其他群聊中重新发布正确内容，不提及此前错误" },
+      { "id": "D", "text": "等待他人指出错误后再作回应" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "更正的价值在于让已经接触到错误信息的成员获得同样的更正信息。悄悄删除只能减少后续传播，已看到原消息的人仍保留错误认识；在其他群聊发布正确内容并未触达原受众；等待他人指出则延长了错误信息的存续时间。",
+    "score": 5,
+    "knowledgePoints": ["信息更正", "传播责任"]
+  },
+  {
+    "id": "BASIC-039",
+    "type": "single_choice",
+    "category": "platform_rules",
+    "difficulty": 1,
+    "tags": ["content-ownership", "platform-terms"],
+    "stem": "用户在平台发布原创内容时，通常需要了解平台规则中关于内容授权的说明。下列理解最恰当的是？",
+    "options": [
+      { "id": "A", "text": "用户通常保留作品权利，同时按规则授予平台在约定范围内展示与分发该内容的许可" },
+      { "id": "B", "text": "内容一经发布，全部权利即转移给平台，用户不再享有任何权益" },
+      { "id": "C", "text": "平台规则中的授权条款对用户发布的内容不产生实际影响" },
+      { "id": "D", "text": "只要内容由用户原创，平台就不得以任何形式使用该内容" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "平台规则通常区分权利归属与使用许可：作品权利仍由用户保留，平台在规则约定的范围内获得展示、分发等许可。认为权利全部转移或授权条款毫无影响，都会导致对自身权益的误判；而平台完全不能使用用户内容，则与平台展示内容的基本运行方式不符。",
+    "score": 5,
+    "knowledgePoints": ["内容授权", "权利归属"]
+  },
+  {
+    "id": "BASIC-040",
+    "type": "single_choice",
+    "category": "information_literacy",
+    "difficulty": 2,
+    "tags": ["search", "verification"],
+    "stem": "使用搜索引擎核查一则信息时，下列做法最有助于获得可靠结果的是？",
+    "options": [
+      { "id": "A", "text": "使用该信息中的关键事实作为检索词，并查看多个来源对同一事实的表述" },
+      { "id": "B", "text": "直接检索该信息的结论句，取第一条结果作为依据" },
+      { "id": "C", "text": "只检索支持该结论的关键词，忽略相反表述" },
+      { "id": "D", "text": "以搜索结果的总条数作为真实性的判断依据" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "以关键事实为检索词并比较多个来源，可以检验该事实是否被独立记录以及各来源表述是否一致。只检索结论句或只检索支持性关键词会造成选择性检索，结果条数反映的是内容被索引的规模，与事实是否成立无关。",
+    "score": 5,
+    "knowledgePoints": ["检索策略", "多源比对"]
+  }
+]

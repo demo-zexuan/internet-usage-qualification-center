@@ -1,0 +1,431 @@
+[
+  {
+    "id": "ADV-039",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 4,
+    "tags": ["significance", "effect-size"],
+    "stem": "某研究报告称，一项干预的效果在统计上显著，但效应量极小，且置信区间接近零。下列哪一项解读最为合理？",
+    "options": [
+      { "id": "A", "text": "统计显著说明结果不太可能由抽样波动单独造成，但极小的效应量意味着实际意义有限" },
+      { "id": "B", "text": "统计显著即说明该干预具有重要的实际价值" },
+      { "id": "C", "text": "效应量小说明该研究一定是伪造的" },
+      { "id": "D", "text": "置信区间接近零说明研究样本一定不足" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "统计显著性回答的是「观察到的差异是否可能来自随机波动」，效应量回答的是「差异有多大」，二者不能互相替代。样本量很大时，微不足道的差异也可能达到显著，因此需要同时看效应量与置信区间来判断实际意义。B 混淆了两个不同的问题；C 与 D 都从效应量小推出了超出证据的结论。",
+    "score": 5,
+    "knowledgePoints": ["统计显著性", "效应量", "置信区间"]
+  },
+  {
+    "id": "ADV-040",
+    "type": "multiple_choice",
+    "category": "logical_reasoning",
+    "difficulty": 4,
+    "tags": ["selection-bias", "sampling"],
+    "stem": "下列哪些情形属于选择偏差？",
+    "options": [
+      { "id": "A", "text": "仅通过线上问卷收集意见，而该议题的主要受影响群体较少上网" },
+      { "id": "B", "text": "只统计主动留下评价的顾客满意度，忽略未评价者" },
+      { "id": "C", "text": "采用随机抽样，并在分析前预先登记分析方案" },
+      { "id": "D", "text": "以自愿报名的参与者评估某项干预效果，且报名者多为对该干预持积极态度的人" },
+      { "id": "E", "text": "在样本中同时纳入不同年龄段，并说明纳入标准" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "D"] },
+    "selection": "multiple",
+    "explanation": "选择偏差的共同特征是：进入样本的机制与所研究的特征相关。线上问卷漏掉不上网群体、只统计主动评价者、以自愿报名者代表总体，都会让样本在关键维度上系统性偏离总体。随机抽样配合预先登记、明确纳入标准并覆盖不同年龄段，都是降低选择偏差的做法。",
+    "score": 5,
+    "knowledgePoints": ["选择偏差", "样本代表性", "自愿响应偏差"]
+  },
+  {
+    "id": "ADV-041",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 5,
+    "tags": ["confounder", "causal-graph"],
+    "stem": "一项研究发现「使用某类工具的人群收入更高」。若要判断该工具是否带来收入提升，下列哪一项处理最为关键？",
+    "options": [
+      { "id": "A", "text": "识别并控制可能同时影响工具使用与收入的共同原因，例如行业与岗位类型" },
+      { "id": "B", "text": "扩大样本量，使相关性估计更加稳定" },
+      { "id": "C", "text": "改用更精确的收入统计口径" },
+      { "id": "D", "text": "重复测量同一批人，观察相关性是否持续存在" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "当存在混杂因素时，相关性不能直接读作因果：若行业与岗位类型同时影响是否使用该工具和收入水平，观察到的差异可能完全来自这一共同原因。扩大样本、改进测量与重复测量都只能让相关性估计更精确，无法消除混杂带来的系统性偏差。",
+    "score": 5,
+    "knowledgePoints": ["混杂因素", "因果图", "相关与因果"]
+  },
+  {
+    "id": "ADV-042",
+    "type": "multiple_choice",
+    "category": "logical_reasoning",
+    "difficulty": 4,
+    "tags": ["formal-fallacy", "inference-direction"],
+    "stem": "下列哪些论证存在形式上的推理错误？",
+    "options": [
+      { "id": "A", "text": "「如果这份材料是伪造的，那么它的时间戳会有异常；它的时间戳确实有异常，所以它一定是伪造的」" },
+      { "id": "B", "text": "「如果该方案有效，那么指标会下降；指标没有下降，所以该方案无效」" },
+      { "id": "C", "text": "「如果该方案有效，那么指标会下降；指标下降了，所以该方案有效」" },
+      { "id": "D", "text": "「如果所有环节都合规，那么流程可以通过审核；该流程通过了审核，所以所有环节都合规」" },
+      { "id": "E", "text": "「如果今天是周三，那么明天是周四；今天是周三，所以明天是周四」" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "C", "D"] },
+    "selection": "multiple",
+    "explanation": "A、C、D 都把充分条件当作必要条件使用，即由后件成立推出前件成立，属于肯定后件。B 是否定后件的有效形式：后件不成立，可以推出前件不成立。E 是肯定前件的有效形式。判断形式错误的关键是辨认推理方向，而不是判断结论是否符合直觉。",
+    "score": 5,
+    "knowledgePoints": ["形式谬误", "肯定后件", "有效推理形式"]
+  },
+  {
+    "id": "ADV-043",
+    "type": "scenario_analysis",
+    "category": "logical_reasoning",
+    "difficulty": 4,
+    "tags": ["sampling", "nonresponse-bias"],
+    "materialTitle": "情景：一份内部调查报告的评审",
+    "material": "一份内部调查报告称：「我们调查了本单位 120 名员工，其中 78% 认为现行流程需要调整，因此可以推断全体员工中约八成支持调整流程。」报告未说明抽样方式，仅提到问卷通过内部通讯软件发放，回收期为两个工作日。报告的结论段落还写道：「未填写问卷的同事大多事务繁忙，其意见与已填写者应当没有系统性差异。」",
+    "stem": "对该报告，下列处理方式中哪一项最为恰当？",
+    "options": [
+      {
+        "id": "A",
+        "text": "指出抽样方式与回收率未说明、未回应者被直接假定为无差异，因此不宜由样本比例推断总体比例；建议补充抽样说明与对未回应者的分析",
+        "points": 5,
+        "rationale": "抓住了推断链上的关键缺口——样本如何产生、未回应者是否系统性不同——并给出了可执行的补充方向。"
+      },
+      {
+        "id": "B",
+        "text": "认可结论，因为 120 人的样本规模已经足够大",
+        "points": 0,
+        "rationale": "样本规模不能弥补抽样机制不明带来的偏差，规模与代表性是两个不同的问题。"
+      },
+      {
+        "id": "C",
+        "text": "直接否定全部数据，认为问卷结果没有任何参考价值",
+        "points": 1,
+        "rationale": "数据本身仍有描述性价值，全面否定超出了证据所能支持的范围，属于过度反应。"
+      },
+      {
+        "id": "D",
+        "text": "把「约八成」改为「约七成八」，其余结论保持不变",
+        "points": -1,
+        "rationale": "修改数字精度并不改变推断结构，未回应者被假定为无差异这一问题依然存在。"
+      }
+    ],
+    "answer": {
+      "mode": "points",
+      "bestOptionIds": ["A"],
+      "optionPoints": { "A": 5, "B": 0, "C": 1, "D": -1 }
+    },
+    "selection": "single",
+    "explanation": "从样本比例推断总体比例，前提是样本在关键维度上不系统性偏离总体。报告既未说明抽样方式，又把未回应者假定为与已回应者无差异，这两点都会使推断失效；正确的评审意见应指向推断结构，而不是数字精度。",
+    "score": 5,
+    "knowledgePoints": ["抽样说明", "无回应偏差", "推断结构"]
+  },
+  {
+    "id": "ADV-044",
+    "type": "reading_comprehension",
+    "category": "logical_reasoning",
+    "difficulty": 5,
+    "tags": ["absolute-risk", "effect-size"],
+    "materialTitle": "材料：一份试验结果摘要",
+    "material": "一份试验摘要写道：「本试验共纳入 24000 名参与者，随机分为两组。干预组事件发生率为 1.02%，对照组为 1.18%，差异具有统计显著性（p<0.05），绝对风险下降约 0.16 个百分点。摘要同时说明，试验期间两组的总体不良事件报告率相近，参与者依从性良好。研究者结论为：该干预具有明确的临床推广价值。」摘要未提供干预的成本、实施难度与随访时长，也未说明该干预与现有替代方案之间的比较结果。",
+    "stem": "根据材料，下列哪一项判断最为准确？",
+    "options": [
+      { "id": "A", "text": "差异的统计显著性成立，但绝对风险下降很小，结论中的「明确推广价值」超出了数据所能支持的范围" },
+      { "id": "B", "text": "统计显著即说明该干预具有明确的推广价值，研究者的结论成立" },
+      { "id": "C", "text": "因为绝对风险下降很小，该差异必然是随机波动造成的" },
+      { "id": "D", "text": "只要参与者依从性良好，就不需要再考虑效应量的大小" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "材料同时给出了显著性与绝对风险下降两个信息：大样本使微小差异也容易达到显著，而 0.16 个百分点的绝对下降意味着需要干预的人数很多。因此可以承认差异存在，但「明确推广价值」还需要成本、可及性与替代方案等材料未提供的信息。C 与显著性结果矛盾；D 忽略了效应量的独立意义。",
+    "score": 5,
+    "knowledgePoints": ["统计显著性", "绝对风险", "效应量"]
+  },
+  {
+    "id": "ADV-045",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 3,
+    "tags": ["correlation", "causation"],
+    "stem": "观察到「冰淇淋销量与溺水事件数量同步上升」这一相关性时，下列哪一项解释最为合理？",
+    "options": [
+      { "id": "A", "text": "两者可能同受第三个因素（如气温与季节）影响，相关性本身不指明因果方向" },
+      { "id": "B", "text": "冰淇淋销量上升导致了溺水事件增加" },
+      { "id": "C", "text": "溺水事件增加导致了冰淇淋销量上升" },
+      { "id": "D", "text": "相关性既然存在，必然对应某种直接因果关系" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "相关性的存在只说明两个变量同步变化，既不指明因果方向，也不排除共同原因。气温与季节会同时影响消暑食品消费与水上活动，因此最合理的解释是先考虑共同因素。B 与 C 各自假定了一个方向的因果却未提供机制；D 把「有相关」直接读作「有因果」，忽略了混杂与巧合。",
+    "score": 5,
+    "knowledgePoints": ["相关与因果", "共同原因", "混杂"]
+  },
+  {
+    "id": "ADV-046",
+    "type": "multiple_choice",
+    "category": "logical_reasoning",
+    "difficulty": 3,
+    "tags": ["implicit-premise", "generalization"],
+    "stem": "「该方案在甲地取得了良好效果，因此在本机构也一定会取得良好效果。」要使这一论证成立，需要补充下列哪些隐含前提？",
+    "options": [
+      { "id": "A", "text": "甲地与本研究机构在影响效果的关键条件上足够相似" },
+      { "id": "B", "text": "该方案在甲地的效果确实来自方案本身，而非当地的特殊条件" },
+      { "id": "C", "text": "该方案的实施成本在本机构可以接受" },
+      { "id": "D", "text": "甲地的成功案例曾被广泛报道" },
+      { "id": "E", "text": "本机构此前从未尝试过类似方案" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B"] },
+    "selection": "multiple",
+    "explanation": "从个别案例推广到另一环境，需要两件事成立：环境在关键条件上可比，以及原案例的效果可以归因于方案本身。成本可接受性影响的是可行性判断，不是推论成立的前提；报道范围与既往尝试经历同样不改变推论的有效性。",
+    "score": 5,
+    "knowledgePoints": ["隐含前提", "类比推广", "可迁移性"]
+  },
+  {
+    "id": "ADV-047",
+    "type": "single_choice",
+    "category": "logical_reasoning",
+    "difficulty": 3,
+    "tags": ["sampling", "representativeness"],
+    "stem": "某机构想了解用户对新界面的整体满意度，最终只在应用商店的评论中收集意见。下列哪一项对该做法的问题描述最为准确？",
+    "options": [
+      { "id": "A", "text": "应用商店的评论者多为体验极端者，样本在满意度维度上不具代表性" },
+      { "id": "B", "text": "应用商店的评论数量通常不足，只要增加数量即可解决" },
+      { "id": "C", "text": "应用商店的评论都是虚假的" },
+      { "id": "D", "text": "满意度本身无法被测量" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "主动留下评论的用户往往集中在体验很好或很差的群体，中间群体大量缺席，因此样本在满意度维度上系统性偏离总体。数量增加只会让同一个有偏样本更加稳定；C 与 D 都做出了远超证据的判断。",
+    "score": 5,
+    "knowledgePoints": ["样本代表性", "自愿响应偏差", "满意度测量"]
+  },
+  {
+    "id": "ADV-048",
+    "type": "single_choice",
+    "category": "public_discourse",
+    "difficulty": 3,
+    "tags": ["burden-of-proof"],
+    "stem": "在公共讨论中，「举证责任」通常指下列哪一项？",
+    "options": [
+      { "id": "A", "text": "提出主张的一方需要为其主张提供证据支持" },
+      { "id": "B", "text": "质疑主张的一方需要证明该主张完全错误" },
+      { "id": "C", "text": "讨论的主持人需要为双方提供证据" },
+      { "id": "D", "text": "举证责任由发言次数较少的一方承担" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "举证责任的基本原则是「谁主张，谁举证」：提出事实性主张的一方需要给出支持该主张的理由与证据。质疑者可以指出证据不足，但通常不因此承担证明该主张为假的责任；主持人与发言次数与举证责任的分配无关。",
+    "score": 5,
+    "knowledgePoints": ["举证责任", "主张与证据"]
+  },
+  {
+    "id": "ADV-049",
+    "type": "single_choice",
+    "category": "public_discourse",
+    "difficulty": 3,
+    "tags": ["falsifiability"],
+    "stem": "关于「可证伪性」在讨论中的作用，下列哪一项表述最为准确？",
+    "options": [
+      { "id": "A", "text": "它要求主张说明在什么条件下该主张会被认定为不成立，从而使讨论有明确的检验方向" },
+      { "id": "B", "text": "它要求主张必须已经被证明为假" },
+      { "id": "C", "text": "它意味着任何无法立即验证的主张都是错误的" },
+      { "id": "D", "text": "它要求讨论者必须提供反例才能发言" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "可证伪性描述的是一种结构属性：主张是否给出了可以被检验、并可能被否定的条件。给出这些条件能让讨论集中在证据上；它并不要求主张已被证伪，也不等于「暂时无法验证即为错误」，更不是对发言资格的限制。",
+    "score": 5,
+    "knowledgePoints": ["可证伪性", "检验条件", "讨论规范"]
+  },
+  {
+    "id": "ADV-050",
+    "type": "single_choice",
+    "category": "public_discourse",
+    "difficulty": 4,
+    "tags": ["consensus", "evidence"],
+    "stem": "关于「共识」与「真理」的关系，下列哪一项表述最为准确？",
+    "options": [
+      { "id": "A", "text": "共识是特定群体在特定时期内的判断结果，可以作为线索，但不能替代证据本身" },
+      { "id": "B", "text": "只要形成共识，该判断即为真" },
+      { "id": "C", "text": "共识与证据无关，因此没有任何参考价值" },
+      { "id": "D", "text": "真理由多数表决决定" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "共识反映的是一个群体在现有信息与程序下的判断，它既可能接近事实，也可能因信息不足或程序缺陷而偏离，因此适合作为寻找证据的线索而非终点。B 与 D 把群体判断等同于事实；C 走向另一个极端，忽略了共识在信息整合中的作用。",
+    "score": 5,
+    "knowledgePoints": ["共识", "真理", "证据优先"]
+  },
+  {
+    "id": "ADV-051",
+    "type": "multiple_choice",
+    "category": "public_discourse",
+    "difficulty": 3,
+    "tags": ["steelmanning", "charity"],
+    "stem": "下列哪些做法体现了「钢人化」（steelmanning）？",
+    "options": [
+      { "id": "A", "text": "在回应前先复述对方论证的最强版本，并确认理解无误" },
+      { "id": "B", "text": "主动补充对方可能提出但尚未说出的有力理由，再对其进行回应" },
+      { "id": "C", "text": "只挑选对方表述中最薄弱的措辞进行反驳" },
+      { "id": "D", "text": "假定对方的论证存在隐藏的合理前提，并在回应中处理该前提" },
+      { "id": "E", "text": "把对方的观点概括为最容易反驳的极端版本" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "D"] },
+    "selection": "multiple",
+    "explanation": "钢人化要求回应的是对方论证的最强形式，因此需要先准确复述、补充其可能的强理由、处理其隐含前提。C 与 E 属于稻草人化：通过挑选最弱措辞或把观点极端化，使反驳变得容易，但并未回应对方真正的论证。",
+    "score": 5,
+    "knowledgePoints": ["钢人化", "稻草人谬误", "论证回应"]
+  },
+  {
+    "id": "ADV-052",
+    "type": "multiple_choice",
+    "category": "public_discourse",
+    "difficulty": 4,
+    "tags": ["symmetry", "standards"],
+    "stem": "在讨论中应用「对称性标准」意味着下列哪些做法？",
+    "options": [
+      { "id": "A", "text": "对双方的事实性主张使用同样的证据门槛" },
+      { "id": "B", "text": "当自己一方出现同类问题时，采用与评判对方时相同的态度" },
+      { "id": "C", "text": "因为双方都有问题，所以任何结论都不成立" },
+      { "id": "D", "text": "对来源可靠性的判定标准不因结论是否符合自己预期而改变" },
+      { "id": "E", "text": "在证据不足时，默认支持自己更认同的一方" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A", "B", "D"] },
+    "selection": "multiple",
+    "explanation": "对称性标准要求把证据门槛、来源判定与自我要求统一到同一套规则上，避免因结论偏好而调整标准。C 把对称性误解为「各打五十大板」后的虚无结论；E 恰恰是打破对称性的做法，即在证据不足时按偏好分配默认立场。",
+    "score": 5,
+    "knowledgePoints": ["对称性标准", "双重标准", "证据门槛"]
+  },
+  {
+    "id": "ADV-053",
+    "type": "scenario_analysis",
+    "category": "public_discourse",
+    "difficulty": 3,
+    "tags": ["burden-of-proof", "moderation"],
+    "materialTitle": "情景：讨论中的举证僵局",
+    "material": "在模拟讨论区中，甲提出一项事实性主张，但未提供任何来源；乙要求甲给出证据，甲回应称「你无法证明我说的是错的，所以我的说法成立」。随后双方陷入反复重复各自表述的状态，讨论无法继续。",
+    "stem": "作为讨论参与者，下列处理方式中哪一项最为恰当？",
+    "options": [
+      {
+        "id": "A",
+        "text": "指出事实性主张的举证责任在提出方，并请甲给出可核查的来源；同时说明「无法被证明为假」不构成主张成立的理由",
+        "points": 5,
+        "rationale": "明确举证责任的归属，并把讨论拉回到可核查的证据上，是使讨论能够继续的最有效做法。"
+      },
+      {
+        "id": "B",
+        "text": "支持甲，因为乙确实没有提供反证",
+        "points": 0,
+        "rationale": "把举证责任错误地分配给质疑方，会使任何未经核验的主张都能成立。"
+      },
+      {
+        "id": "C",
+        "text": "直接对甲作出违规处置，不再进行任何说明",
+        "points": 1,
+        "rationale": "处置虽然终止了僵局，但未说明依据，其他参与者无法从中了解规则，讨论质量不会因此提升。"
+      },
+      {
+        "id": "D",
+        "text": "建议双方各自保留意见，结束讨论即可",
+        "points": 1,
+        "rationale": "结束讨论避免了冲突，但也放弃了澄清规则的机会，同一僵局会在下一次讨论中重现。"
+      }
+    ],
+    "answer": {
+      "mode": "points",
+      "bestOptionIds": ["A"],
+      "optionPoints": { "A": 5, "B": 0, "C": 1, "D": 1 }
+    },
+    "selection": "single",
+    "explanation": "讨论僵局常源于举证责任被颠倒：一旦「无法被证伪」被视为成立的依据，任何主张都可以免于核验。正确的介入是指出责任归属并请求可核查的来源，而不是替任何一方补充证据，也不是用处置或搁置代替规则说明。",
+    "score": 5,
+    "knowledgePoints": ["举证责任", "讨论介入", "可核查来源"]
+  },
+  {
+    "id": "ADV-054",
+    "type": "scenario_analysis",
+    "category": "public_discourse",
+    "difficulty": 5,
+    "tags": ["meta-disagreement", "standards"],
+    "materialTitle": "情景：事实层面已收敛的讨论",
+    "material": "在一次关于某议题的讨论中，双方对具体事实的认定已基本一致，但在「应当由谁承担核验成本」与「多大程度的不确定性可以接受」这两个问题上持续分歧。讨论持续数小时，参与者开始互相指责对方「不讲道理」，而具体事实层面的问题已不再被提及。",
+    "stem": "下列处理方式中哪一项最为恰当？",
+    "options": [
+      {
+        "id": "A",
+        "text": "明确指出当前分歧属于元层分歧，即对讨论规则与判断标准的分歧，并建议先就核验成本的分担与可接受的不确定性达成一致，再回到具体事实",
+        "points": 5,
+        "rationale": "把分歧的层次识别出来并先处理规则问题，能够避免双方在不同层面上各说各话，是使讨论重新具有进展的可能路径。"
+      },
+      {
+        "id": "B",
+        "text": "继续在具体事实层面寻找更多材料，认为材料足够多即可消除分歧",
+        "points": 0,
+        "rationale": "事实材料已经基本一致，继续补充材料无法解决标准层面的分歧。"
+      },
+      {
+        "id": "C",
+        "text": "由主持人直接指定一方的标准为唯一有效标准",
+        "points": 1,
+        "rationale": "单方面指定标准虽然可以终止争论，但会让另一方失去参与规则形成的空间，分歧只是被压制而非被处理。"
+      },
+      {
+        "id": "D",
+        "text": "宣布讨论失败，认为元层分歧无法被处理",
+        "points": -1,
+        "rationale": "元层分歧可以被显式讨论，宣布无法处理属于放弃而非结论。"
+      }
+    ],
+    "answer": {
+      "mode": "points",
+      "bestOptionIds": ["A"],
+      "optionPoints": { "A": 5, "B": 0, "C": 1, "D": -1 }
+    },
+    "selection": "single",
+    "explanation": "当讨论在事实层面已经收敛却仍无法达成一致时，分歧往往位于元层：对判断标准、核验成本与不确定性容忍度的分歧。识别层次并先就规则达成一致，比继续堆叠材料更有效，也比单方面指定标准更能维持讨论的持续性。",
+    "score": 5,
+    "knowledgePoints": ["元层分歧", "判断标准", "讨论规则"]
+  },
+  {
+    "id": "ADV-055",
+    "type": "opinion_analysis",
+    "category": "public_discourse",
+    "difficulty": 3,
+    "tags": ["argument-structure", "popularity"],
+    "multipleValidViewpoints": true,
+    "stem": "一段讨论这样论证：「我方观点得到了大量转发与点赞，而对方观点几乎没有互动，可见我方观点更有道理。」下列哪一项对该论证的评价最为准确？",
+    "options": [
+      { "id": "A", "text": "论证以传播规模代替论证质量，未说明互动量与其主张是否成立之间存在何种联系" },
+      { "id": "B", "text": "论证成立，因为互动量是公众判断的直接体现" },
+      { "id": "C", "text": "论证不成立，因为互动量高说明该观点一定是错的" },
+      { "id": "D", "text": "论证成立，因为对方观点缺少互动说明其无人支持" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "本题不评判立场，只评判论证方式。该论证需要一座桥：从「互动量高」到「主张更可能成立」。这座桥并不存在——互动量受推荐机制、发布时间与话题热度影响，与主张是否为真没有稳定关系。B 与 D 只是重复了结论而未提供桥梁；C 把同一指标反向使用，同样没有建立联系。",
+    "score": 5,
+    "knowledgePoints": ["论证结构", "传播规模", "证据相关性"]
+  },
+  {
+    "id": "ADV-056",
+    "type": "opinion_analysis",
+    "category": "public_discourse",
+    "difficulty": 4,
+    "tags": ["argument-structure", "source-credibility"],
+    "multipleValidViewpoints": true,
+    "stem": "一段讨论这样论证：「甲机构曾经在一份报告中出现过数据错误，因此甲机构本次发布的全部结论都不可信。」下列哪一项对该论证的评价最为准确？",
+    "options": [
+      { "id": "A", "text": "论证从一次具体的错误直接推广到该机构的全部结论，缺少对错误性质、是否已更正以及本次结论证据强度的考察" },
+      { "id": "B", "text": "论证成立，因为出现过错误的机构不值得任何信任" },
+      { "id": "C", "text": "论证不成立，因为甲机构的历史错误与本次结论完全无关" },
+      { "id": "D", "text": "论证成立，因为机构的可信度是一个整体属性，不因议题而变化" }
+    ],
+    "answer": { "mode": "key", "correctOptionIds": ["A"] },
+    "selection": "single",
+    "explanation": "本题不评判立场，只评判论证方式。可信度评估应当逐项进行：错误的性质是计算失误还是方法缺陷、是否已更正、本次结论的证据来自何处，都会影响判断。该论证跳过了这些环节，用一次历史错误替代了对本次证据的考察。C 同样跳过了考察，只是给出了相反的结论。",
+    "score": 5,
+    "knowledgePoints": ["论证结构", "来源可信度", "以偏概全"]
+  }
+]

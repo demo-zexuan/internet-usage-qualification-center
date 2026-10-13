@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0.0",
+  "bankId": "demo-advanced",
+  "title": "互联网使用高级资格题库",
+  "description": "面向 L5 跨域信息访问资格与 L6 互联网高级资格的高难度综合题库，覆盖网络安全、信息辨别、逻辑推理、公共讨论与跨境访问合规边界。",
+  "language": "zh-CN",
+  "version": "1.0.0",
+  "author": "IUQA 题库管理处",
+  "updatedAt": "2026-10-14"
+}

@@ -1,0 +1,2933 @@
+{
+  "schemaVersion": "1.0.0",
+  "bankId": "demo-intermediate",
+  "title": "互联网使用进阶资格题库",
+  "description": "面向 L4 高级信息检索资格与信息辨别、网络安全专项能力认证考试的进阶题库，侧重多源交叉验证、证据链构建、隐私保护与论证分析。",
+  "language": "zh-CN",
+  "version": "1.0.0",
+  "author": "IUQA 题库管理处",
+  "updatedAt": "2026-10-14",
+  "questions": [
+    {
+      "id": "INT-001",
+      "type": "single_choice",
+      "category": "information_literacy",
+      "difficulty": 2,
+      "tags": [
+        "source-evaluation",
+        "primary-source"
+      ],
+      "stem": "某自媒体账号发布文章称「据研究显示，某类应用的日均使用时长上升了 18%」，文末标注来源为「某研究机构报告」，但未给出报告名称、发布时间与样本范围。若要核实该数据，最恰当的第一步是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "检索该研究机构的原始报告，确认数据、样本范围与发布时间"
+        },
+        {
+          "id": "B",
+          "text": "直接采信，因为文章已经标注了研究机构"
+        },
+        {
+          "id": "C",
+          "text": "在评论区询问其他读者的看法"
+        },
+        {
+          "id": "D",
+          "text": "查找另一篇引用同一数据的自媒体文章，两篇互相印证"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A"
+        ]
+      },
+      "selection": "single",
+      "explanation": "标注机构名称并不等于来源可核验。核实数据的第一步是回到一手材料，确认统计口径、样本范围与发布时间。D 看似稳妥，但两篇自媒体文章若都转引自同一份无法查证的报告，则共享同一个错误源头，不构成独立印证；读者评论更不构成证据。",
+      "score": 5,
+      "knowledgePoints": [
+        "一手来源",
+        "二手来源",
+        "信息溯源"
+      ]
+    },
+    {
+      "id": "INT-002",
+      "type": "single_choice",
+      "category": "information_literacy",
+      "difficulty": 3,
+      "tags": [
+        "statistics",
+        "denominator"
+      ],
+      "stem": "某平台公告称「本季度违规内容处置量环比增长 200%，治理成效显著」。已知上季度处置量为 500 条，本季度为 1500 条。对该表述最准确的评价是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "增长 200% 的计算有误，应为 100%"
+        },
+        {
+          "id": "B",
+          "text": "增长率计算正确，但由处置量推出「治理成效显著」缺少必要证据"
+        },
+        {
+          "id": "C",
+          "text": "处置量增长说明平台内的违规内容变多了"
+        },
+        {
+          "id": "D",
+          "text": "环比数据不能用于评价治理成效"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "（1500−500）÷500＝200%，计算无误，因此 A 不成立。但处置量上升既可能来自违规增多，也可能来自审核覆盖提升或判定标准收紧，单凭该数字无法区分，故 C 是未经排除的推断。环比数据本身是可用的指标，问题在于推论而非指标类型，D 属于过度否定。",
+      "score": 5,
+      "knowledgePoints": [
+        "统计口径",
+        "分母",
+        "增长率"
+      ]
+    },
+    {
+      "id": "INT-003",
+      "type": "multiple_choice",
+      "category": "information_literacy",
+      "difficulty": 3,
+      "tags": [
+        "chart-misleading",
+        "axis"
+      ],
+      "stem": "下列哪些做法会使读者对图表中数据的实际差异产生高估？（多选）",
+      "options": [
+        {
+          "id": "A",
+          "text": "纵轴不从 0 开始，而截取在接近数据区间的位置"
+        },
+        {
+          "id": "B",
+          "text": "把两组量纲不同的数据画在同一张图上并使用左右双轴"
+        },
+        {
+          "id": "C",
+          "text": "在折线图中标注完整的数据来源与统计口径"
+        },
+        {
+          "id": "D",
+          "text": "用图形面积表示一维数值的等比增长，如数值翻倍时面积放大四倍"
+        },
+        {
+          "id": "E",
+          "text": "在图表中同时给出绝对值与百分比两种读数"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      "selection": "multiple",
+      "explanation": "纵轴截断会放大视觉落差；双轴图中两条曲线的相对位置取决于人为设定的轴范围，容易制造出并不存在的同步关系；用面积表示一维数值会造成平方级高估。C 与 E 都是提高可读性与可核验性的规范做法，只会降低误读风险。",
+      "score": 5,
+      "knowledgePoints": [
+        "图表误导",
+        "坐标轴截断",
+        "可视化规范"
+      ]
+    },
+    {
+      "id": "INT-004",
+      "type": "reading_comprehension",
+      "category": "information_literacy",
+      "difficulty": 3,
+      "tags": [
+        "cross-verification",
+        "statistics"
+      ],
+      "materialTitle": "材料：两份口径不同的统计报告",
+      "material": "甲报告称，某类服务的使用率较去年同期增长 12%；乙报告称，同期该类服务的使用率下降 3%。两份报告均注明数据来自公开问卷。查看方法说明后可知：甲报告的样本为「近三个月内至少使用过一次该服务的用户」，统计对象为「使用频次」；乙报告的样本为「全部登记用户」，统计对象为「月度活跃人数占比」。两份报告的问卷发放时间均为上月。",
+      "stem": "根据材料，两份报告结论相反最可能的原因是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "其中一份报告存在数据造假"
+        },
+        {
+          "id": "B",
+          "text": "两份报告的样本范围与统计对象不同"
+        },
+        {
+          "id": "C",
+          "text": "问卷数据在任何情况下都不可信"
+        },
+        {
+          "id": "D",
+          "text": "使用率无法通过问卷测量"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "材料已经给出关键差异：甲报告的样本限定为已使用者、统计使用频次；乙报告覆盖全部登记用户、统计月度活跃占比。样本范围与统计对象不同，结论方向相反属于可预期的结果。材料未提供任何造假线索，C 与 D 属于超出材料的过度概括。",
+      "score": 5,
+      "knowledgePoints": [
+        "统计口径",
+        "样本范围",
+        "结论冲突排查"
+      ]
+    },
+    {
+      "id": "INT-005",
+      "type": "single_choice",
+      "category": "information_literacy",
+      "difficulty": 4,
+      "tags": [
+        "survivorship-bias",
+        "sampling"
+      ],
+      "stem": "某团队统计了「坚持使用某学习应用满一年」的用户反馈，其中 87% 认为该应用显著提升了学习效率，据此得出「该应用对多数用户有效」的结论。该推论最主要的问题是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "样本量不足"
+        },
+        {
+          "id": "B",
+          "text": "反馈依赖主观感受，不构成数据"
+        },
+        {
+          "id": "C",
+          "text": "未纳入中途放弃的用户，样本只包含坚持下来的人群"
+        },
+        {
+          "id": "D",
+          "text": "一年的观察时间过短"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "C"
+        ]
+      },
+      "selection": "single",
+      "explanation": "统计范围被限定在「坚持满一年」的用户，中途放弃者被系统性排除，而后者恰恰最可能认为应用无效。这是典型的幸存者偏差：结论只能说明坚持者内部的反馈分布，不能外推到全部用户。样本量、主观性、观察时长都不是此处的主要缺陷。",
+      "score": 5,
+      "knowledgePoints": [
+        "幸存者偏差",
+        "样本代表性",
+        "沉默数据"
+      ]
+    },
+    {
+      "id": "INT-006",
+      "type": "single_choice",
+      "category": "information_literacy",
+      "difficulty": 2,
+      "tags": [
+        "correlation-causation"
+      ],
+      "stem": "数据显示，某城市冰淇淋销量上升的月份，溺水事件数量也上升。据此得出「吃冰淇淋导致溺水」的结论，其错误在于？",
+      "options": [
+        {
+          "id": "A",
+          "text": "统计数据存在测量误差"
+        },
+        {
+          "id": "B",
+          "text": "把相关关系直接当作因果关系，忽略了气温等共同影响因素"
+        },
+        {
+          "id": "C",
+          "text": "溺水事件的数量太少，不足以统计"
+        },
+        {
+          "id": "D",
+          "text": "冰淇淋销量不属于可统计的指标"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "两个变量同向变动只说明相关。气温升高会同时推高冰淇淋销量与游泳人数，从而同时抬高溺水事件数量，属于典型的第三变量。未控制共同影响因素，就不能由相关推出因果；这与测量误差、样本数量或指标可否统计无关。",
+      "score": 5,
+      "knowledgePoints": [
+        "相关性",
+        "因果关系",
+        "第三变量"
+      ]
+    },
+    {
+      "id": "INT-007",
+      "type": "opinion_analysis",
+      "category": "information_literacy",
+      "difficulty": 4,
+      "tags": [
+        "argument-analysis",
+        "cherry-picking"
+      ],
+      "materialTitle": "材料：一段关于某学习应用效果的论证",
+      "material": "甲：该学习应用值得推广。我访谈了十位长期使用者，其中九位给出了正面评价。乙：你的访谈对象全部来自该应用的官方用户群。甲：正面评价占九成，这个比例本身就说明问题；如果你拿不出反例，就应该接受我的结论。",
+      "stem": "关于甲的论证，下列评价最准确的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "甲的结论必然错误，因为官方用户群中的评价一定是假的"
+        },
+        {
+          "id": "B",
+          "text": "甲的样本全部来自官方用户群，存在系统性筛选；且「对方拿不出反例」不构成接受结论的理由"
+        },
+        {
+          "id": "C",
+          "text": "甲的论证成立，因为九成是明确的多数"
+        },
+        {
+          "id": "D",
+          "text": "只要把访谈人数扩大到一百人，该论证的缺陷即可消除"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "multipleValidViewpoints": true,
+      "explanation": "本题不评判立场，只评判论证方式。访谈对象全部取自官方用户群，属于来源单一的系统性筛选，比例再高也不能代表整体使用者；同时甲把举证责任转移给对方，属于论证结构上的缺陷。A 以「必然错误」作了另一个方向的跳跃推论；D 只扩大样本量而不改变抽样渠道，偏差依旧存在。",
+      "score": 5,
+      "knowledgePoints": [
+        "论证结构",
+        "选择性举证",
+        "证据充分性"
+      ]
+    },
+    {
+      "id": "INT-008",
+      "type": "multiple_choice",
+      "category": "information_literacy",
+      "difficulty": 3,
+      "tags": [
+        "cross-verification",
+        "evidence"
+      ],
+      "stem": "要判断一条「某地即将实施新管理办法」的消息是否可信，下列哪些做法有助于形成独立验证？（多选）",
+      "options": [
+        {
+          "id": "A",
+          "text": "核查发布该消息的账号是否为权威渠道，并比对原始发布内容"
+        },
+        {
+          "id": "B",
+          "text": "查找内容一致的独立来源，且该来源不是对同一原始帖的转引"
+        },
+        {
+          "id": "C",
+          "text": "统计该消息在社交平台上的转发量"
+        },
+        {
+          "id": "D",
+          "text": "核对消息中的生效日期与该机构公开的其他文件在时间线上是否自洽"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      "selection": "multiple",
+      "explanation": "独立验证要求来源之间不共享同一出处：核对原始发布渠道、寻找非转引的第二来源、检查时间线自洽，都属于有效手段。转发量只反映传播规模，不反映真实性——同一条不实信息同样可以被大量转发，因此 C 不构成验证。",
+      "score": 5,
+      "knowledgePoints": [
+        "多源交叉验证",
+        "独立来源",
+        "证据链"
+      ]
+    },
+    {
+      "id": "INT-009",
+      "type": "single_choice",
+      "category": "information_literacy",
+      "difficulty": 2,
+      "tags": [
+        "quotation",
+        "context"
+      ],
+      "stem": "某文章引用一段访谈称「受访者明确表示该做法不可行」。读者找到访谈原文后发现，受访者的完整表述是「在缺乏配套措施的情况下，该做法不可行」。该文章的问题属于？",
+      "options": [
+        {
+          "id": "A",
+          "text": "数据计算错误"
+        },
+        {
+          "id": "B",
+          "text": "截取片段导致原意被改变"
+        },
+        {
+          "id": "C",
+          "text": "引用格式不规范"
+        },
+        {
+          "id": "D",
+          "text": "受访者前后表述矛盾"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "原文带有「在缺乏配套措施的情况下」这一限定条件，删去限定后，一句有条件的判断被改写为无条件的否定。这属于断章引用：引用的字句本身没有错，但通过删减语境改变了原意。这不是计算错误，也不是格式问题，材料中也没有受访者自相矛盾的证据。",
+      "score": 5,
+      "knowledgePoints": [
+        "断章引用",
+        "上下文",
+        "原始出处"
+      ]
+    },
+    {
+      "id": "INT-010",
+      "type": "single_choice",
+      "category": "cyber_security",
+      "difficulty": 2,
+      "tags": [
+        "password",
+        "account-security"
+      ],
+      "stem": "下列关于口令管理的做法，最恰当的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "为便于记忆，在多个网站使用同一个高强度口令"
+        },
+        {
+          "id": "B",
+          "text": "不同账号使用互不相同的口令，并交由口令管理器保存"
+        },
+        {
+          "id": "C",
+          "text": "把口令写在便签上并贴在显示器边缘"
+        },
+        {
+          "id": "D",
+          "text": "使用生日与姓名拼音组合，只要长度足够即可"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "口令复用的风险在于：任一站点泄露后，攻击者可用同一组合尝试其他站点，单站口令再强也无法阻止跨站扩散。因此不同账号使用不同口令、由口令管理器承担记忆负担更为稳妥。便签与可推测的个人信息都会显著降低口令的实际防护效果。",
+      "score": 5,
+      "knowledgePoints": [
+        "口令强度",
+        "口令复用",
+        "撞库"
+      ]
+    },
+    {
+      "id": "INT-011",
+      "type": "multiple_choice",
+      "category": "cyber_security",
+      "difficulty": 3,
+      "tags": [
+        "mfa",
+        "authentication"
+      ],
+      "stem": "关于多因素认证，下列理解正确的有哪些？（多选）",
+      "options": [
+        {
+          "id": "A",
+          "text": "口令与短信验证码属于不同类型的认证因素"
+        },
+        {
+          "id": "B",
+          "text": "开启多因素认证后，即使口令泄露，攻击者仍可能因缺少第二因素而无法登录"
+        },
+        {
+          "id": "C",
+          "text": "多因素认证可以替代对钓鱼站点的识别，开启后无需再核对网址"
+        },
+        {
+          "id": "D",
+          "text": "认证因素应尽量来自不同类别，如「知道的信息」与「持有的设备」"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      "selection": "multiple",
+      "explanation": "多因素认证的价值在于要求攻击者同时突破多种类型的凭证，口令与短信验证码分属「知道」与「持有」两类，因此 A、D 正确，B 是其直接效果。但它不能替代对钓鱼站点的识别：若用户在伪造页面主动输入口令与验证码，第二因素会被实时转发，C 不成立。",
+      "score": 5,
+      "knowledgePoints": [
+        "多因素认证",
+        "认证因素",
+        "验证码"
+      ]
+    },
+    {
+      "id": "INT-012",
+      "type": "single_choice",
+      "category": "cyber_security",
+      "difficulty": 3,
+      "tags": [
+        "phishing",
+        "email"
+      ],
+      "stem": "收到一封邮件，要求「24 小时内点击链接完成账号验证，否则账号将被停用」。发件人显示名与某平台官方名称一致，但回复地址属于另一域名，链接指向的域名与官方域名仅相差一个字符。下列判断最合理的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "显示名一致即可确认是官方邮件"
+        },
+        {
+          "id": "B",
+          "text": "存在多项钓鱼特征，应通过官方入口自行访问核实，不点击邮件链接"
+        },
+        {
+          "id": "C",
+          "text": "只要不输入口令，点击链接就没有风险"
+        },
+        {
+          "id": "D",
+          "text": "回复地址不同属于正常配置，无需在意"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "制造时间压力、显示名与真实发件域名不一致、链接域名近似仿冒，是钓鱼邮件的典型组合特征。稳妥做法是不经由邮件链接进入，而从官方入口自行访问并核对。仅「不输入口令」并不安全，仿冒页面仍可能借点击投放脚本或诱导下载；D 则忽略了发件域名这一关键证据。",
+      "score": 5,
+      "knowledgePoints": [
+        "钓鱼识别",
+        "发件人伪造",
+        "紧迫话术"
+      ]
+    },
+    {
+      "id": "INT-013",
+      "type": "scenario_analysis",
+      "category": "cyber_security",
+      "difficulty": 3,
+      "tags": [
+        "account-security",
+        "incident-response"
+      ],
+      "materialTitle": "情景：深夜收到异地登录提醒",
+      "material": "你在凌晨收到一条来自某社交平台的登录提醒，提示有新设备在异地登录。你本人当时并未登录，提醒中的时间与地点也与你近期的活动范围不符。该提醒短信内附带一个「立即处理」的短链接。次日你需要使用该账号处理工作事务。",
+      "stem": "此时最合适的处理方式是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "点击短信中的短链接，按页面提示登录并修改口令",
+          "rationale": "在未核实链接归属前经由短信入口登录，可能把口令直接交给仿冒页面；正确做法是从官方应用或官网入口进入。"
+        },
+        {
+          "id": "B",
+          "text": "从官方应用或官网入口登录，修改口令、检查登录设备与会话并退出陌生会话，必要时联系平台客服",
+          "rationale": "绕开可疑链接、从可信入口处置，同时清除攻击者可能保留的会话，覆盖了止损、排查与加固的完整链条。"
+        },
+        {
+          "id": "C",
+          "text": "忽略提醒，认为只是系统误报",
+          "rationale": "在时间与地点均不符的情况下直接判定为误报，会错过处置窗口，攻击者可能利用已获得的会话继续操作。"
+        },
+        {
+          "id": "D",
+          "text": "立即注销该账号并重新注册",
+          "rationale": "注销虽能终止风险，但会丢失账号内的历史数据与关系链，代价过高；在确认损失范围之前，止损与排查更为合适。"
+        }
+      ],
+      "answer": {
+        "mode": "points",
+        "bestOptionIds": [
+          "B"
+        ],
+        "optionPoints": {
+          "A": 0,
+          "B": 5,
+          "C": -1,
+          "D": 2
+        }
+      },
+      "selection": "single",
+      "explanation": "处置顺序应当是先止损、再夺回控制权、最后加固。B 同时完成了绕开可疑入口、清除陌生会话与加固认证三件事；D 代价过高且会丢失排查所需的记录；C 放弃处置；A 则可能在处置过程中二次泄露口令。",
+      "score": 5,
+      "knowledgePoints": [
+        "登录提醒",
+        "异常处置",
+        "账号安全"
+      ]
+    },
+    {
+      "id": "INT-014",
+      "type": "single_choice",
+      "category": "cyber_security",
+      "difficulty": 3,
+      "tags": [
+        "public-wifi",
+        "network"
+      ],
+      "stem": "在公共场所连接未加密的开放 Wi-Fi 时，下列认识最准确的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "只要访问的网站使用 HTTPS，全部风险即被消除"
+        },
+        {
+          "id": "B",
+          "text": "未加密网络中的流量可能被监听或篡改，应避免处理敏感事务，必要时使用可信的加密通道"
+        },
+        {
+          "id": "C",
+          "text": "开放 Wi-Fi 一定由攻击者架设"
+        },
+        {
+          "id": "D",
+          "text": "连接开放 Wi-Fi 后，本机文件会被自动读取"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "开放网络的主要风险是同一网络内的监听与中间人篡改。HTTPS 能保护所访问站点的传输内容，但无法覆盖域名解析被劫持、仿冒热点以及明文协议流量等情形，因此 A 的「全部消除」不成立；C 与 D 则把风险绝对化，或夸大到与事实不符的程度。",
+      "score": 5,
+      "knowledgePoints": [
+        "公共网络风险",
+        "传输加密",
+        "中间人攻击"
+      ]
+    },
+    {
+      "id": "INT-015",
+      "type": "single_choice",
+      "category": "logical_reasoning",
+      "difficulty": 2,
+      "tags": [
+        "necessary-sufficient",
+        "logic"
+      ],
+      "stem": "「只有完成实名登记，才能发布内容。」据此可以必然推出的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "完成实名登记后一定可以发布内容"
+        },
+        {
+          "id": "B",
+          "text": "未完成实名登记则不能发布内容"
+        },
+        {
+          "id": "C",
+          "text": "能发布内容的人一定不需要实名登记"
+        },
+        {
+          "id": "D",
+          "text": "实名登记与发布内容之间没有关系"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "「只有 P 才 Q」表示 P 是 Q 的必要条件：Q 成立必然要求 P 成立，因此由非 P 可推出非 Q，即 B。A 把必要条件误当作充分条件；C 与题干给出的条件方向相反；D 直接否认了题干明确陈述的关系。",
+      "score": 5,
+      "knowledgePoints": [
+        "充分条件",
+        "必要条件",
+        "条件关系"
+      ]
+    },
+    {
+      "id": "INT-016",
+      "type": "single_choice",
+      "category": "logical_reasoning",
+      "difficulty": 2,
+      "tags": [
+        "circular-reasoning",
+        "fallacy"
+      ],
+      "stem": "「这本书说的都是真的，因为书里明确写着它记载的内容全部属实。」该论证的缺陷是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "论据与结论互相支撑，属于循环论证"
+        },
+        {
+          "id": "B",
+          "text": "论据数量太少"
+        },
+        {
+          "id": "C",
+          "text": "结论表述不够精确"
+        },
+        {
+          "id": "D",
+          "text": "使用了不必要的专业术语"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A"
+        ]
+      },
+      "selection": "single",
+      "explanation": "论证的前提是「书里写着内容属实」，结论是「书的内容属实」，而前提成立恰恰依赖结论为真，两者互为支撑，构成循环论证。这类缺陷与论据数量、措辞精度或术语使用都无关。",
+      "score": 5,
+      "knowledgePoints": [
+        "循环论证",
+        "论证结构",
+        "前提与结论"
+      ]
+    },
+    {
+      "id": "INT-017",
+      "type": "single_choice",
+      "category": "logical_reasoning",
+      "difficulty": 3,
+      "tags": [
+        "burden-of-proof"
+      ],
+      "stem": "甲提出「某平台将在下周调整会员价格」，乙要求甲提供依据。甲回答：「你无法证明它不会调整。」从论证规范看，甲的回答存在的问题是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "甲的表述过于简短"
+        },
+        {
+          "id": "B",
+          "text": "甲把举证责任转移给了质疑者，提出主张的一方应先给出依据"
+        },
+        {
+          "id": "C",
+          "text": "乙不应要求甲提供依据"
+        },
+        {
+          "id": "D",
+          "text": "价格调整在逻辑上无法被证明"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "提出肯定性主张的一方承担初步举证责任。质疑者指出证据缺失，并不因此接手证明相反命题的义务；「你无法证伪」不能替代主张方给出依据。这与表述长度无关，也不是乙的要求不当，更不意味着该命题不可讨论。",
+      "score": 5,
+      "knowledgePoints": [
+        "举证责任",
+        "主张与证据",
+        "谁主张谁举证"
+      ]
+    },
+    {
+      "id": "INT-018",
+      "type": "multiple_choice",
+      "category": "logical_reasoning",
+      "difficulty": 4,
+      "tags": [
+        "slippery-slope",
+        "fallacy"
+      ],
+      "stem": "下列哪些论证具有滑坡谬误的特征？（多选）",
+      "options": [
+        {
+          "id": "A",
+          "text": "如果允许学生上课使用电子设备，学生就会逐渐不听讲，最终全部辍学"
+        },
+        {
+          "id": "B",
+          "text": "如果本次不处罚该行为，今后所有用户都会效仿，平台秩序将彻底崩溃"
+        },
+        {
+          "id": "C",
+          "text": "该方案在三个试点城市的效果均未达到预期，因此不宜立即全面推行"
+        },
+        {
+          "id": "D",
+          "text": "一旦允许延期一次，以后所有人都会无限延期"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      "selection": "multiple",
+      "explanation": "滑坡谬误的特征是由第一步直接跳到极端后果，却不给出中间环节的必然性证据。A、B、D 都省略了从起点到灾难性终点的因果链条。C 基于试点结果提出审慎建议，属于有依据的推断，不构成滑坡。",
+      "score": 5,
+      "knowledgePoints": [
+        "滑坡论证",
+        "因果链条",
+        "中间环节"
+      ]
+    },
+    {
+      "id": "INT-019",
+      "type": "reading_comprehension",
+      "category": "logical_reasoning",
+      "difficulty": 4,
+      "tags": [
+        "debate",
+        "topic-drift"
+      ],
+      "materialTitle": "材料：一段群聊记录",
+      "material": "甲：这份统计报告显示，该措施实施后投诉量下降了 15%，可以作为效果参考。乙：报告的作者去年在一次会议上说过支持该措施的话，他的数据不可信。甲：我说的是报告的统计方法，你可以指出方法上的问题。乙：你先解释清楚他为什么支持，再来谈方法。丙：投诉量下降也可能是因为受理渠道变了，建议核对受理口径，因为受理渠道的变化会直接改变投诉量的统计分母。",
+      "stem": "根据材料，乙的回应在论证上最主要的问题是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "乙没有提供任何数据"
+        },
+        {
+          "id": "B",
+          "text": "乙以作者动机替代了对统计方法的检验，并把话题从方法转向动机"
+        },
+        {
+          "id": "C",
+          "text": "乙的说法与甲完全相同"
+        },
+        {
+          "id": "D",
+          "text": "丙的介入使讨论无法继续"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "甲的论证焦点是统计方法，乙没有指出方法层面的问题，而是以作者过往表态推断数据不可信，属于以动机否定论据，同时把话题从「方法是否可靠」转向「作者为何支持」。A 未触及核心缺陷；C 与材料相反；D 中丙提出的恰恰是方法层面的补充意见。",
+      "score": 5,
+      "knowledgePoints": [
+        "话题转移",
+        "诉诸动机",
+        "论证焦点"
+      ]
+    },
+    {
+      "id": "INT-020",
+      "type": "scenario_analysis",
+      "category": "logical_reasoning",
+      "difficulty": 4,
+      "tags": [
+        "argumentation",
+        "disagreement"
+      ],
+      "materialTitle": "情景：会议中的分歧处理",
+      "material": "在一次工作会议上，同事提交了一份基于问卷的结论，认为某功能「用户满意度很高」。你认为问卷只覆盖了主动填写反馈的用户，结论可能被高估。会议剩余时间有限，需要在当天形成下一步安排。",
+      "stem": "此时最合适的做法是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "直接指出结论错误，要求撤回",
+          "rationale": "未指明具体缺陷就否定结论，会把讨论引向立场对抗，也无助于当天形成可执行的安排。"
+        },
+        {
+          "id": "B",
+          "text": "指出样本来自主动反馈者这一具体限制，建议在结论中标注适用范围，并约定补充抽样后再复核",
+          "rationale": "把分歧定位到具体环节，既保留了结论中成立的部分，又给出了可执行的下一步，符合先定位缺陷、再约定验证的处理顺序。"
+        },
+        {
+          "id": "C",
+          "text": "保持沉默，避免影响同事关系",
+          "rationale": "沉默会让已知存在偏差的结论直接进入决策，属于放弃专业判断；讨论规范并不要求回避分歧。"
+        },
+        {
+          "id": "D",
+          "text": "转而在会上讨论问卷的排版与措辞问题",
+          "rationale": "把话题引向与结论可靠性无关的细节属于话题转移，会消耗会议时间却不解决抽样偏差。"
+        }
+      ],
+      "answer": {
+        "mode": "points",
+        "bestOptionIds": [
+          "B"
+        ],
+        "optionPoints": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 1
+        }
+      },
+      "selection": "single",
+      "explanation": "有效的分歧处理包含两步：把问题定位到可检验的具体环节，并给出下一步动作。B 同时完成了这两步；A 只有否定没有依据；C 放弃判断；D 则把讨论引向无关细节。",
+      "score": 5,
+      "knowledgePoints": [
+        "有效反驳",
+        "论证焦点",
+        "分歧定位"
+      ]
+    },
+    {
+      "id": "INT-021",
+      "type": "single_choice",
+      "category": "logical_reasoning",
+      "difficulty": 3,
+      "tags": [
+        "counterexample",
+        "falsification"
+      ],
+      "stem": "有人主张「所有使用短视频应用的人注意力都会下降」。要有效反驳这一主张，最直接的方式是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "说明短视频应用目前非常流行"
+        },
+        {
+          "id": "B",
+          "text": "举出一位长期使用该应用但注意力测评成绩稳定的人"
+        },
+        {
+          "id": "C",
+          "text": "指出注意力难以被准确测量"
+        },
+        {
+          "id": "D",
+          "text": "引用另一位专家的相反观点"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "该主张是全称命题，只需一个真实反例即可使其不成立，因此 B 是最直接的证伪方式。A 与命题真假无关；C 只是质疑测量方式，未直接反驳命题本身；D 属于诉诸权威，两位专家意见相左并不能判定命题真假。",
+      "score": 5,
+      "knowledgePoints": [
+        "反例构造",
+        "全称命题",
+        "证伪"
+      ]
+    },
+    {
+      "id": "INT-022",
+      "type": "single_choice",
+      "category": "logical_reasoning",
+      "difficulty": 5,
+      "tags": [
+        "conditional-probability",
+        "base-rate"
+      ],
+      "stem": "某违规内容识别系统对违规内容的召回率为 99%，对正常内容的误报率为 1%。在某时段的内容中，违规内容占比为 0.1%。若系统判定某条内容为违规，该内容实际违规的概率最接近？",
+      "options": [
+        {
+          "id": "A",
+          "text": "约 99%"
+        },
+        {
+          "id": "B",
+          "text": "约 50%"
+        },
+        {
+          "id": "C",
+          "text": "约 9%"
+        },
+        {
+          "id": "D",
+          "text": "约 1%"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "C"
+        ]
+      },
+      "selection": "single",
+      "explanation": "判定为违规的内容中，多数来自基数庞大的正常内容所产生的误报。按基础比率计算：违规内容被正确标记的概率为 0.1%×99%≈0.099%，正常内容被误标的概率为 99.9%×1%≈0.999%，两者之和约为 1.098%，其中真正违规的占比约为 0.099%÷1.098%≈9%。这说明在基础比率极低时，即使检测准确率很高，阳性结果的实际可信度也可能远低于直觉。",
+      "score": 5,
+      "knowledgePoints": [
+        "条件概率",
+        "基础比率",
+        "检测准确性"
+      ]
+    },
+    {
+      "id": "INT-023",
+      "type": "opinion_analysis",
+      "category": "logical_reasoning",
+      "difficulty": 4,
+      "tags": [
+        "rebuttal",
+        "argument-analysis"
+      ],
+      "materialTitle": "材料：围绕一项管理措施的四种回应",
+      "material": "某单位提出：自下月起，所有对外发布的数据表格须经第二人复核后发布。理由是该单位近半年出现三次数据差错，复核可以在发布前拦截其中大部分差错。四位同事分别给出回应。甲：这个措施没必要，因为我一向很仔细，从没出过错。乙：近半年的三次差错都发生在月末集中发布时段，如果复核只针对该时段，可能以更低成本达到同样效果。丙：复核会增加工作量，所以措施不可能有效。丁：别的单位也有类似措施，所以这个措施一定有效。",
+      "stem": "关于上述四种回应，下列评价最准确的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "甲的回应有效，因为个人经验可以直接否定整体统计"
+        },
+        {
+          "id": "B",
+          "text": "乙的回应有效，因为它接受了目标并提出了成本更低的替代方案"
+        },
+        {
+          "id": "C",
+          "text": "丙的回应有效，因为它指出了工作量问题"
+        },
+        {
+          "id": "D",
+          "text": "丁的回应有效，因为它引用了其他单位的做法"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "multipleValidViewpoints": true,
+      "explanation": "本题不评判立场，只评判论证方式。乙承认复核的目标，并基于差错的时间分布提出成本更低的替代方案，属于针对论证本身的有效回应。甲以个人经验否定统计事实；丙由「增加工作量」推出「不可能有效」，成本高与效果差之间没有必然联系；丁以其他单位的做法直接推出必然有效，属于诉诸先例。",
+      "score": 5,
+      "knowledgePoints": [
+        "反驳有效性",
+        "论证结构",
+        "证据相关性"
+      ]
+    },
+    {
+      "id": "INT-024",
+      "type": "single_choice",
+      "category": "logical_reasoning",
+      "difficulty": 2,
+      "tags": [
+        "hasty-generalization"
+      ],
+      "stem": "「我认识的三个做设计的朋友都用这款软件，所以设计行业普遍使用这款软件。」该推论的主要问题是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "朋友可能说了假话"
+        },
+        {
+          "id": "B",
+          "text": "以极小的、非随机抽取的样本推断整体分布"
+        },
+        {
+          "id": "C",
+          "text": "软件的功能描述不准确"
+        },
+        {
+          "id": "D",
+          "text": "设计行业的从业人数难以统计"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "三个来自同一社交圈的人既非随机抽样，数量也极小，无法支持「普遍使用」这类整体性结论，属于以偏概全。A 引入了材料中没有依据的猜测；C、D 与推论的逻辑结构无关。",
+      "score": 5,
+      "knowledgePoints": [
+        "以偏概全",
+        "样本量",
+        "样本代表性"
+      ]
+    },
+    {
+      "id": "INT-025",
+      "type": "multiple_choice",
+      "category": "logical_reasoning",
+      "difficulty": 3,
+      "tags": [
+        "argument-structure",
+        "premise"
+      ],
+      "stem": "某论证称：「该平台本季度的新注册用户数比上季度增加了 30%，说明平台的用户规模在扩大。」要使该论证成立，需要补充或核实哪些内容？（多选）",
+      "options": [
+        {
+          "id": "A",
+          "text": "上季度的注册用户中，本季度是否有大量用户注销"
+        },
+        {
+          "id": "B",
+          "text": "新注册用户数是否包含被系统判定为异常而批量清除的账号"
+        },
+        {
+          "id": "C",
+          "text": "该平台的界面配色是否在本季度发生变化"
+        },
+        {
+          "id": "D",
+          "text": "「用户规模」是按注册总量还是按活跃用户数衡量"
+        },
+        {
+          "id": "E",
+          "text": "该平台的品牌口号是否在本季度更新"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      "selection": "multiple",
+      "explanation": "论证由「新注册量上升」推出「用户规模扩大」，隐含了三项前提：存量未大幅流失、注册口径未被异常账号污染、且「规模」以注册总量衡量。A、B、D 分别检验这三项前提。C 与 E 属于与结论之间没有推理关系的旁支信息。",
+      "score": 5,
+      "knowledgePoints": [
+        "论证结构",
+        "隐含前提",
+        "结论识别"
+      ]
+    },
+    {
+      "id": "INT-026",
+      "type": "single_choice",
+      "category": "logical_reasoning",
+      "difficulty": 2,
+      "tags": [
+        "causal-reversal"
+      ],
+      "stem": "某调查发现，使用某学习工具的学生平均成绩高于不使用的学生，因此该工具能提高成绩。若实际情况是成绩较好、学习主动性更强的学生更倾向于主动寻找并使用这类工具，则该调查的问题属于？",
+      "options": [
+        {
+          "id": "A",
+          "text": "样本量过小"
+        },
+        {
+          "id": "B",
+          "text": "因果关系方向可能被颠倒，存在自我选择"
+        },
+        {
+          "id": "C",
+          "text": "成绩数据不可靠"
+        },
+        {
+          "id": "D",
+          "text": "工具的使用时间过短"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "若学习主动性既影响是否使用工具，又影响成绩，则「使用」与「成绩」之间的关联可能由自我选择造成，因果方向与结论相反。这类问题无法靠扩大样本量解决，必须通过随机分组或控制混杂变量来识别。",
+      "score": 5,
+      "knowledgePoints": [
+        "因果倒置",
+        "相关与因果",
+        "自我选择偏差"
+      ]
+    },
+    {
+      "id": "INT-027",
+      "type": "single_choice",
+      "category": "information_literacy",
+      "difficulty": 3,
+      "tags": [
+        "timeline",
+        "verification"
+      ],
+      "stem": "一条消息称「某机构已于上月发布新规」，但该机构官网公告列表中，相关内容的最早发布时间显示为本周。在核实该消息时，最应优先确认的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "消息发布者的粉丝数量"
+        },
+        {
+          "id": "B",
+          "text": "公告的实际首次发布时间，以及消息所称「上月」是否有其他可对应的原始文件"
+        },
+        {
+          "id": "C",
+          "text": "该消息的点赞与转发比例"
+        },
+        {
+          "id": "D",
+          "text": "该机构是否还设有其他社交平台账号"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "时间线矛盾是判断信息可靠性的高价值线索。当消息给出的时间与可查证的原始发布时间不一致时，应回到原始文件确认首次发布时间，或确认是否存在被误记的其他文件。粉丝数、互动比例与是否存在其他账号都不能解释这一矛盾。",
+      "score": 5,
+      "knowledgePoints": [
+        "时间线核验",
+        "信息溯源",
+        "时间戳"
+      ]
+    },
+    {
+      "id": "INT-028",
+      "type": "reading_comprehension",
+      "category": "information_literacy",
+      "difficulty": 4,
+      "tags": [
+        "announcement",
+        "cross-check"
+      ],
+      "materialTitle": "材料：一份活动公告与一份统计说明",
+      "material": "某平台发布活动公告：本次活动共发放优惠券 12 万张，覆盖用户 8 万人。随后发布的统计说明写道：活动期间共有 6 万名用户使用了优惠券，使用率为 75%。有读者据此认为两组数据完全吻合：6÷8＝75%，说明统计口径一致、可以互相验证。但两份文件的编制说明显示：公告中的「12 万张」包含向同一用户重复发放的部分，「覆盖用户 8 万人」指领取过至少一张券的用户；而统计说明中的使用率分母为活动页面的访问用户数，同样为 8 万人。",
+      "stem": "根据材料，下列说法与材料一致的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "两份文件的数据完全吻合，可以互相验证"
+        },
+        {
+          "id": "B",
+          "text": "两个 8 万指向不同的用户群体，数值上的巧合不能证明口径一致"
+        },
+        {
+          "id": "C",
+          "text": "使用率 75% 的计算过程有误"
+        },
+        {
+          "id": "D",
+          "text": "优惠券张数与用户规模之间没有任何编制上的联系"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "材料显示，公告中的 8 万是「领取过券的用户」，统计说明的分母是「访问活动页面的用户」，两者是不同群体；6÷8 与 75% 的数值一致只是巧合，不能作为口径一致的证据。材料未指出任何计算错误，也说明了券的张数包含对同一用户的重复发放，因此 D 与材料不符。",
+      "score": 5,
+      "knowledgePoints": [
+        "公告解读",
+        "口径核对",
+        "数据一致性"
+      ]
+    },
+    {
+      "id": "INT-029",
+      "type": "multiple_choice",
+      "category": "information_literacy",
+      "difficulty": 3,
+      "tags": [
+        "sampling",
+        "representativeness"
+      ],
+      "stem": "某平台通过站内弹窗问卷收集用户对改版方案的意见，回收 5 万份。在解读结果时，需要注意哪些问题？（多选）",
+      "options": [
+        {
+          "id": "A",
+          "text": "愿意填写弹窗问卷的用户可能对改版更为关注，存在自我选择偏差"
+        },
+        {
+          "id": "B",
+          "text": "未登录用户与已经离开平台的用户不在抽样范围内"
+        },
+        {
+          "id": "C",
+          "text": "5 万份样本量较大，因此结论可以代表全部用户"
+        },
+        {
+          "id": "D",
+          "text": "问卷的选项设置与提问顺序可能影响回答分布"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      "selection": "multiple",
+      "explanation": "样本量只影响随机误差，不能消除系统性偏差。弹窗问卷的应答者更可能是关注改版的活跃用户，未登录与已流失用户被排除在抽样框之外，选项与题序也会引导回答分布，因此 A、B、D 都是解读时必须说明的限制。C 的推断不成立。",
+      "score": 5,
+      "knowledgePoints": [
+        "样本代表性",
+        "抽样偏差",
+        "覆盖偏差"
+      ]
+    },
+    {
+      "id": "INT-030",
+      "type": "single_choice",
+      "category": "information_literacy",
+      "difficulty": 2,
+      "tags": [
+        "citation",
+        "source"
+      ],
+      "stem": "在整理一份公开资料时，下列哪种来源标注方式最便于他人核验？",
+      "options": [
+        {
+          "id": "A",
+          "text": "「据权威机构统计」"
+        },
+        {
+          "id": "B",
+          "text": "「据某研究报告，2026 年 3 月发布，第 12 页，表 3」"
+        },
+        {
+          "id": "C",
+          "text": "「据业内人士透露」"
+        },
+        {
+          "id": "D",
+          "text": "「据网络公开信息」"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "可核验的引用需要能定位到具体文件与位置：机构名称、发布时间、页码或图表编号。A、C、D 都无法让读者回到原始材料，属于不可核验的标注方式，即使内容真实也无法被他人确认。",
+      "score": 5,
+      "knowledgePoints": [
+        "来源标注",
+        "可核验性",
+        "引用规范"
+      ]
+    },
+    {
+      "id": "INT-031",
+      "type": "single_choice",
+      "category": "information_literacy",
+      "difficulty": 3,
+      "tags": [
+        "chart-misleading",
+        "dual-axis"
+      ],
+      "stem": "一张图表用左轴表示「投诉量」、右轴表示「满意度」，两条曲线的走势高度贴合，图注称「投诉量与满意度同步变化」。对该图最准确的评价是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "该图证明两者之间存在因果关系"
+        },
+        {
+          "id": "B",
+          "text": "双轴图中两条曲线的贴合程度受各自轴范围设置影响，不能直接作为同步变化的证据"
+        },
+        {
+          "id": "C",
+          "text": "只要数据真实，双轴图就不会造成误导"
+        },
+        {
+          "id": "D",
+          "text": "满意度不应被绘制成曲线"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "双轴图的两条曲线各自使用独立刻度，缩放范围由制图者选定，因此视觉上的贴合可以被调整出来，不能作为变量间关系的证据。数据真实并不排除呈现方式造成的误导；D 则把问题归结为图形类型，而非刻度设置。",
+      "score": 5,
+      "knowledgePoints": [
+        "双轴图",
+        "视觉暗示",
+        "图表解读"
+      ]
+    },
+    {
+      "id": "INT-032",
+      "type": "multiple_choice",
+      "category": "cyber_security",
+      "difficulty": 3,
+      "tags": [
+        "least-privilege",
+        "permission"
+      ],
+      "stem": "某小组需要协作整理一份包含联系方式的数据表。下列哪些做法符合权限最小化原则？（多选）",
+      "options": [
+        {
+          "id": "A",
+          "text": "仅向实际需要处理数据的成员开放编辑权限，其余成员只读"
+        },
+        {
+          "id": "B",
+          "text": "为每位成员单独分配权限，不使用共享账号"
+        },
+        {
+          "id": "C",
+          "text": "为方便随时协作，把编辑权限开放给全部同事并长期保留"
+        },
+        {
+          "id": "D",
+          "text": "协作结束后及时回收临时开放的权限"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      "selection": "multiple",
+      "explanation": "权限最小化要求权限范围与期限都收敛到完成当前任务所必需的程度。按需开放、一人一号、到期回收都符合该原则。C 把权限范围与期限同时放大，一旦账号被冒用或成员转岗，数据暴露面会持续存在。",
+      "score": 5,
+      "knowledgePoints": [
+        "权限最小化",
+        "授权范围",
+        "按需授权"
+      ]
+    },
+    {
+      "id": "INT-033",
+      "type": "single_choice",
+      "category": "cyber_security",
+      "difficulty": 2,
+      "tags": [
+        "social-engineering",
+        "pretext"
+      ],
+      "stem": "一名自称是新同事的人通过即时通讯联系你，称「系统迁移需要」，要求你提供一条刚收到的短信验证码，并表示「领导催得很急」。最合适的做法是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "提供验证码，因为对方能说出内部项目名称"
+        },
+        {
+          "id": "B",
+          "text": "拒绝提供验证码，并通过已知的正式渠道核实对方身份与需求"
+        },
+        {
+          "id": "C",
+          "text": "提供验证码，但要求对方保密"
+        },
+        {
+          "id": "D",
+          "text": "把验证码拆成两半，先发送一半"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "验证码是一次性凭证，任何以工作名义索取验证码的请求都应视为高风险。对方能说出项目名称并不构成身份证明，这类信息往往可以通过公开渠道或既往沟通获得。正确做法是拒绝并通过独立可信的渠道核实；要求保密或拆分发送都不能改变凭证已泄露的事实。",
+      "score": 5,
+      "knowledgePoints": [
+        "社交工程",
+        "身份核验",
+        "信息索取"
+      ]
+    },
+    {
+      "id": "INT-034",
+      "type": "scenario_analysis",
+      "category": "cyber_security",
+      "difficulty": 3,
+      "tags": [
+        "verification-code",
+        "social-engineering"
+      ],
+      "materialTitle": "情景：同事索要验证码",
+      "material": "午休时，一位头像是同事照片的账号在群聊中私聊你，称自己的手机丢失、无法接收验证码，希望你帮忙接收一条短信并把验证码转给他，以便尽快登录处理紧急工单。该账号的昵称与同事一致，但你们此前没有单独聊过。",
+      "stem": "此时最合适的做法是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "直接把验证码发给对方，避免耽误工单",
+          "rationale": "验证码一旦转发，账号控制权可能立即转移；昵称与头像都可以被复制，不构成身份依据。"
+        },
+        {
+          "id": "B",
+          "text": "通过电话或当面等独立渠道向该同事本人核实，无法核实则不予提供并向安全管理员报告",
+          "rationale": "用与请求渠道相互独立的途径核实身份，是应对身份仿冒的标准做法；无法核实时上报，可让管理员从组织层面排查是否存在批量仿冒。"
+        },
+        {
+          "id": "C",
+          "text": "把验证码发到群聊里，让其他人帮忙判断",
+          "rationale": "验证码属于一次性凭证，任何形式的扩散都等同于泄露，公开投放到群聊只会扩大暴露面。"
+        },
+        {
+          "id": "D",
+          "text": "先拒绝，等对方再次催促后再提供",
+          "rationale": "反复催促本身就是施压话术，不构成新的证据；以催促次数作为放行条件，等于把安全判断交给对方。"
+        }
+      ],
+      "answer": {
+        "mode": "points",
+        "bestOptionIds": [
+          "B"
+        ],
+        "optionPoints": {
+          "A": -1,
+          "B": 5,
+          "C": 0,
+          "D": 0
+        }
+      },
+      "selection": "single",
+      "explanation": "应对身份仿冒的关键是「换渠道核实」：请求本身不能作为身份证明，只有在独立渠道上确认对方身份后才可能继续。A 直接交出凭证，C 扩大泄露范围，D 把判断权交给施压方，三者都没有建立独立的核实环节。",
+      "score": 5,
+      "knowledgePoints": [
+        "验证码",
+        "社交工程",
+        "身份核验"
+      ]
+    },
+    {
+      "id": "INT-035",
+      "type": "multiple_choice",
+      "category": "cyber_security",
+      "difficulty": 3,
+      "tags": [
+        "backup",
+        "data-recovery"
+      ],
+      "stem": "关于重要数据的备份，下列做法合理的有哪些？（多选）",
+      "options": [
+        {
+          "id": "A",
+          "text": "保留多份副本，并至少有一份存放在与主机不同的介质或位置"
+        },
+        {
+          "id": "B",
+          "text": "定期实际执行一次恢复演练，确认备份可用"
+        },
+        {
+          "id": "C",
+          "text": "只保留一份备份，且与原始数据存放在同一块磁盘上"
+        },
+        {
+          "id": "D",
+          "text": "对备份数据同样设置访问控制，避免备份成为新的泄露点"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      "selection": "multiple",
+      "explanation": "备份的有效性取决于副本数量与分布、可恢复性以及自身的安全性。A 避免单点故障同时摧毁原始数据与备份；B 检验备份是否真的能还原；D 防止备份沦为绕过权限的入口。C 把备份与原始数据放在同一介质上，该介质损坏时两者同时丢失，失去备份的意义。",
+      "score": 5,
+      "knowledgePoints": [
+        "数据备份",
+        "异地备份",
+        "可恢复性"
+      ]
+    },
+    {
+      "id": "INT-036",
+      "type": "reading_comprehension",
+      "category": "cyber_security",
+      "difficulty": 2,
+      "tags": [
+        "login-log",
+        "log-analysis"
+      ],
+      "materialTitle": "材料：一份账号登录记录",
+      "material": "某账号的登录记录如下。10 月 8 日 09:12，常用设备，常用城市；10 月 9 日 21:40，常用设备，常用城市；10 月 11 日 03:05，陌生设备，另一城市，登录后 40 秒内连续修改了绑定邮箱与口令，随后退出；10 月 12 日 08:30，常用设备，常用城市，登录成功。记录还显示，10 月 11 日的登录未触发二次验证，原因是该账号当时未开启该功能。",
+      "stem": "根据材料，最需要优先处置的登录记录及其理由是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "10 月 8 日的记录，因为时间较早"
+        },
+        {
+          "id": "B",
+          "text": "10 月 11 日的记录，因为设备与地点异常，且在极短时间内修改了绑定邮箱与口令"
+        },
+        {
+          "id": "C",
+          "text": "10 月 12 日的记录，因为该次登录成功"
+        },
+        {
+          "id": "D",
+          "text": "无需处置，因为 10 月 12 日本人可以正常登录"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "10 月 11 日的记录同时具备多项异常特征：陌生设备、非常用城市、凌晨时段，以及登录后极短时间内修改绑定邮箱与口令，这类操作常见于账号被接管后的加固行为。10 月 12 日本人能够登录并不能排除风险，反而可能与攻击者同时持有会话。材料未显示 10 月 8 日存在异常。",
+      "score": 5,
+      "knowledgePoints": [
+        "登录日志",
+        "异常行为识别",
+        "操作痕迹"
+      ]
+    },
+    {
+      "id": "INT-037",
+      "type": "single_choice",
+      "category": "cyber_security",
+      "difficulty": 4,
+      "tags": [
+        "encryption",
+        "scope"
+      ],
+      "stem": "关于加密通信的作用边界，下列理解最准确的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "使用加密通信后，账号被盗的风险随之消失"
+        },
+        {
+          "id": "B",
+          "text": "加密保护传输与存储中的内容不被第三方读取，但不解决对方身份是否可信，也不阻止已登录设备上的内容被查看"
+        },
+        {
+          "id": "C",
+          "text": "加密通信可以防止对方截图或转发"
+        },
+        {
+          "id": "D",
+          "text": "只要使用加密通信，就可以在任何场合传递敏感信息"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "加密解决的是内容在传输与存储环节被第三方读取的问题，属于机密性保护。它不验证对话另一端的真实身份，也无法阻止接收方在自己设备上查看、截图或转发，更不覆盖账号被盗后会话被读取的情形。A、C、D 都把加密的能力扩大到了它并不覆盖的领域。",
+      "score": 5,
+      "knowledgePoints": [
+        "加密通信",
+        "机密性",
+        "加密的作用边界"
+      ]
+    },
+    {
+      "id": "INT-038",
+      "type": "single_choice",
+      "category": "cyber_security",
+      "difficulty": 3,
+      "tags": [
+        "privacy-settings",
+        "personal-data"
+      ],
+      "stem": "某应用在首次启动时请求访问通讯录、相册与精确位置，并提示「拒绝将无法使用核心功能」。下列处理方式最恰当的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "全部同意，以便获得完整功能"
+        },
+        {
+          "id": "B",
+          "text": "先核对各项权限与功能的实际关联，只开放当前确实需要的权限，拒绝与功能无关的请求"
+        },
+        {
+          "id": "C",
+          "text": "全部拒绝，然后卸载该应用"
+        },
+        {
+          "id": "D",
+          "text": "先全部同意，使用一段时间后再考虑是否调整"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "权限授予应与功能需求对应：与核心功能无关的权限请求可以先拒绝，若拒绝后核心功能确实不可用，再重新评估是否值得使用该应用。A 与 D 都在缺少核对的情况下扩大了数据暴露面；C 属于过度反应，也放弃了通过权限设置降低暴露的可行路径。",
+      "score": 5,
+      "knowledgePoints": [
+        "隐私设置",
+        "最小披露",
+        "个人信息保护"
+      ]
+    },
+    {
+      "id": "INT-039",
+      "type": "scenario_analysis",
+      "category": "cyber_security",
+      "difficulty": 5,
+      "tags": [
+        "account-takeover",
+        "incident-response"
+      ],
+      "materialTitle": "情景：账号疑似被盗后的处置",
+      "material": "你发现自己的社交账号在异地登录，关注列表中出现陌生账号，个人简介被修改。该账号同时绑定了工作群与支付功能。你目前仍能正常登录，但收到提示称绑定手机号的变更将在 24 小时后生效。",
+      "stem": "在接下来的处置中，最优先且最合适的做法是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "立即删除账号内的全部内容，防止被进一步利用",
+          "rationale": "删除内容会破坏可回溯的记录，也会误删自己仍需保留的资料；此时的重点是先夺回控制权，而不是清空内容。"
+        },
+        {
+          "id": "B",
+          "text": "修改口令并退出全部其他会话，撤销或暂停正在进行的绑定变更，开启多因素认证，随后检查并清理异常授权与关注",
+          "rationale": "该做法按阻断、夺回、加固、排查的顺序处理：先中止攻击者正在推进的绑定变更与会话，再加固认证，最后清理遗留的异常设置，覆盖了处置的完整链条。"
+        },
+        {
+          "id": "C",
+          "text": "先逐一联系被新增关注的陌生账号，询问对方身份",
+          "rationale": "排查异常关注有助于了解情况，但在绑定变更即将生效的时间窗口内，先处置控制权问题更为紧迫，顺序颠倒会错过止损时机。"
+        },
+        {
+          "id": "D",
+          "text": "等到 24 小时后观察绑定变更是否真的生效",
+          "rationale": "材料已明确提示变更将在 24 小时后生效，等待等于把控制权交给对方，属于放弃处置窗口。"
+        }
+      ],
+      "answer": {
+        "mode": "points",
+        "bestOptionIds": [
+          "B"
+        ],
+        "optionPoints": {
+          "A": -1,
+          "B": 5,
+          "C": 2,
+          "D": 0
+        }
+      },
+      "selection": "single",
+      "explanation": "账号接管的处置有明确的时间压力：正在推进的绑定变更必须优先中止，随后才是加固与排查。B 的步骤顺序与这一要求一致；C 虽有排查价值但优先级靠后；A 破坏记录；D 直接放弃了处置窗口。",
+      "score": 5,
+      "knowledgePoints": [
+        "账号接管",
+        "处置顺序",
+        "止损与取证"
+      ]
+    },
+    {
+      "id": "INT-040",
+      "type": "single_choice",
+      "category": "cyber_security",
+      "difficulty": 4,
+      "tags": [
+        "least-privilege",
+        "authorization"
+      ],
+      "stem": "某第三方工具申请「读取并管理你在某平台的全部内容」的授权，而你只需要它把已发布内容导出为备份。最符合权限最小化原则的做法是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "直接授权，因为该工具来自朋友推荐"
+        },
+        {
+          "id": "B",
+          "text": "查找是否提供只读或仅导出所需的授权范围，无法收窄权限时改用其他方案"
+        },
+        {
+          "id": "C",
+          "text": "先授权，之后定期检查该工具的更新日志"
+        },
+        {
+          "id": "D",
+          "text": "授权，但使用一个不常用的账号登录"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "权限最小化要求授权范围与任务需求匹配：仅需导出备份，就应选择只读或范围更窄的授权。若应用只提供「读取并管理全部内容」这一档，说明权限范围超出需求，改用其他方案比事后检查更有效。C 与 D 都是在权限已经过度开放之后采取的补救措施，不能消除授权本身带来的风险。",
+      "score": 5,
+      "knowledgePoints": [
+        "最小权限",
+        "授权范围",
+        "第三方应用"
+      ]
+    },
+    {
+      "id": "INT-041",
+      "type": "single_choice",
+      "category": "information_literacy",
+      "difficulty": 4,
+      "tags": [
+        "chart-misleading",
+        "axis-truncation"
+      ],
+      "stem": "一张柱状图显示某指标从 98.5% 上升到 99.2%，纵轴范围被设置为 98% 至 100%。读者据此认为「提升幅度巨大」。该图的问题在于？",
+      "options": [
+        {
+          "id": "A",
+          "text": "数据本身存在计算错误"
+        },
+        {
+          "id": "B",
+          "text": "纵轴截断使 0.7 个百分点的变化在视觉上被显著放大"
+        },
+        {
+          "id": "C",
+          "text": "柱状图不适合表示百分比"
+        },
+        {
+          "id": "D",
+          "text": "上升幅度应当改用饼图表示"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "纵轴从 98% 起始，使 0.7 个百分点的变化占据了近三分之一的图高，视觉落差与数值落差严重不匹配，容易诱导读者高估变化。数据本身并未出错；柱状图可以表示百分比，问题出在刻度起点而非图形类型，D 也把问题错误地归结为图表选型。",
+      "score": 5,
+      "knowledgePoints": [
+        "坐标轴截断",
+        "视觉夸大",
+        "图表规范"
+      ]
+    },
+    {
+      "id": "INT-042",
+      "type": "multiple_choice",
+      "category": "information_literacy",
+      "difficulty": 5,
+      "tags": [
+        "evidence-chain",
+        "cross-verification"
+      ],
+      "stem": "在核实一条涉及具体数字的传闻时，下列哪些做法有助于形成可复核的证据链？（多选）",
+      "options": [
+        {
+          "id": "A",
+          "text": "保存原始页面的访问时间、链接与截图，并记录检索路径"
+        },
+        {
+          "id": "B",
+          "text": "优先寻找一手材料，并核对其统计口径与样本范围"
+        },
+        {
+          "id": "C",
+          "text": "收集多个来源，同时确认它们是否都转引自同一原始帖"
+        },
+        {
+          "id": "D",
+          "text": "只保留与结论一致的材料，其余不予记录"
+        },
+        {
+          "id": "E",
+          "text": "只采用能够通过搜索引擎首页找到的材料"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      "selection": "multiple",
+      "explanation": "可复核的证据链要求每一步都能被他人重走：记录来源与检索路径、回到一手材料核对其口径、检查多来源之间的独立性。D 属于选择性取证，会系统性地隐藏与结论冲突的材料；E 把检索结果的排序当作可靠性标准，而排序受多种因素影响，与证据质量无关。",
+      "score": 5,
+      "knowledgePoints": [
+        "证据链",
+        "独立来源",
+        "可复核性"
+      ]
+    },
+    {
+      "id": "INT-043",
+      "type": "single_choice",
+      "category": "information_literacy",
+      "difficulty": 3,
+      "tags": [
+        "time-window",
+        "statistics"
+      ],
+      "stem": "某报告称「本平台内容质量显著提升」，依据是「本月违规内容占比同比下降 40%」。若要检验该结论，最需要确认的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "报告作者的从业资历"
+        },
+        {
+          "id": "B",
+          "text": "同比区间内判定标准、统计范围与分母定义是否发生变化"
+        },
+        {
+          "id": "C",
+          "text": "本月的内容发布总量是多少"
+        },
+        {
+          "id": "D",
+          "text": "报告是否使用了图表呈现"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "同比降幅要成立，前提是两期使用相同的判定标准与统计范围。若期间收紧了判定标准、调整了统计对象或改变了分母定义，降幅就可能来自口径变化而非内容质量变化。内容总量只影响绝对数，不解释占比变化；作者资历与是否使用图表与结论的可靠性无关。",
+      "score": 5,
+      "knowledgePoints": [
+        "时间窗口",
+        "口径一致性",
+        "同比与环比"
+      ]
+    },
+    {
+      "id": "INT-044",
+      "type": "scenario_analysis",
+      "category": "information_literacy",
+      "difficulty": 4,
+      "tags": [
+        "unverified-claim",
+        "handling"
+      ],
+      "materialTitle": "情景：收到一条尚未核实的消息",
+      "material": "你在一个兴趣群中看到有人发布消息，称某机构「下周起将停止提供某项公共服务」，并附有一张看不清落款的截图。群内已有多人转发。你对该领域较为熟悉，但此前没有听说过相关安排，也没有找到官方公告。",
+      "stem": "此时最合适的做法是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "立即转发到自己的社交账号，并注明「待核实」",
+          "rationale": "即使标注「待核实」，转发仍会把未经核实的信息推入更大范围的传播链，而后续更正通常无法覆盖最初的传播规模。"
+        },
+        {
+          "id": "B",
+          "text": "暂不转发，检索该机构的官方公告与公开渠道，确认后再决定是否传播；确实无法核实时，如实说明目前的检索结果",
+          "rationale": "先核实再传播符合信息处理的基本顺序：把判断建立在可查证的来源上，并在无法核实时说明检索范围，既不扩散未核实内容，也不武断地断言其真假。"
+        },
+        {
+          "id": "C",
+          "text": "直接断言该消息是谣言，并要求群友删除",
+          "rationale": "在尚未检索的情况下断言真假，只是把一种未经核实的判断替换成另一种；指出证据不足与断言虚假是两件事。"
+        },
+        {
+          "id": "D",
+          "text": "把截图转发给朋友，请朋友帮忙判断",
+          "rationale": "扩大询问范围本身不产生新的证据，且转发截图会让未核实内容继续扩散；更有效的做法是检索官方渠道。"
+        }
+      ],
+      "answer": {
+        "mode": "points",
+        "bestOptionIds": [
+          "B"
+        ],
+        "optionPoints": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 1
+        }
+      },
+      "selection": "single",
+      "explanation": "面对未核实信息，可选的判断只有三种：核实、如实说明无法核实、以及不表态。B 走的是前两条路径；A 与 D 都在核实之前扩大了传播；C 则把「证据不足」误当作「已证伪」。",
+      "score": 5,
+      "knowledgePoints": [
+        "未核实信息",
+        "传播判断",
+        "核实顺序"
+      ]
+    },
+    {
+      "id": "INT-045",
+      "type": "multiple_choice",
+      "category": "information_literacy",
+      "difficulty": 3,
+      "tags": [
+        "traceability",
+        "reverse-search"
+      ],
+      "stem": "要追查一张在社交平台广泛流传的图片的最初出处，下列哪些做法是有效的？（多选）",
+      "options": [
+        {
+          "id": "A",
+          "text": "使用反向图片检索，查找该图片出现时间最早的页面"
+        },
+        {
+          "id": "B",
+          "text": "核对图片中可识别的标志、文字以及天气、季节等环境线索"
+        },
+        {
+          "id": "C",
+          "text": "查看转发量最高的那条帖子，以它作为原始出处"
+        },
+        {
+          "id": "D",
+          "text": "检索图片中文字的关键词，确认是否与某份原始文件对应"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      "selection": "multiple",
+      "explanation": "溯源的目标是找到时间最早且可核验的原始发布。反向检索、环境线索核对、文字关键词检索都能指向更早或更权威的出处。转发量最高的帖子只说明传播范围，与发布时间先后无关，把它当作原始出处是常见的溯源错误。",
+      "score": 5,
+      "knowledgePoints": [
+        "信息溯源",
+        "反向检索",
+        "原始出处"
+      ]
+    },
+    {
+      "id": "INT-046",
+      "type": "reading_comprehension",
+      "category": "information_literacy",
+      "difficulty": 2,
+      "tags": [
+        "source-comparison",
+        "verification"
+      ],
+      "materialTitle": "材料：同一事件的两条记录",
+      "material": "记录一：某自媒体文章称「某场馆自本月起取消现场售票，全部改为线上预约」，文中写道「据工作人员介绍」。记录二：该场馆官网的服务公告页面显示，自本月起现场售票窗口的开放时间调整为每日 9 时至 12 时，线上预约通道同步开放，公告未提及取消现场售票。两条记录指向同一时间段：记录一的文章发布于本月 3 日，记录二的公告页面标注的更新时间为本月 1 日。",
+      "stem": "根据材料，下列说法最恰当的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "两条记录完全一致，可以互相印证"
+        },
+        {
+          "id": "B",
+          "text": "官网公告未提及取消现场售票，与自媒体文章的说法不一致，应回到可核验的原始文件并进一步核实"
+        },
+        {
+          "id": "C",
+          "text": "自媒体文章更可信，因为它引用了工作人员"
+        },
+        {
+          "id": "D",
+          "text": "两条记录都不成立，因为二者互相矛盾"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "官网公告是可核验的原始文件，其内容是调整开放时间而非取消现场售票，与自媒体文章的说法存在实质差异。此时应回到可核验的原始文件并进一步核实，而不是依据「据工作人员介绍」这类无法追溯的表述作判断。A 忽略了差异；D 由存在差异直接否定两者，同样缺少依据。",
+      "score": 5,
+      "knowledgePoints": [
+        "来源对照",
+        "原始文件",
+        "转引"
+      ]
+    },
+    {
+      "id": "INT-047",
+      "type": "single_choice",
+      "category": "information_literacy",
+      "difficulty": 5,
+      "tags": [
+        "statistics",
+        "rate-trap"
+      ],
+      "stem": "某报告称「A 类问题的发生率下降了 50%，B 类问题的发生率上升了 100%」，并据此认为 B 类问题更为严重。已知 A 类问题从每万次 4 例降至每万次 2 例，B 类问题从每万次 0.5 例升至每万次 1 例。对该结论最准确的评价是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "结论成立，因为 100% 大于 50%"
+        },
+        {
+          "id": "B",
+          "text": "结论不成立，B 类的绝对水平仍低于 A 类，仅凭相对变化幅度无法比较严重程度"
+        },
+        {
+          "id": "C",
+          "text": "结论成立，因为 B 类问题的增速更快"
+        },
+        {
+          "id": "D",
+          "text": "两组数据都不足以说明问题，因为发生率无法比较"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "相对变化幅度依赖基数：B 类从 0.5 例升至 1 例，增幅为 100%，但每万次 1 例的绝对水平仍低于 A 类降幅后的 2 例。比较严重程度需要同时看绝对水平与变化幅度，并在同一分母下对照。A、C 只比较了百分比；D 否定了数据的可比性，而两组数据在同一分母下是可以比较的。",
+      "score": 5,
+      "knowledgePoints": [
+        "比率陷阱",
+        "基数效应",
+        "绝对数与相对数"
+      ]
+    },
+    {
+      "id": "INT-048",
+      "type": "single_choice",
+      "category": "platform_rules",
+      "difficulty": 2,
+      "tags": [
+        "report",
+        "appeal"
+      ],
+      "stem": "用户发现自己的内容被平台判定违规并下架，但认为判定有误。按照一般的平台治理流程，最合适的做法是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "注册新账号重新发布相同内容"
+        },
+        {
+          "id": "B",
+          "text": "通过平台提供的申诉入口提交申诉，并附上可核验的说明材料"
+        },
+        {
+          "id": "C",
+          "text": "在其他平台公开发帖指责该平台"
+        },
+        {
+          "id": "D",
+          "text": "反复提交相同的举报工单直到被受理"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "平台治理通常设有独立于初次判定的申诉渠道，申诉时应提供与争议点相关的说明材料，便于复核人员重新判断。注册新账号重发会构成规避处置；在外部平台发帖不进入平台的处理流程；重复提交相同工单不会产生新的判断依据，反而占用处理资源。",
+      "score": 5,
+      "knowledgePoints": [
+        "举报流程",
+        "申诉渠道",
+        "处理时限"
+      ]
+    },
+    {
+      "id": "INT-049",
+      "type": "single_choice",
+      "category": "cyber_security",
+      "difficulty": 3,
+      "tags": [
+        "logging",
+        "audit-trail"
+      ],
+      "stem": "某团队在共享设备上处理内部资料，为了在出现误操作时能够定位原因，下列做法最有效的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "关闭全部操作记录，避免占用存储空间"
+        },
+        {
+          "id": "B",
+          "text": "保留关键操作日志，记录操作者、时间、对象与结果，并定期核对异常记录"
+        },
+        {
+          "id": "C",
+          "text": "只在出现事故后临时询问当时在场的人员"
+        },
+        {
+          "id": "D",
+          "text": "把日志与业务数据存放在同一目录下"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "日志的价值在于事后可追溯：记录操作者、时间、对象与结果，才能在出现误操作或异常访问时还原经过。关闭记录等于放弃追溯能力；依赖事后回忆并不可靠；把日志与业务数据放在同一目录，一旦该目录被误删或被攻击者获取，日志会同时失效，也更易被篡改。",
+      "score": 5,
+      "knowledgePoints": [
+        "操作日志",
+        "审计痕迹",
+        "可追溯性"
+      ]
+    },
+    {
+      "id": "INT-050",
+      "type": "multiple_choice",
+      "category": "cyber_security",
+      "difficulty": 4,
+      "tags": [
+        "encryption",
+        "scope"
+      ],
+      "stem": "关于加密能够解决的问题，下列说法正确的有哪些？（多选）",
+      "options": [
+        {
+          "id": "A",
+          "text": "防止内容在传输过程中被第三方直接读取"
+        },
+        {
+          "id": "B",
+          "text": "保证通信对方的身份一定与其自称的一致"
+        },
+        {
+          "id": "C",
+          "text": "配合完整性校验，可以发现内容在传输中被篡改"
+        },
+        {
+          "id": "D",
+          "text": "阻止接收方在获得内容后进行截图或转发"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A",
+          "C"
+        ]
+      },
+      "selection": "multiple",
+      "explanation": "加密提供机密性，配合消息认证码或数字签名可提供完整性校验，因此 A、C 成立。但加密本身不验证对方身份，身份需要由证书体系或带外核对来确认；它也无法约束接收方在解密后对内容的处置，截图与转发属于加密范围之外的行为，B、D 不成立。",
+      "score": 5,
+      "knowledgePoints": [
+        "加密的作用边界",
+        "机密性",
+        "完整性校验"
+      ]
+    },
+    {
+      "id": "INT-051",
+      "type": "single_choice",
+      "category": "platform_rules",
+      "difficulty": 2,
+      "tags": [
+        "content-rating",
+        "age"
+      ],
+      "stem": "某平台对部分含惊悚情节的影视内容设置了年龄提示与观看前确认。对该机制的理解，最准确的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "设置提示后，该内容即对所有用户开放"
+        },
+        {
+          "id": "B",
+          "text": "提示的作用是让用户及其监护人了解内容性质，从而作出是否观看的判断"
+        },
+        {
+          "id": "C",
+          "text": "提示等同于禁止未成年人观看"
+        },
+        {
+          "id": "D",
+          "text": "只要内容通过审核，就无需任何提示"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "内容分级与提示属于信息披露机制，作用在于把内容性质告知用户与监护人，使其能够作出选择；它本身并不等同于准入禁止，也不意味着内容不合规。A、C 把提示的效果扩大或缩小到了与实际不符的程度；D 则否认了分级提示独立于审核存在的意义。",
+      "score": 5,
+      "knowledgePoints": [
+        "内容分级",
+        "年龄提示",
+        "适用范围"
+      ]
+    },
+    {
+      "id": "INT-052",
+      "type": "multiple_choice",
+      "category": "platform_rules",
+      "difficulty": 3,
+      "tags": [
+        "community-rules",
+        "enforcement"
+      ],
+      "stem": "关于社区规范执行边界的理解，下列哪些说法是合理的？（多选）",
+      "options": [
+        {
+          "id": "A",
+          "text": "同一规则在不同语境下的适用结果可以不同，但判断依据应当公开且可说明"
+        },
+        {
+          "id": "B",
+          "text": "规则未明确列举的行为，仍可能因违反规则的整体目的而被处置"
+        },
+        {
+          "id": "C",
+          "text": "只要某条内容没有被他人举报，就不应被处置"
+        },
+        {
+          "id": "D",
+          "text": "处置应当说明所依据的规则条款，便于用户申诉与复核"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      "selection": "multiple",
+      "explanation": "规则执行需要在可预期与可解释之间取得平衡：依据公开、可说明，处置时指明条款，并在未列举行为上依据规则目的作判断，都是合理做法。C 把「是否被举报」当作处置的前提，会使规则执行取决于偶然的举报行为，而不是行为本身是否违规。",
+      "score": 5,
+      "knowledgePoints": [
+        "社区规范",
+        "执行边界",
+        "规则解释"
+      ]
+    },
+    {
+      "id": "INT-053",
+      "type": "scenario_analysis",
+      "category": "platform_rules",
+      "difficulty": 3,
+      "tags": [
+        "appeal",
+        "evidence"
+      ],
+      "materialTitle": "情景：准备一份申诉材料",
+      "material": "你的账号因「发布未标注来源的转载内容」被限制发布三天。你确实转载了一篇外部文章，但已在文首注明作者与出处链接，只是该链接在发布后失效。你希望申诉，并希望复核人员能快速判断。",
+      "stem": "在提交申诉时，最合适的做法是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "只写「我没有违规，请解除限制」",
+          "rationale": "仅作结论性陈述，没有提供任何可供复核的信息，复核人员无法据此重新判断，申诉很可能因材料不足被驳回。"
+        },
+        {
+          "id": "B",
+          "text": "说明发布时间与转载对象，提供当时的来源标注截图或存档链接，并说明原链接已失效的情况",
+          "rationale": "申诉的目标是让复核人员在原始链接失效的情况下重建事实：时间、标注内容与可替代的存档证据共同构成可核验的说明，直接对应被判定违规的具体要件。"
+        },
+        {
+          "id": "C",
+          "text": "在申诉中指责审核人员的判断水平不足",
+          "rationale": "针对审核人员而非判定依据，既不能帮助复核，也可能使申诉被视为与争议无关；申诉应围绕事实与规则要件展开。"
+        },
+        {
+          "id": "D",
+          "text": "连续提交多份内容相同的申诉，以增加被受理的机会",
+          "rationale": "重复提交不产生新的判断依据，反而增加处理负担；在材料不变的情况下，多份工单通常按同一结论处理。"
+        }
+      ],
+      "answer": {
+        "mode": "points",
+        "bestOptionIds": [
+          "B"
+        ],
+        "optionPoints": {
+          "A": 0,
+          "B": 5,
+          "C": -1,
+          "D": 0
+        }
+      },
+      "selection": "single",
+      "explanation": "申诉的有效性取决于能否提供与判定要件对应的可核验材料。B 补齐了失效链接所缺失的证据；A 只有结论；C 把争议引向人身评价；D 试图以数量替代材料，都不构成复核所需的依据。",
+      "score": 5,
+      "knowledgePoints": [
+        "申诉材料",
+        "可核验说明",
+        "复核"
+      ]
+    },
+    {
+      "id": "INT-054",
+      "type": "scenario_analysis",
+      "category": "platform_rules",
+      "difficulty": 4,
+      "tags": [
+        "report-appeal",
+        "escalation"
+      ],
+      "materialTitle": "情景：举报被驳回之后",
+      "material": "你举报了一条带有攻击性的评论，平台回复称「经复核，该内容未违反社区规范」。你认为该评论使用了针对特定群体的贬损称呼。你希望继续推进，但不确定应当如何操作。",
+      "stem": "在继续推进时，最合适的做法是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "反复提交同一条举报，直到得到不同结论",
+          "rationale": "在材料与理由不变的情况下重复提交通常得到相同结论，只会消耗处理资源，也不会产生新的判断依据。"
+        },
+        {
+          "id": "B",
+          "text": "通过申诉或复核渠道补充说明该评论所贬损的对象与规范条款的对应关系，并请求由更高一级复核",
+          "rationale": "初次驳回往往源于举报理由与规则要件未能对应。补充具体说明并请求升级复核，是把争议引向规则解释层面的有效路径。"
+        },
+        {
+          "id": "C",
+          "text": "发布公开帖文，号召他人一起举报该用户",
+          "rationale": "组织批量举报会干扰处理流程，也可能被判定为滥用举报机制，反而削弱本次主张的可信度。"
+        },
+        {
+          "id": "D",
+          "text": "以相同措辞回击该用户",
+          "rationale": "以违规方式回应违规会使自己也进入被处置范围，并使原始争议难以被清晰判断。"
+        }
+      ],
+      "answer": {
+        "mode": "points",
+        "bestOptionIds": [
+          "B"
+        ],
+        "optionPoints": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": -1
+        }
+      },
+      "selection": "single",
+      "explanation": "举报被驳回后仍可推进的路径是补充理由与升级复核，而不是重复提交或扩大冲突。B 把主张重新落到规则要件上；A 无新信息；C 干扰流程；D 使自己成为新的违规方。",
+      "score": 5,
+      "knowledgePoints": [
+        "申诉被驳回",
+        "升级渠道",
+        "规则依据"
+      ]
+    },
+    {
+      "id": "INT-055",
+      "type": "scenario_analysis",
+      "category": "platform_rules",
+      "difficulty": 3,
+      "tags": [
+        "account-security",
+        "reporting"
+      ],
+      "materialTitle": "情景：发现同事账号异常",
+      "material": "你在工作群中注意到，一位同事的账号连续发送了多条包含可疑链接的消息，措辞与其平时习惯明显不同。该同事目前不在线，群内已有两人点击了链接。",
+      "stem": "此时最合适的做法是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "在群内公开提醒大家不要点击，并说明已有多人点击",
+          "rationale": "提醒本身有价值，但仅停留在群内通告，既不阻断链接继续扩散，也无法处理已经点击的账号，属于只做了告知而未进入处置流程。"
+        },
+        {
+          "id": "B",
+          "text": "立即提醒群成员停止点击，同时按单位流程向安全管理员报告并联系该同事本人核实，必要时协助受影响者修改口令",
+          "rationale": "该做法同时覆盖三件事：阻断传播、启动正式处置、核实与控制，与安全事件的处置顺序一致，也照顾到已经点击链接的成员。"
+        },
+        {
+          "id": "C",
+          "text": "先私下联系该同事，等其回复后再决定是否上报",
+          "rationale": "联系本人是必要环节，但对方当前不在线，等待会延长链接的暴露时间；联系与上报可以并行，不必互为前提。"
+        },
+        {
+          "id": "D",
+          "text": "忽略该现象，认为与自己的工作无关",
+          "rationale": "账号异常与可疑链接已经影响到群内成员，属于需要处置的安全事件；以与己无关为由不处理，会使风险继续扩散。"
+        }
+      ],
+      "answer": {
+        "mode": "points",
+        "bestOptionIds": [
+          "B"
+        ],
+        "optionPoints": {
+          "A": 0,
+          "B": 5,
+          "C": 2,
+          "D": -1
+        }
+      },
+      "selection": "single",
+      "explanation": "安全事件处置要求同时完成阻断、上报与核实三件事，且这三件事可以并行推进。B 全部覆盖；C 把核实当成上报的前置条件，拖延了处置；A 只完成告知；D 放弃处置。",
+      "score": 5,
+      "knowledgePoints": [
+        "安全事件上报",
+        "处置流程",
+        "内部报告"
+      ]
+    },
+    {
+      "id": "INT-056",
+      "type": "single_choice",
+      "category": "platform_rules",
+      "difficulty": 4,
+      "tags": [
+        "rule-scope",
+        "interpretation"
+      ],
+      "stem": "某平台规定「禁止发布未经许可的他人联系方式」。一名用户认为，自己发布的是公开场合已经张贴过的联系方式，因此不受该规定限制。对该用户的理由，最恰当的判断是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "理由成立，公开过的信息即不再受规则保护"
+        },
+        {
+          "id": "B",
+          "text": "理由不成立，规则限制的是发布行为本身，信息来源是否公开不构成豁免条件"
+        },
+        {
+          "id": "C",
+          "text": "理由成立，只要不用于商业用途即可"
+        },
+        {
+          "id": "D",
+          "text": "无法判断，规则没有明确说明"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "该规则约束的是「在平台发布他人联系方式」这一行为，与信息此前是否在别处出现过无关，公开场合张贴不构成豁免。A、C 都把规则没有规定的条件当作豁免依据；D 忽略了规则文本已经明确了被禁止的行为类型。",
+      "score": 5,
+      "knowledgePoints": [
+        "规则适用范围",
+        "条款解释",
+        "豁免条件"
+      ]
+    },
+    {
+      "id": "INT-057",
+      "type": "single_choice",
+      "category": "public_discourse",
+      "difficulty": 3,
+      "tags": [
+        "burden-of-proof",
+        "discussion"
+      ],
+      "stem": "在一场讨论中，甲提出「该做法导致效率下降」，乙回应「你有什么证据」。甲说「那你先证明它没有导致效率下降」。从讨论规范看，问题在于？",
+      "options": [
+        {
+          "id": "A",
+          "text": "乙的提问方式不够礼貌"
+        },
+        {
+          "id": "B",
+          "text": "甲把本应由主张方承担的举证责任转给了对方"
+        },
+        {
+          "id": "C",
+          "text": "效率问题在讨论中无法被证明"
+        },
+        {
+          "id": "D",
+          "text": "讨论不应当涉及效率问题"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "提出具体主张的一方需要先给出支持该主张的依据；质疑者要求证据，并不因此承担证明相反命题的义务。甲以「你先证明不是」回应，属于举证责任转移，会使讨论陷入无法推进的状态。这与提问是否礼貌无关，也不意味着该议题不可讨论。",
+      "score": 5,
+      "knowledgePoints": [
+        "举证责任",
+        "主张与证据",
+        "讨论规范"
+      ]
+    },
+    {
+      "id": "INT-058",
+      "type": "opinion_analysis",
+      "category": "public_discourse",
+      "difficulty": 4,
+      "tags": [
+        "rebuttal",
+        "argument-analysis"
+      ],
+      "materialTitle": "材料：四种反驳方式",
+      "material": "某人在讨论中提出：某类线上课程的学习效果不如线下课程，依据是一项覆盖两万名学员、控制了学习时长与基础水平的对比研究。四位参与者分别作出回应。甲：你自己就是做线上课程的，你的结论不可信。乙：该研究中的线上课程全部为录播形式，而讨论涉及的是直播课程，结论的适用范围有限。丙：我上过一门线上课，效果很好，所以这个结论不成立。丁：线上课程更省钱，所以效果一定更好。",
+      "stem": "关于上述四种回应，下列评价最准确的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "甲的反驳有效，因为它指出了利益相关"
+        },
+        {
+          "id": "B",
+          "text": "乙的反驳有效，因为它指出了研究结论与讨论对象之间的范围差异"
+        },
+        {
+          "id": "C",
+          "text": "丙的反驳有效，因为它提供了亲身经历"
+        },
+        {
+          "id": "D",
+          "text": "丁的反驳有效，因为它提出了成本因素"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "multipleValidViewpoints": true,
+      "explanation": "本题不评判立场，只评判论证方式。乙接受了研究的内部结论，但指出研究中的课程形式与讨论对象不一致，属于对适用范围的有效限定。甲以身份推断结论不可信，属于诉诸动机；丙以单次个人经历否定两万人的对照研究，属于以个例否定统计结论；丁由成本更低推出效果更好，两者之间没有推理关系。",
+      "score": 5,
+      "knowledgePoints": [
+        "有效反驳",
+        "证据相关性",
+        "论证结构"
+      ]
+    },
+    {
+      "id": "INT-059",
+      "type": "opinion_analysis",
+      "category": "public_discourse",
+      "difficulty": 4,
+      "tags": [
+        "topic-drift",
+        "argument-analysis"
+      ],
+      "materialTitle": "材料：一段讨论记录",
+      "material": "甲：这份报告认为该功能上线后，用户投诉的平均处理时长由 30 小时缩短至 18 小时。乙：处理时长缩短不代表用户满意，可能只是把未解决的工单提前关闭了。甲：你说得对，那我们可以看一下关闭原因的分布。乙：另外，我觉得整个行业在这类指标上都不透明，这个问题更值得讨论。",
+      "stem": "关于乙最后的发言，下列评价最准确的是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "乙的发言有效，因为它把讨论引向了更根本的问题"
+        },
+        {
+          "id": "B",
+          "text": "乙的发言属于话题转移，把尚未完成的验证步骤替换成了另一个更大的议题"
+        },
+        {
+          "id": "C",
+          "text": "乙的发言有效，因为它否定了前面的全部结论"
+        },
+        {
+          "id": "D",
+          "text": "乙的发言与前面的讨论完全一致"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "multipleValidViewpoints": true,
+      "explanation": "本题不评判立场，只评判论证方式，行业指标透明度是否值得讨论不在考查范围内。甲已经接受了乙提出的检验方向，讨论正处于可验证的推进状态；乙随后把议题替换为范围更大的行业透明度问题，使原先的具体验证无法完成，属于话题转移。A 混淆了议题的吸引力与论证的推进；C、D 与材料内容不符。",
+      "score": 5,
+      "knowledgePoints": [
+        "话题转移",
+        "论证焦点",
+        "讨论效率"
+      ]
+    },
+    {
+      "id": "INT-060",
+      "type": "reading_comprehension",
+      "category": "public_discourse",
+      "difficulty": 2,
+      "tags": [
+        "symmetry",
+        "discussion-norms"
+      ],
+      "materialTitle": "材料：两种标准的对话",
+      "material": "两人正在讨论一份用户满意度调查能否作为判断依据。甲：你引用的那份调查只有两百个样本，太少了，不能作为依据。乙：你刚才引用的调查只有一百五十个样本，为什么可以用？甲：我那份是专业机构做的。乙：那么按同样的标准，我这份也是专业机构做的，两者应当被同等看待。甲：总之我那份更可靠。讨论至此，双方仍未就判断标准达成一致。",
+      "stem": "根据材料，乙在对话中提出的核心要求是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "要求甲提供更多样本"
+        },
+        {
+          "id": "B",
+          "text": "要求对同类证据适用同一标准，即讨论中的对称性"
+        },
+        {
+          "id": "C",
+          "text": "要求更换讨论的话题"
+        },
+        {
+          "id": "D",
+          "text": "要求甲停止引用调查数据"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "乙并没有主张自己的样本量足够，而是指出甲对两份同类证据使用了不同的判断标准：以样本量否定乙，又以机构属性为甲开脱。这属于对称性要求——同类证据应适用同一评价标准。材料未显示乙要求增加样本、更换话题或禁止引用数据。",
+      "score": 5,
+      "knowledgePoints": [
+        "对称性要求",
+        "标准一致性",
+        "讨论规范"
+      ]
+    },
+    {
+      "id": "INT-061",
+      "type": "single_choice",
+      "category": "public_discourse",
+      "difficulty": 2,
+      "tags": [
+        "symmetry",
+        "norms"
+      ],
+      "stem": "在讨论中，「对称性要求」最准确的含义是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "双方的发言时间应当相同"
+        },
+        {
+          "id": "B",
+          "text": "对同类证据与同类论证适用相同的评价标准，不因支持哪一方而改变"
+        },
+        {
+          "id": "C",
+          "text": "双方必须最终达成一致的结论"
+        },
+        {
+          "id": "D",
+          "text": "讨论中不得提出反驳"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "对称性要求针对的是评价标准的一致性：同一种证据、同一类推理，无论支持哪一方，都应当接受同样的检验。它与发言时长无关，也不要求双方最终意见相同——讨论允许保留分歧，但标准不应随立场变化，更不意味着不能反驳。",
+      "score": 5,
+      "knowledgePoints": [
+        "对称性",
+        "标准一致",
+        "讨论规范"
+      ]
+    },
+    {
+      "id": "INT-062",
+      "type": "single_choice",
+      "category": "digital_wellbeing",
+      "difficulty": 2,
+      "tags": [
+        "screen-time",
+        "metrics"
+      ],
+      "stem": "某应用统计显示，用户日均使用时长较上月下降 20%，因此宣称「用户的数字健康水平显著改善」。对该结论最需要补充的信息是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "应用图标的配色是否调整"
+        },
+        {
+          "id": "B",
+          "text": "使用时长下降是否来自功能改版导致使用路径变短，或统计口径是否发生变化"
+        },
+        {
+          "id": "C",
+          "text": "平台的注册用户总数是否变化"
+        },
+        {
+          "id": "D",
+          "text": "该应用是否支持夜间模式"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "B"
+        ]
+      },
+      "selection": "single",
+      "explanation": "使用时长是一个代理指标，下降既可能来自用户主动减少使用，也可能来自改版后完成同样任务所需时间变短，或统计口径发生变化。在排除这些解释之前，不能把时长下降直接等同于健康水平改善。图标配色与夜间模式与该结论无关；用户总数变化也不解释人均时长的变化原因。",
+      "score": 5,
+      "knowledgePoints": [
+        "屏幕时间",
+        "指标解读",
+        "代理指标"
+      ]
+    },
+    {
+      "id": "INT-063",
+      "type": "multiple_choice",
+      "category": "digital_wellbeing",
+      "difficulty": 2,
+      "tags": [
+        "notification",
+        "attention"
+      ],
+      "stem": "关于通知对注意力的影响，下列认识合理的有哪些？（多选）",
+      "options": [
+        {
+          "id": "A",
+          "text": "频繁的即时通知会打断连续任务，重新进入状态需要额外时间"
+        },
+        {
+          "id": "B",
+          "text": "关闭非必要通知、把消息集中到固定时段查看，有助于减少打断"
+        },
+        {
+          "id": "C",
+          "text": "通知越多，说明需要处理的事情越重要"
+        },
+        {
+          "id": "D",
+          "text": "把重要联系人的通知设为优先，可以降低错过关键信息的风险"
+        },
+        {
+          "id": "E",
+          "text": "把所有通知设为静音，之后完全依靠记忆回顾未读消息"
+        }
+      ],
+      "answer": {
+        "mode": "key",
+        "correctOptionIds": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      "selection": "multiple",
+      "explanation": "通知的主要成本是打断：每次中断后重新回到原有任务都需要额外的认知切换时间。因此减少非必要通知、集中处理消息、对关键联系人设置例外，都是在「不漏重要信息」与「减少打断」之间取得平衡的做法。C 把通知数量与事项重要性直接对应，而通知量更多反映默认设置的宽松程度；E 依赖记忆回顾，容易造成遗漏。",
+      "score": 5,
+      "knowledgePoints": [
+        "通知设计",
+        "注意力管理",
+        "打断成本"
+      ]
+    },
+    {
+      "id": "INT-064",
+      "type": "scenario_analysis",
+      "category": "digital_wellbeing",
+      "difficulty": 3,
+      "tags": [
+        "attention",
+        "boundaries"
+      ],
+      "materialTitle": "情景：安排专注时段",
+      "material": "你需要在本周内完成一份需要连续思考的报告。工作群消息较为频繁，平均每十几分钟就有新消息，其中多数与你当前的任务无关，但偶有需要当天回复的事项。你此前尝试过整天不看群消息，结果错过了一项当天的安排。",
+      "stem": "在安排本周工作时，最合适的做法是？",
+      "options": [
+        {
+          "id": "A",
+          "text": "整天关闭全部消息通知，直到报告完成",
+          "rationale": "完全切断消息虽能获得连续时间，但此前已经出现过错过当天安排的情况，说明需要保留必要的接入点，否则会把打断成本换成延误成本。"
+        },
+        {
+          "id": "B",
+          "text": "设定固定的专注时段并关闭非必要通知，在时段之间集中查看消息，同时对需要当天回复的事项约定明确的接入方式",
+          "rationale": "该做法在专注与响应之间建立了可预期的节奏：专注时段减少打断，时段之间集中处理保证不遗漏，明确的接入方式用于处理真正紧急的事项，同时回应了此前错过安排的问题。"
+        },
+        {
+          "id": "C",
+          "text": "保持全部通知开启，收到消息立即处理",
+          "rationale": "立即处理会使连续思考不断被打断，报告进度难以保证，属于把响应速度置于任务完成之上。"
+        },
+        {
+          "id": "D",
+          "text": "把手机调成静音，其余安排不变",
+          "rationale": "静音只是降低了提示强度，消息仍会在查看时集中涌来；缺少查看节奏与紧急接入方式，仍可能错过当天需要回复的事项。"
+        }
+      ],
+      "answer": {
+        "mode": "points",
+        "bestOptionIds": [
+          "B"
+        ],
+        "optionPoints": {
+          "A": 0,
+          "B": 5,
+          "C": 0,
+          "D": 1
+        }
+      },
+      "selection": "single",
+      "explanation": "注意力管理的难点在于同时控制打断成本与遗漏成本。B 通过固定的专注时段与集中查看节奏把两者都纳入安排；A 只压低打断成本而抬高了遗漏成本，且已经出现过实际后果；C 完全放弃专注；D 只降低了提示强度，未改变查看节奏。",
+      "score": 5,
+      "knowledgePoints": [
+        "注意力管理",
+        "时段安排",
+        "遗漏成本"
+      ]
+    }
+  ]
+}
