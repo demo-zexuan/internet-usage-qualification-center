@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0.0",
+  "templateId": "certificate-default",
+  "version": "1.0.0",
+  "documentTitle": "互联网使用资格证书",
+  "documentTitleEn": "Internet Usage Qualification Certificate",
+  "issuerName": "互联网使用资格考试中心",
+  "issuerNameEn": "Internet Usage Qualification Authority",
+  "issuerCode": "IUQA",
+  "numberPrefix": "IUQA",
+  "numberRandomLength": 6,
+  "statement": "兹证明下列持证人已在本中心完成相应等级的理论考试，成绩达到该等级规定的合格标准，特发此证，以资证明。",
+  "clauses": [
+    "本证件由互联网使用资格考试中心（IUQA）在本机浏览器内生成，全部数据仅保存于持证人本机，本中心不掌握任何持证人数据副本。",
+    "本证件所载等级为本中心虚构资格体系中的等级，用于演示与教学，不对应任何现实行政管理、职业资格或行政许可。",
+    "本证件不具备在线核验能力：本中心未部署任何验证服务，证件编号与校验图形仅用于本机展示与防伪视觉演示，第三方无法通过任何渠道核验其真伪。",
+    "本证件不授予持证人任何真实的网络访问权限、代理能力或平台发言权限，亦不改变持证人设备的任何系统设置。",
+    "本证件在持证人取得更高级别证件后自动转为历史记录保留，不会因升级而被删除；已被替代的历史证件仍可查阅，但不再作为当前资格依据。"
+  ],
+  "disclaimer": "本证件为虚构的娱乐性质资格认证，不具有任何现实法律效力，不得用于求职、资质申报、行政审批或任何需要真实资质的场合。",
+  "signatories": [
+    { "title": "签发人", "name": "资格认证处 · 值班签发人" },
+    { "title": "复核人", "name": "考试监督处 · 系统自动复核" }
+  ],
+  "validityStatement": "本证件长期有效，直至持证人取得更高级别证件或本机数据被清除。"
+}

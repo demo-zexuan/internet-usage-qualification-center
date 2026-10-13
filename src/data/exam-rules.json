@@ -1,0 +1,371 @@
+{
+  "schemaVersion": "1.0.0",
+  "rulesId": "rules-default",
+  "version": "1.0.0",
+  "title": "IUQA 考试规则配置",
+  "description": "本文件定义全站评分策略与每一场考试的制度参数。等级名称与权限定义分别由 levels.json 与 permissions.json 管理，本文件只负责考试本身。",
+  "updatedAt": "2026-10-14",
+  "scoring": {
+    "normalizeToHundred": true,
+    "rounding": "half_up",
+    "decimalPlaces": 1,
+    "allowNegativeTotal": false,
+    "defaultNegativeScore": 0,
+    "partialCreditEnabled": false
+  },
+  "exams": [
+    {
+      "examId": "L1-BASIC",
+      "title": "互联网浏览资格基础考试",
+      "levelId": "L1",
+      "category": "novice",
+      "summary": "面向首次参加 IUQA 考试的考生，考查信息浏览与来源判断的最基本常识。",
+      "description": "本场考试为 IUQA 体系的新手资格考试，是取得互联网浏览资格（L1）的唯一途径。考试内容覆盖平台规则、信息辨别与浏览安全三个方向，全部为客观题。",
+      "instructions": [
+        "本场考试为新手资格考试，通过后可取得互联网浏览资格（L1）电子证件。",
+        "考试过程中可以标记疑问题目，交卷前请通过题号面板复核未作答题目。",
+        "答题数据每隔数秒自动保存至本机，浏览器意外关闭后可从报名页恢复本次考试。",
+        "倒计时归零时系统将自动交卷，已作答内容以最后一次自动保存为准。"
+      ],
+      "durationMinutes": 10,
+      "questionCount": 10,
+      "totalScore": 100,
+      "passScore": 60,
+      "allowRetake": true,
+      "retakeCooldownMinutes": 0,
+      "maxAttempts": null,
+      "allowMock": true,
+      "negativeScoring": false,
+      "showAnswers": "always",
+      "eligibility": {
+        "requirePrerequisite": false,
+        "prerequisiteLevelIds": []
+      },
+      "paper": {
+        "mode": "quota",
+        "bankIds": ["demo-basic"],
+        "quotas": [
+          { "category": "platform_rules", "difficulty": null, "count": 3 },
+          { "category": "information_literacy", "difficulty": null, "count": 3 },
+          { "category": "cyber_security", "difficulty": null, "count": 2 },
+          { "category": "internet_etiquette", "difficulty": null, "count": 2 }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "seed": null
+      },
+      "grantsLevelId": "L1",
+      "specialty": null
+    },
+    {
+      "examId": "L2-INTERACT",
+      "title": "互动交流资格进阶考试",
+      "levelId": "L2",
+      "category": "intermediate",
+      "summary": "考查公共讨论中的举证责任、反驳方式与话题边界，通过后解锁模拟评论与讨论功能。",
+      "description": "本场考试为 IUQA 体系的进阶资格考试，通过后可取得互动交流资格（L2）。考试重点在于讨论规范与信息来源核验，不考查考生的具体立场。",
+      "instructions": [
+        "本场考试需要已取得互联网浏览资格（L1），未取得者无法报名。",
+        "考试内容涉及公共讨论规范，所有题目均不考查政治立场，只考查论证方式与信息来源。",
+        "多选题默认采用严格匹配评分：少选、多选或错选均不得分。",
+        "交卷后立即显示总分与逐题作答情况，请勿在交卷前关闭浏览器。"
+      ],
+      "durationMinutes": 15,
+      "questionCount": 15,
+      "totalScore": 100,
+      "passScore": 70,
+      "allowRetake": true,
+      "retakeCooldownMinutes": 0,
+      "maxAttempts": null,
+      "allowMock": true,
+      "negativeScoring": false,
+      "showAnswers": "always",
+      "eligibility": {
+        "requirePrerequisite": true,
+        "prerequisiteLevelIds": ["L1"]
+      },
+      "paper": {
+        "mode": "quota",
+        "bankIds": ["demo-basic"],
+        "quotas": [
+          { "category": "internet_etiquette", "difficulty": null, "count": 4 },
+          { "category": "public_discourse", "difficulty": null, "count": 4 },
+          { "category": "platform_rules", "difficulty": null, "count": 3 },
+          { "category": "information_literacy", "difficulty": null, "count": 4 }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "seed": null
+      },
+      "grantsLevelId": "L2",
+      "specialty": null
+    },
+    {
+      "examId": "L3-PUBLISH",
+      "title": "内容发布资格进阶考试",
+      "levelId": "L3",
+      "category": "intermediate",
+      "summary": "考查发布者对信息真实性与传播后果的判断力，通过后解锁模拟发帖与内容发布功能。",
+      "description": "本场考试为 IUQA 体系的进阶资格考试，通过后可取得内容发布资格（L3）。考试内容覆盖标题与正文一致性、来源标注、时效核验与传播影响评估。",
+      "instructions": [
+        "本场考试需要已取得互动交流资格（L2）。",
+        "情景分析题按所选选项的预设分值计分，不同处理方式对应的得分不同。",
+        "考试过程中不允许切换浏览器标签以外的操作，请提前关闭无关程序。",
+        "自动保存的记录包含剩余时间，恢复考试时倒计时将按剩余时间继续。"
+      ],
+      "durationMinutes": 20,
+      "questionCount": 20,
+      "totalScore": 100,
+      "passScore": 75,
+      "allowRetake": true,
+      "retakeCooldownMinutes": 0,
+      "maxAttempts": null,
+      "allowMock": true,
+      "negativeScoring": false,
+      "showAnswers": "always",
+      "eligibility": {
+        "requirePrerequisite": true,
+        "prerequisiteLevelIds": ["L2"]
+      },
+      "paper": {
+        "mode": "quota",
+        "bankIds": ["demo-basic"],
+        "quotas": [
+          { "category": "public_discourse", "difficulty": null, "count": 5 },
+          { "category": "platform_rules", "difficulty": null, "count": 4 },
+          { "category": "information_literacy", "difficulty": null, "count": 4 },
+          { "category": "logical_reasoning", "difficulty": null, "count": 3 },
+          { "category": "digital_wellbeing", "difficulty": null, "count": 2 },
+          { "category": "internet_etiquette", "difficulty": null, "count": 2 }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "seed": null
+      },
+      "grantsLevelId": "L3",
+      "specialty": null
+    },
+    {
+      "examId": "L4-RETRIEVAL",
+      "title": "高级信息检索资格考试",
+      "levelId": "L4",
+      "category": "information_literacy",
+      "summary": "考查多源交叉验证、证据链构建与误导性图表识别，通过后解锁高级检索与溯源训练。",
+      "description": "本场考试属于信息辨别专项考试，通过后可取得高级信息检索资格（L4）。考试包含阅读理解题，答案必须以材料中的证据为依据。",
+      "instructions": [
+        "本场考试需要已取得内容发布资格（L3）。",
+        "阅读理解题的材料较长，建议先通读材料再作答，材料在作答期间始终可见。",
+        "本场考试设有 15 分钟补考间隔：未通过后需等待间隔结束方可重新报名。",
+        "成绩页会给出每道题的知识点标注，可用于针对性地复习。"
+      ],
+      "durationMinutes": 30,
+      "questionCount": 25,
+      "totalScore": 100,
+      "passScore": 80,
+      "allowRetake": true,
+      "retakeCooldownMinutes": 15,
+      "maxAttempts": null,
+      "allowMock": true,
+      "negativeScoring": false,
+      "showAnswers": "always",
+      "eligibility": {
+        "requirePrerequisite": true,
+        "prerequisiteLevelIds": ["L3"]
+      },
+      "paper": {
+        "mode": "quota",
+        "bankIds": ["demo-intermediate"],
+        "quotas": [
+          { "category": "information_literacy", "difficulty": null, "count": 8 },
+          { "category": "logical_reasoning", "difficulty": null, "count": 6 },
+          { "category": "public_discourse", "difficulty": null, "count": 4 },
+          { "category": "cyber_security", "difficulty": null, "count": 4 },
+          { "category": "platform_rules", "difficulty": null, "count": 3 }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "seed": null
+      },
+      "grantsLevelId": "L4",
+      "specialty": null
+    },
+    {
+      "examId": "L5-CROSSDOMAIN",
+      "title": "跨域信息访问资格特别考试",
+      "levelId": "L5",
+      "category": "special",
+      "summary": "考查跨境网络访问的制度边界、加密通信原理与替代核验路径，通过后解锁模拟境外信息专区。",
+      "description": "本场考试属于特别资格考试，通过后可取得跨域信息访问资格（L5）。考试全部内容为本平台的模拟情景，不涉及任何真实网络连接操作。",
+      "instructions": [
+        "本场考试需要已取得高级信息检索资格（L4）。",
+        "考试中涉及 VPN 的题目只考查原理、合规边界与风险识别，不涉及任何配置或使用真实工具的操作步骤。",
+        "本场考试设有 30 分钟补考间隔。",
+        "通过后可在权限中心进入模拟境外信息访问专区，该专区内容全部为本平台自建模拟页面。"
+      ],
+      "durationMinutes": 35,
+      "questionCount": 30,
+      "totalScore": 100,
+      "passScore": 85,
+      "allowRetake": true,
+      "retakeCooldownMinutes": 30,
+      "maxAttempts": null,
+      "allowMock": true,
+      "negativeScoring": false,
+      "showAnswers": "always",
+      "eligibility": {
+        "requirePrerequisite": true,
+        "prerequisiteLevelIds": ["L4"],
+        "requireStudyMaterial": true,
+        "studyMaterialIds": ["vpn-basics", "cross-domain-compliance"]
+      },
+      "paper": {
+        "mode": "quota",
+        "bankIds": ["demo-advanced"],
+        "quotas": [
+          { "category": "cyber_security", "difficulty": null, "count": 8 },
+          { "category": "information_literacy", "difficulty": null, "count": 6 },
+          { "category": "logical_reasoning", "difficulty": null, "count": 5 },
+          { "category": "public_discourse", "difficulty": null, "count": 4 },
+          { "category": "platform_rules", "difficulty": null, "count": 4 },
+          { "category": "digital_wellbeing", "difficulty": null, "count": 3 }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "seed": null
+      },
+      "grantsLevelId": "L5",
+      "specialty": null
+    },
+    {
+      "examId": "L6-SENIOR",
+      "title": "互联网高级资格考试",
+      "levelId": "L6",
+      "category": "advanced",
+      "summary": "全站题量与难度最高的综合考试，覆盖信息辨别、网络安全、逻辑推理与公共讨论全部科目。",
+      "description": "本场考试为高级互联网使用资格考试，通过后可取得互联网高级资格（L6），即本体系最高等级。考试设有 30 分钟补考间隔，未通过时保留已取得的全部等级与证件。",
+      "instructions": [
+        "本场考试需要已取得跨域信息访问资格（L5）。",
+        "本场考试共 40 题、限时 45 分钟，是全站题量最大的考试，请合理安排作答节奏。",
+        "未通过本场考试不会降低已取得的任何等级，也不会作废已签发的证件。",
+        "本场考试设有 30 分钟补考间隔。"
+      ],
+      "durationMinutes": 45,
+      "questionCount": 40,
+      "totalScore": 100,
+      "passScore": 90,
+      "allowRetake": true,
+      "retakeCooldownMinutes": 30,
+      "maxAttempts": null,
+      "allowMock": true,
+      "negativeScoring": false,
+      "showAnswers": "always",
+      "eligibility": {
+        "requirePrerequisite": true,
+        "prerequisiteLevelIds": ["L5"]
+      },
+      "paper": {
+        "mode": "quota",
+        "bankIds": ["demo-advanced"],
+        "quotas": [
+          { "category": "information_literacy", "difficulty": null, "count": 8 },
+          { "category": "cyber_security", "difficulty": null, "count": 8 },
+          { "category": "logical_reasoning", "difficulty": null, "count": 8 },
+          { "category": "public_discourse", "difficulty": null, "count": 6 },
+          { "category": "platform_rules", "difficulty": null, "count": 5 },
+          { "category": "internet_etiquette", "difficulty": null, "count": 3 },
+          { "category": "digital_wellbeing", "difficulty": null, "count": 2 }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "seed": null
+      },
+      "grantsLevelId": "L6",
+      "specialty": null
+    },
+    {
+      "examId": "SPEC-INFO",
+      "title": "信息辨别专项能力认证考试",
+      "levelId": "L3",
+      "category": "information_literacy",
+      "summary": "专项能力认证，不提升等级，通过后在证件与权限中心标注「信息辨别能力认证」。",
+      "description": "本场考试为专项能力认证考试，通过后不提升等级，仅在电子证件与权限中心标注信息辨别能力认证。报考需已取得内容发布资格（L3）。",
+      "instructions": [
+        "本场考试需要已取得内容发布资格（L3）。",
+        "通过本场考试不会提升等级，只授予「信息辨别能力认证」标注。",
+        "专项认证标注会显示在电子证件的认证栏中。",
+        "本场考试设有 60 分钟补考间隔。"
+      ],
+      "durationMinutes": 15,
+      "questionCount": 15,
+      "totalScore": 100,
+      "passScore": 75,
+      "allowRetake": true,
+      "retakeCooldownMinutes": 60,
+      "maxAttempts": null,
+      "allowMock": true,
+      "negativeScoring": false,
+      "showAnswers": "always",
+      "eligibility": {
+        "requirePrerequisite": true,
+        "prerequisiteLevelIds": ["L3"]
+      },
+      "paper": {
+        "mode": "quota",
+        "bankIds": ["demo-intermediate"],
+        "quotas": [
+          { "category": "information_literacy", "difficulty": null, "count": 10 },
+          { "category": "logical_reasoning", "difficulty": null, "count": 5 }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "seed": null
+      },
+      "grantsLevelId": "L3",
+      "grantsCertifications": ["information_literacy_certified"],
+      "specialty": "information_literacy"
+    },
+    {
+      "examId": "SPEC-SEC",
+      "title": "网络安全专项能力认证考试",
+      "levelId": "L3",
+      "category": "cyber_security",
+      "summary": "一次性专项能力认证，不提升等级，通过后标注「网络安全能力认证」。",
+      "description": "本场考试为一次性专项能力认证考试。为保证认证的严肃性，每人仅可参加一次，未通过者不予补考，可继续参加其他等级考试。",
+      "instructions": [
+        "本场考试需要已取得内容发布资格（L3）。",
+        "本场考试为一次性认证考试，每人仅可参加一次正式考试，未通过者不予补考。",
+        "模拟考试不受次数限制，可在正式报名前反复练习。",
+        "通过后将在电子证件的认证栏中标注「网络安全能力认证」。"
+      ],
+      "durationMinutes": 15,
+      "questionCount": 15,
+      "totalScore": 100,
+      "passScore": 75,
+      "allowRetake": false,
+      "retakeCooldownMinutes": 0,
+      "maxAttempts": 1,
+      "allowMock": true,
+      "negativeScoring": false,
+      "showAnswers": "always",
+      "eligibility": {
+        "requirePrerequisite": true,
+        "prerequisiteLevelIds": ["L3"]
+      },
+      "paper": {
+        "mode": "quota",
+        "bankIds": ["demo-intermediate"],
+        "quotas": [
+          { "category": "cyber_security", "difficulty": null, "count": 10 },
+          { "category": "platform_rules", "difficulty": null, "count": 3 },
+          { "category": "digital_wellbeing", "difficulty": null, "count": 2 }
+        ],
+        "shuffleQuestions": true,
+        "shuffleOptions": true,
+        "seed": null
+      },
+      "grantsLevelId": "L3",
+      "grantsCertifications": ["cyber_security_certified"],
+      "specialty": "cyber_security"
+    }
+  ]
+}
