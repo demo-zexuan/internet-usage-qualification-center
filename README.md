@@ -2,6 +2,11 @@
 
 > **Internet Usage Qualification Authority**
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6.svg)](tsconfig.json)
+[![React](https://img.shields.io/badge/React-19.3-61dafb.svg)](package.json)
+[![Tests](https://img.shields.io/badge/tests-184%20unit%20%2B%2025%20e2e-brightgreen.svg)](docs/功能清单与验证结果.md)
+
 一套**纯前端**的虚构互联网使用资格认证与在线考试系统。以驾照考试制度为灵感，
 建立针对互联网使用能力、信息辨别能力、网络安全意识、逻辑思维与公共讨论素养的资格分级制度。
 
@@ -361,6 +366,21 @@ pnpm test:e2e     # 25 个端到端测试（桌面端 + 移动端）
 ---
 
 ## 许可与用途
+
+本项目采用 [MIT License](LICENSE) 开源。
+
+```
+MIT License
+
+Copyright (c) 2026 zexuan.peng
+```
+
+你可以自由使用、修改、分发本项目（包括商业用途），只需保留版权声明与许可声明。
+
+> **许可范围说明**：MIT 协议覆盖的是**源代码**。
+> 项目中虚构的机构名称、等级体系、证件文案与题目内容属于创作性内容，
+> 转载或再分发时请一并保留 README 与证件页面中的**虚构性质声明**，
+> 不得将本项目包装为真实政府机构、真实考试系统或真实资格认证。
 
 本项目为演示与教学用途的纯前端应用，供学习 React / TypeScript / IndexedDB 应用架构参考。
 再次强调：**全部等级、证件与网络权限均为虚构设定，不具有现实法律效力。**
