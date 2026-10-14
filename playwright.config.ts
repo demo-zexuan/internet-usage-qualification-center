@@ -15,7 +15,16 @@
 import { defineConfig, devices } from '@playwright/test';
 
 const PORT = 4173;
-const BASE_URL = `http://127.0.0.1:${PORT}`;
+
+/**
+ * 被测地址
+ *
+ * 1. 默认启动本地生产预览服务，验证真实交付形态
+ * 2. 设置 PLAYWRIGHT_BASE_URL 时改为测试该地址（例如已部署的
+ *    Cloudflare Pages 站点），并跳过本地 webServer 启动
+ */
+const REMOTE_BASE_URL = process.env.PLAYWRIGHT_BASE_URL;
+const BASE_URL = REMOTE_BASE_URL ?? `http://127.0.0.1:${PORT}`;
 
 export default defineConfig({
   testDir: './tests/e2e',
@@ -51,12 +60,15 @@ export default defineConfig({
     },
   ],
 
-  webServer: {
-    command: 'npm run build:only && npm run preview',
-    url: BASE_URL,
-    reuseExistingServer: !process.env.CI,
-    timeout: 180_000,
-    stdout: 'ignore',
-    stderr: 'pipe',
-  },
+  // 测试远程已部署站点时不需要也不应该启动本地预览服务
+  webServer: REMOTE_BASE_URL
+    ? undefined
+    : {
+        command: 'npm run build:only && npm run preview',
+        url: BASE_URL,
+        reuseExistingServer: !process.env.CI,
+        timeout: 180_000,
+        stdout: 'ignore',
+        stderr: 'pipe',
+      },
 });

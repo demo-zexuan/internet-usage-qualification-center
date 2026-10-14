@@ -7,6 +7,15 @@
 [![React](https://img.shields.io/badge/React-19.3-61dafb.svg)](package.json)
 [![Tests](https://img.shields.io/badge/tests-184%20unit%20%2B%2025%20e2e-brightgreen.svg)](docs/功能清单与验证结果.md)
 
+## 🌐 在线演示
+
+**https://internet-usage-qualification-center.pages.dev**
+
+部署于 Cloudflare Pages。首次访问点击「建立本地档案并进入考试工作台」即可开始，
+全部数据保存在你自己的浏览器中，不上传任何服务器。
+
+> 该在线站点与本地构建产物完全一致；完整端到端测试套件（25 例）已针对该地址实际运行并通过。
+
 一套**纯前端**的虚构互联网使用资格认证与在线考试系统。以驾照考试制度为灵感，
 建立针对互联网使用能力、信息辨别能力、网络安全意识、逻辑思维与公共讨论素养的资格分级制度。
 
@@ -123,6 +132,44 @@ pnpm preview        # 预览构建产物
 - `dist/` 为纯静态文件，可直接部署到任意静态托管（Nginx、GitHub Pages、对象存储等）。
 - 构建产物为单页应用，**部署时需将未匹配的路径回退到 `index.html`**（history 路由）。
 - 无需任何环境变量或服务端配置。
+
+### 部署到 Cloudflare Pages
+
+项目已包含 Cloudflare Pages 所需的两个配置文件（位于 `public/`，构建时复制到 `dist/`）：
+
+| 文件 | 作用 |
+|---|---|
+| `_redirects` | `/* /index.html 200`，把深层地址（`/exams`、`/certificate/xxx`）回退到 SPA 外壳 |
+| `_headers` | 安全响应头（`nosniff` / `DENY` / `Referrer-Policy` / `Permissions-Policy`）与静态资源长缓存 |
+
+```bash
+# 1. 构建
+pnpm build
+
+# 2. 设置凭据（不要在仓库内保存 Token）
+export CLOUDFLARE_ACCOUNT_ID=<你的 Account ID>
+export CLOUDFLARE_API_TOKEN=<你的 API Token>
+
+# 3. 部署（wrangler 通过 npx 临时获取，不是项目依赖）
+pnpm deploy:cf
+```
+
+也可使用 `npx wrangler pages deploy dist --project-name=<项目名> --branch=main`。
+
+> **首次部署**需先在 Cloudflare 控制台创建 Pages 项目，或调用
+> `POST /accounts/{account_id}/pages/projects`（`{"name":"…","production_branch":"main"}`）创建。
+
+### 针对任意地址运行端到端测试
+
+```bash
+# 测试本地预览服务（默认行为）
+pnpm test:e2e
+
+# 测试已部署的站点
+PLAYWRIGHT_BASE_URL=https://internet-usage-qualification-center.pages.dev pnpm test:e2e
+```
+
+设置 `PLAYWRIGHT_BASE_URL` 后会跳过本地预览服务的启动，直接对目标地址执行全部用例。
 
 ---
 

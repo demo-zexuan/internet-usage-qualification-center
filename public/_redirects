@@ -1,0 +1,8 @@
+# Cloudflare Pages 路由回退规则
+#
+# 本应用使用 history 路由（BrowserRouter），部署到静态托管时
+# 必须把未匹配到实际文件的请求回退到 index.html，否则直接访问
+# /exams、/certificate/xxx 等深层地址会返回 404。
+#
+# 语法：<来源路径> <目标路径> <状态码>
+/*    /index.html   200

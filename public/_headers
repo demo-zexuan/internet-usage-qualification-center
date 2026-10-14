@@ -1,0 +1,16 @@
+# Cloudflare Pages 响应头
+#
+# 本应用为纯静态前端，不涉及任何服务端逻辑，因此这里只设置
+# 与安全基线相关的响应头。未设置 CSP：首页包含一小段用于
+# 预置主题的内联脚本，且 Tailwind 会生成内联样式属性，收紧
+# CSP 需要额外的 nonce 机制，收益与风险不成比例。
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+
+# 带内容哈希的静态资源可以长期缓存
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
